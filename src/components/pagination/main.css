@@ -1,0 +1,73 @@
+.pagination-wrapper{
+    margin: 60px 0;
+    display: flex;
+    justify-content: center;
+}
+.ant-pagination{
+    width: 378px;
+}
+
+.ant-pagination-item{
+    width: 48px;
+    height: 48px;
+    border-color: transparent !important;
+    border: 2px solid transparent;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    cursor: pointer;
+}
+.ant-pagination-next{
+    cursor: pointer;
+}
+
+.ant-pagination-prev{
+    cursor: pointer;
+}
+
+.ant-pagination-item a{
+    transform: translate(0%, 12%);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 0;
+    
+    color: #000000;
+}
+
+.ant-pagination-item.ant-pagination-item-active{
+    border-radius: 50% !important;
+    border-color: #000000 !important;
+}
+
+.ant-pagination-item.ant-pagination-item-active a{
+    color: #000000 !important;
+}
+
+.ant-pagination-mini{
+    display: flex !important;
+}
+
+.ant-pagination-next{
+    margin-left: 10px !important;
+}
+
+.ant-pagination-prev{
+    margin-right: 10px !important;
+}
+
+.ant-pagination-next.ant-pagination-disabled{
+    display: none !important;
+}
+
+.ant-pagination-prev.ant-pagination-disabled{
+    display: none !important;
+}
+
+.pagination{
+    margin: 60px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

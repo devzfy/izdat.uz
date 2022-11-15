@@ -1,0 +1,87 @@
+.Header_wrapper{
+    background: #0D378C;
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    .inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .header_navs{
+            position: relative;
+            .logo{
+                margin-left: 10px;
+                .logo_link{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 35px;
+                    line-height: 25px;
+                    color: #FFFFFF;
+                }
+            }
+            .header_links{
+                display: flex;
+                align-items: center;
+                gap: 50px;
+                .link{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #FFFFFF;
+                }
+            }
+            &.burger{
+                display: flex;
+                align-items: center;
+                .burger_btn{
+                    cursor: pointer;
+                }
+            }
+        }
+        .header_navs_term{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .search{
+                width: 220px;
+                background: #FFFFFF;
+                border-radius: 20px;
+                display: flex;
+                overflow: hidden;
+                align-items: center;
+                padding-right: 14px;
+                input{
+                    width: 100%;
+                    height: 100%;
+                    padding: 14px 0 14px 14px;
+                    box-sizing: border-box;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 22px;
+                    &::placeholder{
+                        color: #AAA9A9;
+                    }
+                }
+            }
+            .lang{
+                width: 40px;
+                button{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 22px;
+                    line-height: 27px;
+                    color: #FFFFFF;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
