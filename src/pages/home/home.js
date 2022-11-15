@@ -22,15 +22,15 @@ const Home = ()=>{
                         <div className={clas.slider_wrapper} style={{backgroundImage: `url(${Bg})`}}>
                             <Slider {...settings}>
                                 {
-                                    fakeArr.map(()=>{
+                                    data.map((el)=>{
                                         return <div className={clas.slider_cards}  >
                                             <div className={clas.left_side}>
                                                 <h1>
-                                                    Скидка 10% на приобретение <b>ПЕРВОЙ КНИГИ</b>
+                                                    {el.name}
                                                 </h1>
                                                 <button>Подробнее</button>
                                             </div>
-                                            <img src={Book} alt="" />
+                                            <img src={el.products[0].image} alt="" />
                                         </div>
                                     })
                                 }

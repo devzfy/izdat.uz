@@ -6,16 +6,18 @@ const Shopcontainer = ({name,data})=>{
         <h1>{name}</h1>
         <div className={clas.shopCards}>
             {
-                data.map((el)=>{
-                    return <Shopcard 
+                data.slice(0,4).map((el)=>{
+                    return <div className={clas.card}>
+                        <Shopcard 
                         image={el.image}
                         title={el.title}
                         rate={el.rate}
                         rateCount={el.rateCount}
                         price={el.price}
                         sale={el.sale}
-                        salePrice={el.salePrice}
-                    />
+                        saleprice={el.saleprice}
+                        />
+                    </div>
                 })
             }
         </div>

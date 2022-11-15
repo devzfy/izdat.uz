@@ -23,6 +23,7 @@
                     background-size: cover;
                     display: flex !important;
                     align-items: center !important;
+                    justify-content: space-between;
                     h1{
                         font-family: 'Inter';
                         font-style: normal;
@@ -36,7 +37,7 @@
                     button{
                         background: #135EF2;
                         border-radius: 20px;
-                        font-family: 'Montserrat';
+                        font-family: 'inter';
                         font-style: normal;
                         font-weight: 500;
                         font-size: 22px;

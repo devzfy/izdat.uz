@@ -482,6 +482,42 @@ export const data = [
                 sale: false,
                 saleprice: '' 
             },
+            {
+                image: Image10,
+                title: 'Госпожа Бовари.Гюстав Флобер',
+                rate: '4',
+                rateCount: '165',
+                price: '52 000',
+                sale: false,
+                saleprice: '' 
+            },
+            {
+                image: Image10,
+                title: 'Госпожа Бовари.Гюстав Флобер',
+                rate: '4',
+                rateCount: '165',
+                price: '52 000',
+                sale: false,
+                saleprice: '' 
+            },
+            {
+                image: Image10,
+                title: 'Госпожа Бовари.Гюстав Флобер',
+                rate: '4',
+                rateCount: '165',
+                price: '52 000',
+                sale: false,
+                saleprice: '' 
+            },
+            {
+                image: Image10,
+                title: 'Госпожа Бовари.Гюстав Флобер',
+                rate: '4',
+                rateCount: '165',
+                price: '52 000',
+                sale: false,
+                saleprice: '' 
+            },
         ]
     }
 ]
