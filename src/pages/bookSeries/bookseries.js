@@ -7,7 +7,7 @@ import React from 'react'
 const BookSeries = ()=>{
     return <React.Fragment>
         <Header/>
-        <Banner image={'https://cdn-v2.asla.org/uploadedImages/CMS/Shop/Bookstore/books.jpg'}/>
+        <Banner title={'Cерия книги'} image={'https://cdn-v2.asla.org/uploadedImages/CMS/Shop/Bookstore/books.jpg'}/>
         <div className={clas.bookseries_wrapper}>
             <div className="container">
                 <div className={clas.inner}>
