@@ -36,7 +36,7 @@ const Shopcard = ({
         {saleprice !== "" ? <span>{saleprice}сум</span> : null}
       </div>
       <div className={clas.action_btn}>
-        <button className="btn btn-white btn-animate">Купить в 1 клик</button>
+        <button className="btn btn-white btn-animate">Купить</button>
         <button
           onClick={() => setActive(true)}
           class={`cart-button ${active ? "clicked" : ""}`}

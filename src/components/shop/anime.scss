@@ -6,6 +6,11 @@ width: 100% !important;
   width: auto;
   box-shadow: none !important;
   background-color: none !important;
+	&:hover{
+		.heart{
+			transform: scale(1);
+		}
+	}
 }
 
 :root {
@@ -20,10 +25,10 @@ width: 100% !important;
 
   
   .heart #initial {
-	stroke-width: 1.5;
+	stroke-width: 2;
 	stroke: var(--color-pink);
-	fill: transparent;
-  } 
+	fill: var(--color-pink);
+  }
 	
 	
   .heart #stroke {
@@ -38,7 +43,10 @@ width: 100% !important;
 	position: absolute;
 	right: 7px;
 	top: 5px;
+	transform: scale(0);
+	transition: .2s;
 	&.active{
+		transform: scale(1);
 			svg {
 			  transform-origin: 50% 50%;
 			  animation: heart var(--transition-time) cubic-bezier(.64,-1.5,.64,1.5);
@@ -91,11 +99,11 @@ width: 100% !important;
 
 .cart-button {
 	position: relative;
-	padding: 10px;
-	width: 60px;
+	padding: 17px;
+	width: 56px;
 	height: 37px;
 	border: 0;
-	border-radius: 6px;
+	border-radius: 17px;
 	background-color: #0D378C;
 	outline: none;
 	cursor: pointer;
@@ -198,67 +206,23 @@ width: 100% !important;
 
 .btn{
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 5px 36px;
     display: inline-block;
     border-radius: 100px;
     transition: all .2s;
 	cursor: pointer;
 	font-family: 'inter';
 	font-style: normal;
-	font-weight: 400;
-	font-size: 15px;
+	font-weight: 600;
+	font-size: 17px;
 	line-height: 27px;
 	color: #FFFFFF;
 	background-color: #135EF2;
-	border-radius: 6px;
+	border-radius: 20px;
 }
 
 .btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 	background-color: transparent;
 	border: 1px solid #0D378C;
 	color: #0D378C;
-}
-
-.btn:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-
-
-.btn::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all .4s;
-}
-
-.btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
-}
-
-.btn-animated {
-    animation: moveInBottom 5s ease-out;
-    animation-fill-mode: backwards;
-}
-
-@keyframes moveInBottom {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
 }
