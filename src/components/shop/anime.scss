@@ -1,11 +1,89 @@
 
 .vanilla{
+width: 100% !important;
   padding: 0 !important;
   margin: 0 !important;
   width: auto;
   box-shadow: none !important;
   background-color: none !important;
 }
+
+:root {
+	--color-blue: rgb(78, 101, 203);
+	--color-purple: rgb(113,75,128);
+	--color-pink: #bdbdbd;
+	--color-red: #f00;
+	
+	--transition-time: 500ms;
+	--transition-ease: cubic-bezier(.1,.7,.8,.3);
+  }
+
+  
+  .heart #initial {
+	stroke-width: 1.5;
+	stroke: var(--color-pink);
+	fill: transparent;
+  } 
+	
+	
+  .heart #stroke {
+	stroke-dasharray: 100;
+	stroke-dashoffset: 100;
+	stroke-linecap: round;
+	stroke-width: 2.5;
+  }
+  
+  .heart{
+	cursor: pointer;
+	position: absolute;
+	right: 7px;
+	top: 5px;
+	&.active{
+			svg {
+			  transform-origin: 50% 50%;
+			  animation: heart var(--transition-time) cubic-bezier(.64,-1.5,.64,1.5);
+			  animation-fill-mode: forwards;
+			}
+			#initial {
+			  display: none;
+			}
+			#stroke {
+			  animation: stroke var(--transition-time) var(--transition-ease);
+			  animation-fill-mode: forwards;
+			}
+		  
+  }}
+  
+  @keyframes heart {
+	from {
+	  transform: scale(1)
+	}
+	78% {
+	  transform: scale(1.25)
+	}
+	to {
+	  transform: scale(1)
+	}
+  }
+  
+  @keyframes stroke {
+	from {
+	  stroke: var(--color-blue);
+	  fill: transparent
+	  
+	}
+	50% {
+	  stroke: var(--color-purple); 
+	}
+	85% {
+	  fill: transparent
+	}
+	to {
+	  stroke-dashoffset: 0;
+	  stroke: var(--color-red);
+	  fill: var(--color-red)
+	}
+  }
 
 
 
@@ -14,11 +92,11 @@
 .cart-button {
 	position: relative;
 	padding: 10px;
-	width: 65px;
-	height: 45px;
+	width: 60px;
+	height: 37px;
 	border: 0;
-	border-radius: 10px;
-	background-color: #4834d4;
+	border-radius: 6px;
+	background-color: #0D378C;
 	outline: none;
 	cursor: pointer;
 	color: #fff;
@@ -43,7 +121,7 @@
 .cart-button .fa-box {
 	position: absolute;
 	z-index: 3;
-	top: -20%;
+	top: -21%;
 	left: 60%;
 	font-size: 1.2em;
 	transform: translate(-50%,-50%);
@@ -51,8 +129,8 @@
 .cart-button span {
 	position: absolute;
 	z-index: 3;
-	left: 50%;
-	top: 50%;
+	left: 51%;
+	top: 56%;
 	font-size: 1.2em;
 	color: #fff;
 	transform: translate(-50%,-50%);
@@ -119,26 +197,28 @@
 
 
 .btn{
-    text-transform: uppercase;
     text-decoration: none;
-    padding: 10px 40px;
+    padding: 5px 10px;
     display: inline-block;
     border-radius: 100px;
     transition: all .2s;
 	cursor: pointer;
 	font-family: 'inter';
 	font-style: normal;
-	font-weight: 600;
-	font-size: 22px;
+	font-weight: 400;
+	font-size: 15px;
 	line-height: 27px;
 	color: #FFFFFF;
 	background-color: #135EF2;
-	border-radius: 20px;
+	border-radius: 6px;
 }
 
 .btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	background-color: transparent;
+	border: 1px solid #0D378C;
+	color: #0D378C;
 }
 
 .btn:active {

@@ -1,0 +1,229 @@
+.About_wrapper {
+  margin-top: 160px;
+  .holder {
+    text-align: center;
+    margin-bottom: 40px;
+    h1 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 150%;
+      color: #000000;
+    }
+  }
+  .block_first {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    .side {
+      &:nth-child(1) {
+        width: 59%;
+      }
+      &:nth-child(2) {
+        width: 35%;
+        height: 400px;
+        position: relative;
+        img {
+          position: absolute;
+          width: 358px;
+height: 430px;
+&:nth-child(2){
+    bottom: -60px;
+    right: 43px;
+}
+&:nth-child(1){
+    top: -10px;
+    right: 0;
+}
+        }
+      }
+      h1 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 150%;
+        color: #000000;
+        span {
+          font-weight: 600;
+          font-size: 50px;
+        }
+        margin-bottom: 30px;
+      }
+      p {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 150%;
+        color: #000000;
+      }
+    }
+  }
+  .block_second{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px;
+    .side{
+        &:nth-child(1){
+            width: 69%;
+            img{
+                width: 100%;
+                object-fit: cover;
+height: 409px;
+            }
+        }
+        &:nth-child(2){
+            height: 335px;
+            width: 315px;
+            position: relative;
+            margin-top: 75px;
+            img{
+                width: 283.34px;
+height: 289.85px;
+position: absolute;
+&:nth-child(1){
+    right: 0;
+    bottom: -13px;
+}
+&:nth-child(2){
+    top: 20px;
+}
+            }
+        }
+    }
+
+    
+  }
+  .our_advantages{
+    margin: 60px auto 90px auto;
+    max-width: 989px;
+    
+    h1{
+        font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 150%;
+/* identical to box height, or 60px */
+text-align: center;
+
+color: #000000;
+margin-bottom: 60px;
+
+    }
+    .advantages{
+        background: #77A1D9;
+    padding: 33px 67px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    .advantages_card{
+        width: 30%;
+        span{
+            display: flex;
+            text-align: center;
+            &.number{
+                align-items: center;
+                justify-content: center;
+                font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 35px;
+line-height: 51px;
+text-align: center;
+color: #FFFFFF;
+            }
+            &.text{
+                font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 30px;
+text-align: center;
+
+color: #FFFFFF;
+            }
+        }
+    }
+    }
+}
+.recommends{
+    h1{
+        font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 150%;
+color: #000000;
+margin: 90px 0 40px 0;
+    }
+    
+    .recommends_cards{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
+}
+
+.writersingle_wrapper{
+  .page_intro{
+    margin: 160px auto 60px 
+    auto;
+    width: 100%;
+    max-width: 1076px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1{
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 49px;
+      color: #000000;
+      text-align: center;
+      margin: 40px 0 30px 0;
+    }
+    p{
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 150%;
+      color: #000000;
+      text-align: justify;
+    }
+    img{
+      width: 856px;
+      height: 515px;
+      object-fit: cover;
+    }
+  }
+
+  .writer_books{
+    h1{
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 49px;
+      color: #000000;
+      margin-bottom: 40px;
+    }
+    .books{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .book_card{
+        width: 24%;
+        margin-bottom: 60px;
+      }
+    }
+  }
+}

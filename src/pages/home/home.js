@@ -1,12 +1,11 @@
 import React from 'react'
-import { Header , Shopcontainer} from '../../container'
+import { Header , Shopcontainer, Footer} from '../../container'
 import clas from './main.module.scss'
 import Slider from 'react-slick'
 import { settings } from '../../helpers/settings'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Bg from '../../assets/images/Union.png'
-import Book from '../../assets/images/book.png'
 import '../../helpers/settings.css'
 import Image from '../../assets/images/Rectangle 10.png'
 import {data} from '../../data/collection'
@@ -58,6 +57,7 @@ const Home = ()=>{
                 </div>
             </div>
         </div>
+        <Footer/>
     </React.Fragment>
 }
 

@@ -1,8 +1,9 @@
 import clas from "./main.module.scss";
 import "./anime.scss";
 import { Rating } from "react-simple-star-rating";
-import { Sale, Korzina, True } from "../../assets/icons";
+import { Sale, Korzina, True, AnimeHeart } from "../../assets/icons";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Title from 'react-vanilla-tilt'
 const Shopcard = ({
   image,
@@ -12,13 +13,16 @@ const Shopcard = ({
   price,
   sale,
   saleprice,
+  link
 }) => {
   const [active, setActive] = useState(false);
+  const [active2, setActive2] = useState(false);
   return (
     <Title className="vanilla">
-        <div className={`${clas.shopcard_wrapper} card`}
+        <Link to={link} className={`${clas.shopcard_wrapper}`}
     >
       <div className={clas.sale}>{sale ? <Sale /> : null}</div>
+      <div className={clas.liked}><button onClick={()=> setActive2(true)} className={`heart ${active2 ? 'active' : ''}`}><AnimeHeart/></button></div>
       <div className={clas.image}>
         <img src={image} alt="" />
       </div>
@@ -32,7 +36,7 @@ const Shopcard = ({
         {saleprice !== "" ? <span>{saleprice}сум</span> : null}
       </div>
       <div className={clas.action_btn}>
-        <button className="btn btn-white btn-animate">Купить</button>
+        <button className="btn btn-white btn-animate">Купить в 1 клик</button>
         <button
           onClick={() => setActive(true)}
           class={`cart-button ${active ? "clicked" : ""}`}
@@ -47,7 +51,7 @@ const Shopcard = ({
           <i class="fas fa-box"></i>
         </button>
       </div>
-    </div>
+    </Link>
     </Title>
   );
 };

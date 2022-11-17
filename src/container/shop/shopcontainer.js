@@ -6,7 +6,7 @@ const Shopcontainer = ({name,data})=>{
         <h1>{name}</h1>
         <div className={clas.shopCards}>
             {
-                data.slice(0,4).map((el)=>{
+                data.map((el)=>{
                     return <div className={clas.card}>
                         <Shopcard 
                         image={el.image}

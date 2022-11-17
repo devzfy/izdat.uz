@@ -1,0 +1,28 @@
+.SaleEvents_wrapper{
+    .ads_ac{
+        margin-bottom: 80px;
+        h1{
+            text-align: center;
+            margin: 60px 0 40px 0;
+        }
+        .ads{
+            display: flex;
+            align-items: center;
+            img{
+                width: 33.33%;
+                object-fit: cover;
+                height: 233px;
+            }
+        }
+    }
+    .sale_cards_wrapper{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        .sale_card{
+            width: 32%;
+            margin-bottom: 60px;
+        }
+    }
+}

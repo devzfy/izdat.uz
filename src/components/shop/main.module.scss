@@ -2,17 +2,18 @@
     background: #FFFAFA;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-    padding: 20px;
+    padding: 15px;
     box-sizing: border-box;
     position: relative;
+    display: block;
     .sale{
         position: absolute;
-        top: 10px;
-        right: 10px;
+        top: 5px;
+        left: 10px;
     }
     img{
-        width: 200px;
-        height: 254px;
+        width: 160px;
+        height: 160px;
         object-fit: cover;
     }
     .image{
@@ -25,16 +26,18 @@
         font-family: 'inter';
         font-style: normal;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 14px;
+        height: 40px;
+        overflow: hidden;
         line-height: 22px;
         white-space: wrap;
         color: #000000;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     .rate{
         display: flex;
         align-items: center;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
         .rateCount{
             font-family: 'Montserrat';
             font-style: normal;
@@ -43,6 +46,7 @@
             color: #918888;
             display: block;
             margin-left: 10px;
+            margin-top: -7px;
         }
     }
     .price{
@@ -54,7 +58,7 @@
                 font-family: 'inter';
                 font-style: normal;
                 font-weight: 700;
-                font-size: 20px;
+                font-size: 18px;
                 line-height: 24px;
                 color: #000000;
             }
@@ -62,7 +66,7 @@
                 font-family: 'inter';
                 font-style: normal;
                 font-weight: 500;
-                font-size: 18px;
+                font-size: 14px;
                 line-height: 22px;
                 color: #000000;
                 position: relative;
@@ -70,11 +74,11 @@
                     height: 1px;
                     transform: rotate(7deg);
                     background-color: #f00;
-                    width: 118px;
+                    width: 78px;
                     position: absolute;
                     content: '';
                     top: 10px;
-                    left: -10px;
+                    left: -1px;
                 }
             }
         }
@@ -82,7 +86,7 @@
     .action_btn{
         display: flex;
         align-items: center;
-        margin-top: 22px;
+        margin-top: 15px;
         justify-content: space-between;
         .buy_btn{
             font-family: 'inter';

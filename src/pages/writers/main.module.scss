@@ -1,0 +1,96 @@
+.Writers_wrapper{
+    .banner{
+        width: 100%;
+        margin-bottom: 60px;
+        img{
+            width: 100%;
+        }
+    }
+
+    .writers_wrapper{
+        .writers_container{
+            h1{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 49px;
+                color: #000000;
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            .writers_card_wrapper{
+                display: flex;
+                align-items: center;
+                margin-bottom: 80px;
+                .card{
+                    width: 33.33%;
+                    display: flex;
+                    flex-direction: column;
+                    &:nth-child(2){
+                        flex-direction: column-reverse;
+                    }
+                    .top_place{
+                        background: #3E588C;
+                        height: 279px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        padding: 0 22px;
+                        h3{
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 32px;
+                            line-height: 39px;
+                            color: #FFFFFF;
+                            margin-bottom: 15px;
+                        }
+                        p{
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 25px;
+                            line-height: 30px;
+                            text-align: center;
+                            color: #FFFFFF;
+                            margin-bottom: 40px;
+                        }
+                        .single_navigate_link{
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 22px;
+                            color: #FFFFFF;
+                            position: relative;
+                            &::before{
+                                position: absolute;
+                                content: '';
+                                right: -13px;
+                                top: 0;
+                                bottom: 0;
+                                margin: auto;
+                                width: 8px;
+                                height: 15px;
+                                background-position: center;
+                                background-size: contain;
+                                background-image: url('../../assets/icons/more.png');
+                            }
+                        }
+                    }
+                    .bottom_place{
+                        width: 100%;
+                        height: 279px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
