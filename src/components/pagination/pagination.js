@@ -11,8 +11,11 @@ const PaginationCustome = ()=>{
         }
         return originalElement
     }
+    const change = ()=>[
+        console.log('changed')
+    ]
     return <div className="pagination-wrapper">
-        <Pagination size="small" total={50} itemRender={itemRender}/>
+        <Pagination size="small" total={40} defaultPageSize={16} itemRender={itemRender} onChange={change}/>
     </div>
 }
 
