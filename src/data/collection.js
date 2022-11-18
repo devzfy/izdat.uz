@@ -9,14 +9,13 @@ import Image8 from '../assets/images/vinovati-zvezdi-800x800 2.png'
 import Image9 from '../assets/images/orig 2.png'
 import Image10 from '../assets/images/cf929335-3d38-4fbb-830a-2eb6cf60dbd3 1.png'
 import Sale1 from '../assets/images/sale1.png'
-import Sale2 from '../assets/images/sale2.png'
 
 
 
 
 export const data = [
     {
-        name: 'Художественная литература',
+        name: 'Художественная литература 1',
         products: [
             {
                 image: Image1,
@@ -25,7 +24,8 @@ export const data = [
                 rateCount: '165',
                 price: '52 000',
                 sale: true,
-                saleprice: '65 000'
+                saleprice: '65 000',
+                id: 1
             },
             {
                 image: Image1,
@@ -34,7 +34,8 @@ export const data = [
                 rateCount: '165',
                 price: '52 000',
                 sale: true,
-                saleprice: '65 000'
+                saleprice: '65 000',
+                id: 1
             },
             {
                 image: Image1,
@@ -43,7 +44,8 @@ export const data = [
                 rateCount: '165',
                 price: '52 000',
                 sale: false,
-                saleprice: ''
+                saleprice: '',
+                id: 1
             },
 
             {
@@ -53,7 +55,8 @@ export const data = [
                 rateCount: '165',
                 price: '52 000',
                 sale: false,
-                saleprice: ''
+                saleprice: '',
+                id: 1
             },
             {
                 image: Image1,
@@ -62,13 +65,14 @@ export const data = [
                 rateCount: '165',
                 price: '52 000',
                 sale: false,
-                saleprice: ''
+                saleprice: '',
+                id: 1
             },
 
         ]
     },
     {
-        name: 'Психология и мотивация',
+        name: 'Психология и мотивация 2',
         products: [
             {
                 image: Image2,
@@ -77,7 +81,8 @@ export const data = [
                 rateCount: '165',
                 price: '49 000',
                 sale: false,
-                saleprice: ''
+                saleprice: '',
+                id: 2
             },
             {
                 image: Image2,
@@ -86,7 +91,8 @@ export const data = [
                 rateCount: '165',
                 price: '49 000',
                 sale: false,
-                saleprice: ''
+                saleprice: '',
+                id: 2
             },
             {
                 image: Image2,
@@ -95,7 +101,8 @@ export const data = [
                 rateCount: '165',
                 price: '49 000',
                 sale: false,
-                saleprice: ''
+                saleprice: '',
+                id: 2
             },
             {
                 image: Image2,
@@ -104,7 +111,8 @@ export const data = [
                 rateCount: '165',
                 price: '49 000',
                 sale: false,
-                saleprice: ''
+                saleprice: '',
+                id: 2
             },
             {
                 image: Image2,
@@ -113,13 +121,14 @@ export const data = [
                 rateCount: '165',
                 price: '49 000',
                 sale: false,
-                saleprice: ''
+                saleprice: '',
+                id: 2
             },
 
         ]
     },
     {
-        name: 'Досуг и хобби',
+        name: 'Досуг и хобби 3',
         products: [
             {
                 image: Image3,
@@ -128,7 +137,8 @@ export const data = [
                 rateCount: '165',
                 price: '52 000',
                 sale: false,
-                saleprice: ''
+                saleprice: '',
+                id: 3
             },
             {
                 image: Image3,

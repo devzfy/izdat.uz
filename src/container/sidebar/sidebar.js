@@ -1,23 +1,32 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import clas from './main.module.scss'
-import ReactDOM from  'react-dom'
-const Sidebar = ({activeSidebar, setActiveSidebar})=>{
-    const root = document.getElementById('root')
-    const body = document.querySelector('body')
-    if(activeSidebar){
-        root.classList.add('active')
-        body.classList.add('active')
-    }else{
-        root.classList.remove('active')
-        body.classList.remove('active')
+const Sidebar = ({ activeSidebar, setActiveSidebar }) => {
+    const data = [1,1,1]
+    const [cateData, setCateData] = useState([])
+    useEffect(()=>{
+        fetchData()
+    },[])
+    const fetchData = async ()=>{
+        const list = await fetch('https://www.googleapis.com/books/v1/volumes?q=subject&filter=ebooks&key=AIzaSyC9ROl3QupFvo-5ZqG3AD7LS_ECZqy8GsI')
+        const data = await list.json()
+        setCateData(data.items)
     }
-    console.log(root); 
-    return ReactDOM.createPortal(
-        <div className={clas.sidebar_wrapper}>
-            <div onClick={()=> setActiveSidebar(false)} className={`${clas.overlay} ${activeSidebar ? clas.active : ''}`}></div>
-            <div className={`${clas.sidebar_content} ${activeSidebar ? clas.active : ''}`}></div>
-        </div>,
-        document.getElementById('portal')
-    )
+    const categories = []
+    for (let i = 0; i < cateData.length; i++) {
+        const element = cateData[i];
+        categories.push(element.volumeInfo.categories[0])
+    }
+    const newData = new Array(...new Set(categories))
+
+    return <div className={clas.sidebar}>
+        <ul className={clas.sidebar_ul}>
+            <li><button className={clas.sidebar_btn}>Bсе</button></li>
+            {
+                newData?.map(el => {
+                    return <li><button className={clas.sidebar_btn}>{el}</button></li>
+                })
+            }
+        </ul>
+    </div>
 }
 export default Sidebar

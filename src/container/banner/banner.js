@@ -1,8 +1,7 @@
 import clas from './main.module.scss'
 
-const Banner = ({image, title})=>{
+const Banner = ({image})=>{
     return <div className={clas.banner}>
-        <h6>{title}</h6>
         <img src={image} alt="" />
     </div>
 }

@@ -11,7 +11,7 @@ const Recomend = ()=>{
             <h1>Рекомендуем</h1>
             <div className={clas.rec_cards}>
                 {
-                    data[0].products.slice(0,4).map(el => {
+                    data[0].products.slice(0,5).map(el => {
                         return <div className={clas.card}><Shopcard
                             image={el.image}
                             title={el.title}
