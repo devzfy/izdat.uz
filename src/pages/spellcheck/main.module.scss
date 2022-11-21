@@ -1,0 +1,134 @@
+.SpellCheck_wrapper {
+  .inner {
+    .holder {
+      text-align: center;
+      margin: 40px 0 60px 0;
+    }
+    .checking_wrapper {
+      margin-bottom: 60px;
+      .field_one {
+        label {
+          margin-bottom: 10px;
+          display: block;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 30px;
+          line-height: 37px;
+          color: #000000;
+        }
+        textarea {
+          border: none;
+          outline: none;
+          background: #ffffff;
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+          border-radius: 20px;
+          padding: 40px;
+          box-sizing: border-box;
+          height: 327px;
+          width: 100%;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 25px;
+          line-height: 30px;
+          display: block;
+          margin-bottom: 25px;
+          &::placeholder {
+            color: #cfcfcf;
+          }
+        }
+        .error_btns {
+          display: flex;
+          align-items: center;
+          margin-top: 40px;
+          .btn_one {
+            border-radius: 10px;
+            width: 208px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            margin-right: 25px;
+            span {
+              font-family: "Montserrat";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 20px;
+              color: #000000;
+              border: 2px solid #77a1d9;
+              padding: 10px;
+              border-top-right-radius: 10px;
+              border-bottom-right-radius: 10px;
+            }
+            button {
+              width: 70px;
+              font-family: "Montserrat";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 22px;
+              color: #c8c5c5;
+              display: block;
+              height: 100%;
+              background-color: #77a1d9;
+              padding: 11px;
+            }
+          }
+        }
+      }
+      .changer {
+        display: flex;
+        justify-content: center;
+        button {
+          width: 88px;
+          height: 64px;
+          background-color: #77a1d9;
+          border-radius: 10px;
+          cursor: pointer;
+        }
+      }
+      .check_btn {
+        display: flex;
+        justify-content: center;
+        margin: 60px 0;
+        button {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 27px;
+          /* identical to box height */
+
+          color: #ffffff;
+          background: #135ef2;
+          border-radius: 20px;
+          padding: 12px 35px;
+          cursor: pointer;
+        }
+      }
+    }
+    .why_izdat {
+      margin-bottom: 60px;
+      h1 {
+        text-align: center;
+      }
+      .content_block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 25px;
+          line-height: 150%;
+          /* or 38px */
+
+          color: #000000;
+          max-width: 574px;
+        }
+      }
+    }
+  }
+}

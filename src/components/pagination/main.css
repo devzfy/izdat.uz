@@ -47,6 +47,7 @@
 
 .ant-pagination-mini{
     display: flex !important;
+    justify-content: center !important;
 }
 
 .ant-pagination-next{
