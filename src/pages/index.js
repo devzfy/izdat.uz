@@ -12,4 +12,5 @@ import Auction from "./auction/auction";
 import SpellCheck from "./spellcheck/spellcheck";
 import Partners from "./partners/partner";
 import Delivery from "./delivery/delivery";
-export {Auction,Delivery,Partners,SpellCheck,Rating,RatingSingle,SeriesSingle ,Home, About,UniqueEdition, Writers, WriterSingle, SaleEvents, BookSeries}
+import Work from "./work/work";
+export {Work,Auction,Delivery,Partners,SpellCheck,Rating,RatingSingle,SeriesSingle ,Home, About,UniqueEdition, Writers, WriterSingle, SaleEvents, BookSeries}
