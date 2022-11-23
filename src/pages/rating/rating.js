@@ -9,15 +9,18 @@ const Rating = ()=>{
     const arr = [
         {
             image: Image,
-            text: 'Рейтинги авторов'
+            text: 'Рейтинги авторов',
+            link: '/rating/author'
         },
         {
             image: Image,
-            text: 'Рейтинги книг и журналов'
+            text: 'Рейтинги книг и журналов',
+            link: '/rating/book'
         },
         {
             image: Image,
-            text: 'Рейтинги издательств'
+            text: 'Рейтинги издательств',
+            link: '/rating/publishing'
         }
     ]
     return <React.Fragment>
@@ -36,7 +39,7 @@ const Rating = ()=>{
             </div>
             <div className={clas.item_text}>
                 <h3>{el.text}</h3>
-                <Link className={clas.item_link}>Подробнее</Link>
+                <Link to={el.link} className={clas.item_link}>Подробнее</Link>
             </div>
         </div>
         })

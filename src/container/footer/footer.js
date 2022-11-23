@@ -9,18 +9,18 @@ const Footer = ()=>{
                     <Link to={'/'} className={clas.logo_link}>Izdat.uz</Link>
                     <ul>
                         <li><Link to={'/'} className={clas.footer_link}>Каталог</Link></li>
-                        <li><Link to={'/'} className={clas.footer_link}>О нас</Link></li>
-                        <li><Link to={'/'} className={clas.footer_link}>Авторы</Link></li>
-                        <li><Link to={'/'} className={clas.footer_link}>Букинистика</Link></li>
-                        <li><Link to={'/'} className={clas.footer_link}>Акции</Link></li>
-                        <li><Link to={'/'} className={clas.footer_link}>Серии</Link></li>
-                        <li><Link to={'/'} className={clas.footer_link}>Рейтинги</Link></li>
-                        <li><Link to={'/'} className={clas.footer_link}>Аукцион</Link></li>
-                        <li><Link to={'/'} className={clas.footer_link}>Проверка орфографии</Link></li>
-                        <li><Link to={'/'} className={clas.footer_link}>Нашим партнерам</Link></li>
-                        <li><Link to={'/'} className={clas.footer_link}>Доставка</Link></li>
-                        <li><Link to={'/'} className={clas.footer_link}>Работа специалистам</Link></li>
-                        <li><Link to={'/'} className={clas.footer_link}>Онлайн печать</Link></li>
+                        <li><Link to={'/about'} className={clas.footer_link}>О нас</Link></li>
+                        <li><Link to={'/writers'} className={clas.footer_link}>Авторы</Link></li>
+                        <li><Link to={'/edition'} className={clas.footer_link}>Букинистика</Link></li>
+                        <li><Link to={'/sale'} className={clas.footer_link}>Акции</Link></li>
+                        <li><Link to={'/book-series'} className={clas.footer_link}>Серии</Link></li>
+                        <li><Link to={'/rating'} className={clas.footer_link}>Рейтинги</Link></li>
+                        <li><Link to={'/auction'} className={clas.footer_link}>Аукцион</Link></li>
+                        <li><Link to={'/spell-checking'} className={clas.footer_link}>Проверка орфографии</Link></li>
+                        <li><Link to={'/partners'} className={clas.footer_link}>Нашим партнерам</Link></li>
+                        <li><Link to={'/delivery'} className={clas.footer_link}>Доставка</Link></li>
+                        <li><Link to={'/work'} className={clas.footer_link}>Работа специалистам</Link></li>
+                        <li><Link to={'/print'} className={clas.footer_link}>Онлайн печать</Link></li>
                     </ul>
                 </div>
                 <div className={clas.block}>
