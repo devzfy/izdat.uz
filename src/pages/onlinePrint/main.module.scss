@@ -1,0 +1,45 @@
+.SinglePrint_wrpper{
+    .holder{
+        margin: 60px 0 40px 0;
+        text-align: center;
+    }
+    .prints{
+        margin-bottom: 60px;
+        display: flex;
+        justify-content: space-between;
+        .item_wrap{
+            width: 33.33%;
+            height: 390px;
+            .image{
+                height: 50%;
+                width: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    background-size: contain;
+                }
+            }
+            .text{
+                width: 100%;
+                height: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #3E588C;
+                span{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 36px;
+                    color: #FFFFFF;
+                    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+                }
+            }
+            &:nth-child(odd){
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
+    }
+}

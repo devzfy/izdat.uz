@@ -1,16 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import clas from './main.module.scss'
 import {Header, Footer, Recommend, Banner} from '../../container'
 import { PaginationCustome } from '../../components'
-
+import { Link } from 'react-router-dom'
 const Work = ()=>{
     return <React.Fragment>
         <Header/>
         <Banner image={'https://images.unsplash.com/photo-1607003881177-9b4e0d844536?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80'}/>
         <div className={clas.Work_wrapper}>
             <div className="container">
-                <h1 className={clas.holder}>Работа специалистам</h1>
                 <div className={clas.inner}>
+                    <div className={clas.short_contents}>
+                    <h1 className={clas.holder}>Работа специалистам</h1>
                     {
                         [1,1,1,1].map(() => {
                             return <div className={clas.work_cards}>
@@ -26,7 +27,7 @@ const Work = ()=>{
                             <div className={clas.bottom}>
                                 <div className={clas.btns}>
                                     <button>Откликнуться</button>
-                                    <button>Подробнее</button>
+                                    <Link className={clas.single_link} to={'/work/1'}>Подробнее</Link>
                                 </div>
                                 <div className={clas.views}>
                                     <span>Откликнулись: 14</span>
@@ -37,6 +38,7 @@ const Work = ()=>{
                         })
                     }
                     <PaginationCustome/>
+                    </div>
                 </div>
             </div>
         </div>

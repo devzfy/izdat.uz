@@ -47,7 +47,7 @@ const Shopcard = ({
           <span class="added">
             <True />
           </span>
-          <i class="fas fa-shopping-cart"></i>
+          <i class="fas fa-shopping-cart fa-2xs" style={{color: '#F7A302'}}></i>
           <i class="fas fa-box"></i>
         </button>
       </div>

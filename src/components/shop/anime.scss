@@ -98,22 +98,21 @@ width: 100% !important;
 
 
 .cart-button {
+	border: 3px solid #F7A302;
 	position: relative;
 	padding: 17px;
 	width: 56px;
 	height: 37px;
-	border: 0;
+	
 	border-radius: 17px;
-	background-color: #0D378C;
+	background-color: transparent;
 	outline: none;
 	cursor: pointer;
 	color: #fff;
 	transition: .3s ease-in-out;
 	overflow: hidden;
 }
-.cart-button:hover {
-	background-color: #35269b;
-}
+
 .cart-button:active {
 	transform: scale(.9);
 }
@@ -217,13 +216,16 @@ width: 100% !important;
 	font-size: 17px;
 	line-height: 27px;
 	color: #FFFFFF;
-	background-color: #135EF2;
+	background-color: 
+	#F7A302;
 	border-radius: 20px;
 	border: 1px solid transparent;
 }
 
 .btn:hover {
 	background-color: transparent;
-	border: 1px solid #0D378C;
-	color: #0D378C;
+	border: 1px solid 
+	#F7A302;
+	color: 
+	#F7A302;
 }

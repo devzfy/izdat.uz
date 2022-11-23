@@ -13,4 +13,7 @@ import SpellCheck from "./spellcheck/spellcheck";
 import Partners from "./partners/partner";
 import Delivery from "./delivery/delivery";
 import Work from "./work/work";
-export {Work,Auction,Delivery,Partners,SpellCheck,Rating,RatingSingle,SeriesSingle ,Home, About,UniqueEdition, Writers, WriterSingle, SaleEvents, BookSeries}
+import SingleWork from "./work/single";
+import Print from "./onlinePrint/print";
+import SinglePrint from "./onlinePrint/single";
+export {SinglePrint,Print,SingleWork,Work,Auction,Delivery,Partners,SpellCheck,Rating,RatingSingle,SeriesSingle ,Home, About,UniqueEdition, Writers, WriterSingle, SaleEvents, BookSeries}

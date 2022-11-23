@@ -1,9 +1,16 @@
 import clas from './main.module.scss'
 import {PaginationCustome, Shopcard} from '../../components'
+import { Arrow, Arrow2 } from '../../assets/icons'
 
 const Shopcontainer = ({name,data})=>{
     return <div className={clas.Shopcontainer_wrapper}>
+        <div className={clas.contaner_heder}>
         <h1>{name}</h1>
+        <div className={clas.icons}>
+            <Arrow/>
+            <Arrow2/>
+        </div>
+        </div>
         <div className={clas.shopCards}>
             {
                 data.map((el)=>{
@@ -21,7 +28,7 @@ const Shopcontainer = ({name,data})=>{
                 })
             }
         </div>
-        <PaginationCustome/>
+       
     </div>
 }
 
