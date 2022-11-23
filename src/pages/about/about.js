@@ -1,6 +1,6 @@
 import React from "react";
 import clas from "./main.module.scss";
-import { Header, Footer } from "../../container";
+import { Header, Footer, Recommend } from "../../container";
 import Image from '../../assets/images/Rectangle 74.png'
 import Image1 from '../../assets/images/Rectangle 75.png'
 import Image2 from '../../assets/images/Rectangle 76.png'
@@ -68,25 +68,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className={clas.recommends}>
-            <h1>Рекомендуем</h1>
-            <div className={clas.recommends_cards}>
-                {data[0].products.slice(0,4).map((el) =>{
-                    return <div className={clas.card}>
-                        <Shopcard
-                        image={el.image}
-                        title={el.title}
-                        rate={el.rate}
-                        rateCount={el.rateCount}
-                        price={el.price}
-                        sale={el.sale}
-                        saleprice={el.saleprice}
-                        />
-                    </div>
-                })}
-            </div>
-            <PaginationCustome/>
-          </div>
+          <Recommend/>
         </div>
       </div>
       <Footer />

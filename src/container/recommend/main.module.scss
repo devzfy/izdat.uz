@@ -1,16 +1,32 @@
-h1{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 150%;
-    color: #000000;
-    margin-bottom: 40px;
-}
-.rec_cards{
-    display: flex;
-    justify-content: space-between;
-    .card{
-        width: 19%;
+.Shopcontainer_wrapper{
+    width: 100%;
+    margin-bottom: 60px;
+    .contaner_heder{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        .icons{
+            gap: 20px;
+            display: flex;
+        }
+    }
+    h1{
+        font-family: 'inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 150%;
+        color: #F1AE3D;
+        text-align: left;
+        margin-bottom: 0;
+    }
+    .shopCards{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .card{
+            width: 19%;
+        }
     }
 }

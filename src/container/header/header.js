@@ -22,7 +22,7 @@ const Header = ()=>{
                         <ul className={clas.header_links}>
                             <li><Link className={clas.link} to={'/catalog'}>Каталог</Link></li>
                             <li><Link className={clas.link}  to={'/about'}>О проекте</Link></li>
-                            <li><Link className={clas.link}  to={'/shippingPayment'}>Доставка и оплата</Link></li>
+                            <li><Link className={clas.link}  to={'/delivery'}>Доставка и оплата</Link></li>
                             <li><Link className={clas.link}  to={'/contact'}>Контакты</Link></li>
                         </ul>
                     </div>
