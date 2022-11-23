@@ -8,7 +8,7 @@
     display: block;
     .sale{
         position: absolute;
-        top: 5px;
+        top: 10px;
         left: 10px;
     }
     img{
@@ -26,18 +26,18 @@
         font-family: 'inter';
         font-style: normal;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 16px;
         height: 40px;
         overflow: hidden;
         line-height: 22px;
         white-space: wrap;
-        color: #F7A302;
-        margin-bottom: 5px;
+        color: #000;
+        margin-bottom: 8px;
     }
     .rate{
         display: flex;
         align-items: center;
-        margin-bottom: 5px;
+        
         .rateCount{
             font-family: 'Montserrat';
             font-style: normal;
@@ -46,13 +46,14 @@
             color: #918888;
             display: block;
             margin-left: 10px;
-            margin-top: -7px;
+            margin-top: -2px;
         }
     }
     .price{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-top: 6px;
         span{
             &:nth-child(1){
                 font-family: 'inter';

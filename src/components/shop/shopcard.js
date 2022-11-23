@@ -28,7 +28,7 @@ const Shopcard = ({
       </div>
       <h3>{title}</h3>
       <div className={clas.rate}>
-        <Rating initialValue={rate} size={20} allowFraction={true}/>
+        <Rating initialValue={rate} size={15} allowFraction={true}/>
         <span className={clas.rateCount}>({rateCount})</span>
       </div>
       <div className={clas.price}>
