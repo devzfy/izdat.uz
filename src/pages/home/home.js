@@ -5,9 +5,10 @@ import Slider from 'react-slick'
 import { settings } from '../../helpers/settings'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import Bg from '../../assets/images/Union.png'
+import Bg from '../../assets/images/Union (3).png'
 import '../../helpers/settings.css'
 import Image from '../../assets/images/Rectangle 10.png'
+import Book from '../../assets/images/Open-Book-Transparent-Background-PNG-2 1.png'
 import {data} from '../../data/collection'
 
 const Home = ()=>{
@@ -25,11 +26,11 @@ const Home = ()=>{
                                         return <div className={clas.slider_cards}  >
                                             <div className={clas.left_side}>
                                                 <h1>
-                                                    {el.name}
+                                                Скидка 10% на приобретение ПЕРВОЙ КНИГИ
                                                 </h1>
                                                 <button>Подробнее</button>
                                             </div>
-                                            <img src={el.products[0].image} alt="" />
+                                            <img src={Book} alt="" />
                                         </div>
                                     })
                                 }

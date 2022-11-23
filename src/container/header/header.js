@@ -27,7 +27,7 @@ const Header = ()=>{
                         </ul>
                     </div>
                     <div className={clas.header_navs_term}>
-                        <div className={clas.search}><input placeholder='Поиск' type="search" name="" id="" /> <button><Search/></button></div>
+                        <div className={clas.search}><Search/></div>
                         <div className={clas.lang}>{lang ? <button onClick={changeLang}>ЎЗ</button> :<button onClick={changeLang}>Рус</button>}</div>
                         <div className={clas.korzinka}><ShopBasket/></div>
                     </div>
