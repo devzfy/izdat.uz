@@ -1,0 +1,117 @@
+.Basket_wrapper{
+    margin: 150px 0 50px 0;
+    
+    h1{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 43px;
+        color: #000000;
+        margin-bottom: 40px;
+    }
+    .table{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 20px 0;
+        border-bottom: 1px solid #000;
+        &:last-child{
+            border-bottom: 1px solid transparent;
+        }
+        .image{
+            display: flex;
+            align-items: flex-start;
+            img{
+                margin-right: 30px;
+                height: 150px;
+                width: 120px;
+                border-radius: 4px;
+                object-fit: cover;
+            }
+            .information{
+                h2{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 30px;
+                    line-height: 37px;
+                    color: #000000;
+                }
+                h3{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 37px;
+                    font-size: 20px;
+                    color: #333;
+                }
+                h4{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 37px;
+                    font-size: 17px;
+                    color: #000;
+                    display: flex;
+                    align-items: center;
+                    span{
+                        color: #333;
+                        display: block;
+                        margin-left: 10px;
+                    }
+                }
+
+                .stock{
+                    display: flex;
+                    align-items: center;
+                    width: 80px;
+                    justify-content: space-between;
+                    padding: 3px 10px;
+                    border-radius: 10px;
+                    background-color: #D9D9D9;
+                    margin-top: 7px;
+                    span{
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 20px;
+                        color: #000;
+                    }
+                }
+            }
+        }
+        .price{
+            text-align: right;
+            span{
+                display: block;
+                text-align: right;
+            }
+            .sale{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 37px;
+                color: #000000;
+                text-decoration: line-through;
+            }
+            .title{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 30px;
+                color: #000000;
+            }
+            .real_price{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 37px;
+                color: #000000;
+            }
+        }
+    }
+}

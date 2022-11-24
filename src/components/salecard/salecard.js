@@ -2,6 +2,7 @@ import { useState } from 'react'
 import clas from './main.module.scss'
 const SaleCard = ({t_image,t_name, t_title, b_name, b_link})=>{
     const [active, setActive] = useState(false)
+    
     return <div className={clas.sale_card_wrapper}>
         <div onClick={()=> setActive(false)} className={`${clas.overlay_content} ${active ? clas.active : null}`}>
             <p>

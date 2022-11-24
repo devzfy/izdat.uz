@@ -106,13 +106,12 @@
     .search_results{
         width: 54%;
         margin: 10px auto 0 auto;
-        padding: 5px 0;
         box-sizing: border-box;
         background-color: #2d2c32;
         border-radius: 5px;
         .result_cards{
             display: flex;
-            padding: 5px 10px;
+            padding:  10px;
             align-items: center;
             border-bottom: 1px solid #252525;
             justify-content: space-between;

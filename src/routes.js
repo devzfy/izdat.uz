@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import {Work,Auction,Delivery,Partners,SpellCheck,Rating,RatingSingle,UniqueEdition, Home , About, Writers, WriterSingle, SaleEvents, BookSeries, SeriesSingle, SingleWork, SinglePrint, Print} from "./pages";
+import {Work,Basket,Auction,Delivery,Partners,SpellCheck,Rating,RatingSingle,UniqueEdition, Home , About, Writers, WriterSingle, SaleEvents, BookSeries, SeriesSingle, SingleWork, SinglePrint, Print} from "./pages";
 
 
 export const routes = createBrowserRouter([
@@ -84,5 +84,9 @@ export const routes = createBrowserRouter([
     {
         path: '/print/1',
         element: <SinglePrint/>
+    },
+    {
+        path: '/basket',
+        element: <Basket/>
     }
 ])

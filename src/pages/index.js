@@ -16,4 +16,5 @@ import Work from "./work/work";
 import SingleWork from "./work/single";
 import Print from "./onlinePrint/print";
 import SinglePrint from "./onlinePrint/single";
-export {SinglePrint,Print,SingleWork,Work,Auction,Delivery,Partners,SpellCheck,Rating,RatingSingle,SeriesSingle ,Home, About,UniqueEdition, Writers, WriterSingle, SaleEvents, BookSeries}
+import Basket from "./basket/basket";
+export {Basket,SinglePrint,Print,SingleWork,Work,Auction,Delivery,Partners,SpellCheck,Rating,RatingSingle,SeriesSingle ,Home, About,UniqueEdition, Writers, WriterSingle, SaleEvents, BookSeries}

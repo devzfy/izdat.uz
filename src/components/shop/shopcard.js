@@ -19,14 +19,14 @@ const Shopcard = ({
   const [active2, setActive2] = useState(false);
   return (
     <Title className="vanilla">
-        <Link to={link} className={`${clas.shopcard_wrapper}`}
+        <div className={`${clas.shopcard_wrapper}`}
     >
       <div className={clas.sale}>{sale ? <Sale /> : null}</div>
       <div className={clas.liked}><button onClick={()=> setActive2(true)} className={`heart ${active2 ? 'active' : ''}`}><AnimeHeart/></button></div>
       <div className={clas.image}>
         <img src={image} alt="" />
       </div>
-      <h3>{title}</h3>
+      <Link className={clas.title} to={link}>{title}</Link>
       <div className={clas.rate}>
         <Rating initialValue={rate} size={15} allowFraction={true}/>
         <span className={clas.rateCount}>({rateCount})</span>
@@ -51,7 +51,7 @@ const Shopcard = ({
           <i class="fas fa-box"></i>
         </button>
       </div>
-    </Link>
+    </div>
     </Title>
   );
 };
