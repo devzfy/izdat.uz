@@ -4,10 +4,13 @@ import React, { useEffect, useState } from 'react'
 import { PaginationCustome, Shopcard } from '../../components'
 import { motion } from 'framer-motion'
 import {GetData} from '../../hooks/getdata'
+import {set_book} from '../../redux/action/action'
+import { useDispatch } from 'react-redux'
 
 
 const BookSeries = ()=>{
     // const [page, setPage] = useState('16')
+    const dispatch = useDispatch()
     const [loading,data, error] = GetData('https://www.googleapis.com/books/v1/volumes?q=fiction&filter=paid-ebooks&key=AIzaSyC9ROl3QupFvo-5ZqG3AD7LS_ECZqy8GsI' + `&maxResults=${'16'}`)
     if(loading) return 'Loading ...'
     if(error) return null
@@ -30,6 +33,10 @@ const BookSeries = ()=>{
           opacity: 1
         }
       };
+      const addCard = async (id)=>{
+        const book = await data?.items.find(el => el.id === id)
+        dispatch(set_book(book))
+      }
     return <React.Fragment>
         <Header/>
         <Banner image={'https://cdn-v2.asla.org/uploadedImages/CMS/Shop/Bookstore/books.jpg'}/>
@@ -60,6 +67,8 @@ const BookSeries = ()=>{
                                             sale={false}
                                             saleprice={''}
                                             link={'/book-series/1'}
+                                            add={addCard}
+                                            id={el.id}
                                         />
                                     </motion.div>
                                 })

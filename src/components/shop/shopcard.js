@@ -13,7 +13,9 @@ const Shopcard = ({
   price,
   sale,
   saleprice,
-  link
+  link,
+  add,
+  id
 }) => {
   const [active, setActive] = useState(false);
   const [active2, setActive2] = useState(false);
@@ -38,7 +40,11 @@ const Shopcard = ({
       <div className={clas.action_btn}>
         <button className="btn btn-white btn-animate">Купить</button>
         <button
-          onClick={() => setActive(true)}
+          onClick={() => {
+            setActive(true);
+            add(id)
+          }}
+          disabled={active}
           class={`cart-button ${active ? "clicked" : ""}`}
         >
           <span class="add-to-cart">

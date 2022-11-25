@@ -8,13 +8,10 @@ const persistConfig = {
     storage
 }
 
-const persistReducer = persistReducer(persistConfig, reducer)
+const persistReducers = persistReducer(persistConfig, reducer)
 
-const store = createStore(
-    persistReducer, {},
+export const store = createStore( 
+    persistReducers, {},
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 )
-
-export default store
-
 export const persist = persistStore(store)

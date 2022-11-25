@@ -1,11 +1,13 @@
 import { RouterProvider } from "react-router-dom";
 import {routes} from './routes'
 import React from "react";
+import { Provider } from "react-redux";
+import {store} from './redux/store'
 function App() {
   return (
-    <React.Fragment>
+    <Provider store={store}>
       <RouterProvider router={routes}/>
-    </React.Fragment>
+    </Provider>
   );
 }
 
