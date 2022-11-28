@@ -17,4 +17,6 @@ import SingleWork from "./work/single";
 import Print from "./onlinePrint/print";
 import SinglePrint from "./onlinePrint/single";
 import Basket from "./basket/basket";
-export {Basket,SinglePrint,Print,SingleWork,Work,Auction,Delivery,Partners,SpellCheck,Rating,RatingSingle,SeriesSingle ,Home, About,UniqueEdition, Writers, WriterSingle, SaleEvents, BookSeries}
+import AudioBook from "./audiobooks/audiobook";
+import SingleBook from "./singleBook/singlebook";
+export {Basket,SingleBook,AudioBook,SinglePrint,Print,SingleWork,Work,Auction,Delivery,Partners,SpellCheck,Rating,RatingSingle,SeriesSingle ,Home, About,UniqueEdition, Writers, WriterSingle, SaleEvents, BookSeries}

@@ -3,6 +3,15 @@
     .holder{
         text-align: center;
         margin: 60px 0 40px 0;
+        font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 49px;
+/* identical to box height */
+
+
+color: #000000;
     }
     .inner{
         position: relative;
@@ -27,7 +36,9 @@
                     font-weight: 600;
                     font-size: 30px;
                     line-height: 37px;
-                    color: #000000;
+                    &.summa{
+                        color: #F7A302;
+                    }
                 }
             }
             .middle{
@@ -63,7 +74,7 @@
                     justify-content: space-between;
                     gap: 45px;
                     button, .single_link{
-                        background: #135EF2;
+                        background: #F7A302;
                         border-radius: 20px;
                         font-family: 'Montserrat';
                         font-style: normal;
@@ -75,7 +86,7 @@
                         
                     }
                     .single_link{
-                        background:  #0D378C;
+                        background:  #393A3F;
                     }
                 }
                 .views{
@@ -166,7 +177,7 @@
             }
         }
         button{
-            background: #135EF2;
+            background: #393A3F;
             border-radius: 20px;
             padding: 12px 22px;
             font-family: 'Montserrat';

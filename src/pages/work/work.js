@@ -17,7 +17,7 @@ const Work = ()=>{
                             return <div className={clas.work_cards}>
                             <div className={clas.top}>
                                 <h4>Написать 2 статьи для сайта</h4>
-                                <h4>450 000сум</h4>
+                                <h4 className={clas.summa}>450 000сум</h4>
                             </div>
                             <div className={clas.middle}>
                                 <h5>Опубликовано: 15.10.2022</h5>
@@ -42,7 +42,7 @@ const Work = ()=>{
                 </div>
             </div>
         </div>
-        <Recommend/>
+                    <div className="container"> <Recommend/></div>
         <Footer/>
     </React.Fragment>
 }

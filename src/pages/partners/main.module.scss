@@ -53,15 +53,22 @@
                         line-height: 150%;
                         color: #000000;
                         &:nth-child(2){
-                            width: 55%;
                             font-weight: 400;
                             display: block;
                             margin-left: 15px;
                         }
-                        &:nth-child(1){
-                            width: 40%;
-                        }
                     }
+                }
+                .go_website{
+                    display: block;
+                    margin-left: 30px;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 17px;
+                    line-height: 21px;
+                    color: #333;
+                    text-decoration: underline;
                 }
             }
         }

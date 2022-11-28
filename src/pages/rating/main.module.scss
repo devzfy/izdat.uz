@@ -11,6 +11,9 @@
             margin: 0 auto 40px auto;
             &:nth-child(even){
                 flex-direction: row-reverse;
+                .item_text{
+                    background-color: #F4AC3E;
+                }
             }
             .item_image{
                 width: 50%;
@@ -26,7 +29,7 @@
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
-                background: #3E588C;
+                background: #393A3F;
                 h3{
                     font-family: 'Montserrat';
                     font-style: normal;

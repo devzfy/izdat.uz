@@ -1,6 +1,15 @@
 .holder{
     text-align: center;
     margin: 60px 0 40px 0;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 49px;
+/* identical to box height */
+
+
+color: #000000;
 }
 
 .Delivery_wrapper{
@@ -9,7 +18,7 @@
         justify-content: space-between;
         .order{
             width: 48%;
-            background: #77A1D9;
+            background: #393A3F;
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.16);
             border-radius: 20px;
             padding: 30px 50px 48px 50px;
@@ -20,7 +29,7 @@
                 font-weight: 700;
                 font-size: 30px;
                 line-height: 37px;
-                color: #0D378C;
+                color: #F7A302;
                 text-align: center;
                 margin-bottom: 30px;
             }
@@ -49,7 +58,7 @@
                         font-weight: 700;
                         font-size: 30px;
                         line-height: 37px;
-                        color: #135EF2;
+                        color: #F7A302;
                         left: 0;
                         width: 49px;
                         height: 49px;
@@ -187,7 +196,7 @@
                     font-weight: 400;
                     font-size: 25px;
                     line-height: 30px;
-                    border: 3px solid #3E588C;
+                    border: 3px solid #393A3F;
                     border-radius: 10px;
                     padding: 25px;
                     display: block;
@@ -208,7 +217,7 @@
                 line-height: 27px;
                 color: #FFFFFF;
                 padding: 12px 48px;
-                background: #135EF2;
+                background: #393A3F;
                 border-radius: 20px;
                 display: inline-block;
                 width: 200px;

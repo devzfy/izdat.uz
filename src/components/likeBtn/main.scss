@@ -1,0 +1,65 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .like_btn {
+    padding: 2px 10px;
+    width: 110px;
+    border: 2px solid #0D0C0C;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span{
+      font-family: 'inter';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      color: #000000;
+      display: block;
+      margin-left: 10px;
+    }
+    &.active {
+      background-color: #000000;
+      span{
+        color: #fff;
+      }
+    }
+    .rotate_btn{
+      transform: rotateY(180deg) rotateX(180deg);
+      .likeBoss{
+        fill: #000000;
+        width: 10px !important;
+        height: 10px !important
+        ;
+      }
+      &.active{
+        .likeBoss{
+          fill: #fff 
+        }
+      }
+
+      .likeBossTwo{
+        fill: #000000;
+      }
+      &.active{
+        .likeBossTwo{
+          fill: #fff 
+        }
+      }
+      &.two{
+        transform: none;
+      }
+    }
+  }
+  
+
+  
+  .like_wrapper{
+    display: flex;
+    width: 250px;
+    align-items: center;
+    justify-content: space-between;
+  }

@@ -25,7 +25,6 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background: #3E588C;
                 span{
                     font-family: 'Inter';
                     font-style: normal;
@@ -37,8 +36,12 @@
                 }
             }
             &:nth-child(odd){
+                background: #393A3F;
                 display: flex;
                 flex-direction: column-reverse;
+            }
+            &:nth-child(2){
+                background: #F7A302;
             }
         }
     }

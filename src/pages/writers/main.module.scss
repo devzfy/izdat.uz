@@ -29,9 +29,12 @@
                     flex-direction: column;
                     &:nth-child(2){
                         flex-direction: column-reverse;
+                        .top_place{
+                            background-color: #F4AC3E;   
+                        }
                     }
                     .top_place{
-                        background: #3E588C;
+                        background: #393A3F;
                         height: 279px;
                         display: flex;
                         align-items: center;

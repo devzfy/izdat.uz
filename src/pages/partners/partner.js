@@ -1,6 +1,7 @@
 import clas from './main.module.scss'
 import {Header, Footer, Banner, Recommend} from '../../container'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Partners = ()=>{
     return <React.Fragment>
@@ -32,6 +33,7 @@ const Partners = ()=>{
                                     <li>Время работы:</li>
                                     <li>09:00-18:00</li>
                                 </ul>
+                                <Link  to={'/partners'} className={clas.go_website}>Go website</Link>
                             </div>
                         </div>
                     })

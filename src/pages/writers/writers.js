@@ -31,7 +31,7 @@ const Writers = () => {
                                                             <div className={clas.top_place}>
                                                                 <h3>{el.name}</h3>
                                                                 <p>{el.title}</p>
-                                                                <Link to={'/writers/1'} className={clas.single_navigate_link} to={'/writers/1'}>Подробнее</Link>
+                                                                <Link to={'/writers/1'} className={clas.single_navigate_link}>Подробнее</Link>
                                                             </div>
                                                             <div className={clas.bottom_place}>
                                                                 <img src={el.image} alt="" />
@@ -51,7 +51,9 @@ const Writers = () => {
                 </div>
             </div>
 
-            <Recommend/>
+            <div className='container'>
+                <Recommend/>
+            </div>
         </div>
         <Footer />
     </React.Fragment>

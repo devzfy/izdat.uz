@@ -6,7 +6,7 @@ import { Arrow, Arrow2 } from '../../assets/icons'
 
 const Recomend = ()=>{
     return (
-        <div className={clas.Shopcontainer_wrapper}>
+        <div className='container'><div className={clas.Shopcontainer_wrapper}>
         <div className={clas.contaner_heder}>
         <h1>Рекомендуем</h1>
         <div className={clas.icons}>
@@ -32,7 +32,7 @@ const Recomend = ()=>{
             }
         </div>
        
-    </div>
+    </div></div>
     )
 } 
 
