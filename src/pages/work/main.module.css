@@ -1,0 +1,188 @@
+.Work_wrapper {
+  overflow-x: hidden;
+}
+.Work_wrapper .holder {
+  text-align: center;
+  margin: 60px 0 40px 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  /* identical to box height */
+  color: #000000;
+}
+.Work_wrapper .inner {
+  position: relative;
+}
+.Work_wrapper .inner .work_cards {
+  padding: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+.Work_wrapper .inner .work_cards .top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.Work_wrapper .inner .work_cards .top h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+}
+.Work_wrapper .inner .work_cards .top h4.summa {
+  color: #F7A302;
+}
+.Work_wrapper .inner .work_cards .middle {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  margin-bottom: 40px;
+}
+.Work_wrapper .inner .work_cards .middle h5 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  color: #444343;
+}
+.Work_wrapper .inner .work_cards p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 150%;
+  color: #000000;
+  margin-bottom: 45px;
+}
+.Work_wrapper .inner .work_cards .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Work_wrapper .inner .work_cards .bottom .btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 45px;
+}
+.Work_wrapper .inner .work_cards .bottom .btns button, .Work_wrapper .inner .work_cards .bottom .btns .single_link {
+  background: #F7A302;
+  border-radius: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: #FFFFFF;
+  padding: 12px 33px;
+}
+.Work_wrapper .inner .work_cards .bottom .btns .single_link {
+  background: #393A3F;
+}
+.Work_wrapper .inner .work_cards .bottom .views {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.Work_wrapper .inner .work_cards .bottom .views span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: #444343;
+}
+
+.full_content {
+  position: relative;
+  top: 0;
+  margin: 60px 80px;
+}
+.full_content h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 46px;
+  color: #000000;
+  position: relative;
+}
+.full_content h2::before {
+  width: 1000%;
+  position: absolute;
+  content: "";
+  height: 1px;
+  background-color: #77A1D9;
+  bottom: -28px;
+  left: -100%;
+}
+.full_content .info {
+  padding-top: 60px;
+}
+.full_content .info h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  color: #000000;
+  margin-bottom: 25px;
+}
+.full_content .info span {
+  margin-bottom: 40px;
+  display: block;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  color: #444343;
+}
+.full_content .info p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 150%;
+  margin-bottom: 40px;
+  color: #000000;
+}
+.full_content .info ul {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+.full_content .info ul li {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  color: #000000;
+}
+.full_content .info ul li:nth-child(2) {
+  font-weight: 400;
+}
+.full_content .info button {
+  background: #393A3F;
+  border-radius: 20px;
+  padding: 12px 22px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: #FFFFFF;
+  margin-top: 60px;
+}/*# sourceMappingURL=main.module.css.map */

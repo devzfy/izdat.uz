@@ -1,3 +1,7 @@
+.tabbar{
+  display: none;
+}
+
 .About_wrapper {
   margin-top: 160px;
   .holder {
@@ -28,15 +32,15 @@
         img {
           position: absolute;
           width: 358px;
-height: 430px;
-&:nth-child(2){
-    bottom: -60px;
-    right: 43px;
-}
-&:nth-child(1){
-    top: -10px;
-    right: 0;
-}
+          height: 430px;
+          &:nth-child(2) {
+            bottom: -60px;
+            right: 43px;
+          }
+          &:nth-child(1) {
+            top: -10px;
+            right: 0;
+          }
         }
       }
       h1 {
@@ -62,126 +66,122 @@ height: 430px;
       }
     }
   }
-  .block_second{
+  .block_second {
     display: flex;
     justify-content: space-between;
     margin-top: -20px;
-    .side{
-        &:nth-child(1){
-            width: 69%;
-            img{
-                width: 100%;
-                object-fit: cover;
-height: 409px;
-            }
+    .side {
+      &:nth-child(1) {
+        width: 69%;
+        img {
+          width: 100%;
+          object-fit: cover;
+          height: 409px;
         }
-        &:nth-child(2){
-            height: 335px;
-            width: 315px;
-            position: relative;
-            margin-top: 75px;
-            img{
-                width: 283.34px;
-height: 289.85px;
-position: absolute;
-&:nth-child(1){
-    right: 0;
-    bottom: -13px;
-}
-&:nth-child(2){
-    top: 20px;
-}
-            }
+      }
+      &:nth-child(2) {
+        height: 335px;
+        width: 315px;
+        position: relative;
+        margin-top: 75px;
+        img {
+          width: 283.34px;
+          height: 289.85px;
+          position: absolute;
+          &:nth-child(1) {
+            right: 0;
+            bottom: -13px;
+          }
+          &:nth-child(2) {
+            top: 20px;
+          }
         }
+      }
     }
-
-    
   }
-  .our_advantages{
+  .our_advantages {
     margin: 60px auto 90px auto;
     max-width: 989px;
-    
-    h1{
-        font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 150%;
-/* identical to box height, or 60px */
-text-align: center;
 
-color: #000000;
-margin-bottom: 60px;
+    h1 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 150%;
+      /* identical to box height, or 60px */
+      text-align: center;
 
+      color: #000000;
+      margin-bottom: 60px;
     }
-    .advantages{
-        background: #77A1D9;
-    padding: 33px 67px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    .advantages_card{
+    .advantages {
+      background: #232323;
+      padding: 33px 67px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      .advantages_card {
         width: 30%;
-        span{
-            display: flex;
+        span {
+          display: flex;
+          text-align: center;
+          &.number {
+            align-items: center;
+            justify-content: center;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 35px;
+            line-height: 51px;
             text-align: center;
-            &.number{
-                align-items: center;
-                justify-content: center;
-                font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 35px;
-line-height: 51px;
-text-align: center;
-color: #FFFFFF;
-            }
-            &.text{
-                font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 25px;
-line-height: 30px;
-text-align: center;
+            color: #ffffff;
+          }
+          &.text {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 30px;
+            text-align: center;
 
-color: #FFFFFF;
-            }
+            color: #ffffff;
+          }
         }
+      }
     }
+  }
+  .recommends {
+    h1 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 150%;
+      color: #000000;
+      margin: 90px 0 40px 0;
     }
-}
-.recommends{
-    h1{
-        font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 150%;
-color: #000000;
-margin: 90px 0 40px 0;
+
+    .recommends_cards {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
     }
-    
-    .recommends_cards{
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
-}
+  }
 }
 
-.writersingle_wrapper{
-  .page_intro{
-    margin: 160px auto 60px 
-    auto;
+.writersingle_wrapper {
+  .page_intro {
+    margin: 160px auto 60px auto;
     width: 100%;
     max-width: 1076px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    h1{
-      font-family: 'Montserrat';
+    h1 {
+      font-family: "Montserrat";
       font-style: normal;
       font-weight: 700;
       font-size: 40px;
@@ -190,8 +190,8 @@ margin: 90px 0 40px 0;
       text-align: center;
       margin: 40px 0 30px 0;
     }
-    p{
-      font-family: 'Montserrat';
+    p {
+      font-family: "Montserrat";
       font-style: normal;
       font-weight: 400;
       font-size: 25px;
@@ -199,16 +199,16 @@ margin: 90px 0 40px 0;
       color: #000000;
       text-align: justify;
     }
-    img{
+    img {
       width: 856px;
       height: 515px;
       object-fit: cover;
     }
   }
 
-  .writer_books{
-    h1{
-      font-family: 'Montserrat';
+  .writer_books {
+    h1 {
+      font-family: "Montserrat";
       font-style: normal;
       font-weight: 700;
       font-size: 40px;
@@ -216,13 +216,195 @@ margin: 90px 0 40px 0;
       color: #000000;
       margin-bottom: 40px;
     }
-    .books{
+    .books {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      .book_card{
+      .book_card {
         width: 24%;
         margin-bottom: 60px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px){
+  .tabbar{
+    display: block;
+    margin-top: 110px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #393A3F;
+    button{
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 150%;
+      color: #000000;
+      display: inline-block;
+      margin-right: 30px;
+      position: relative;
+      &::before{
+        position: absolute;
+        content: '';
+        height: 3px;
+        bottom: -12px;
+        width: 0;
+        border-radius: 100px;
+        background-color: #F7A302;
+        transition: .2s;
+      }
+      &.active{
+        &::before{
+          width: 100%;
+        }
+      }
+    }
+  }
+  .About_wrapper {
+    margin-top: 100px;
+    .holder {
+      margin-bottom: 30px;
+      h1 {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+    .block_first {
+      margin-bottom: 30px;
+      flex-direction: column-reverse;
+      .side {
+        &:nth-child(1) {
+          width: 100%;
+        }
+        &:nth-child(2) {
+          width: 100%;
+          height: 250px;
+          img {
+            width: 245px;
+            height: 250px;
+            &:nth-child(2) {
+              bottom: -15px;
+              left: 10%;
+            }
+            &:nth-child(1) {
+              top: -10px;
+              right: 10%;
+            }
+          }
+        }
+        h1 {
+          font-size: 18px;
+          padding-top: 30px;
+          span {
+            font-weight: 600;
+            font-size: 26px;
+          }
+          margin-bottom: 30px;
+        }
+        p {
+          font-size: 15px;
+          line-height: 22px;
+        }
+      }
+    }
+    .block_second {
+      margin-top: 0;
+      .side {
+        &:nth-child(1) {
+          width: 100%;
+          img {
+            width: 100%;
+            height: 209px;
+          }
+        }
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+    .our_advantages {
+      margin: 40px auto 40px auto;
+      h1 {
+        font-family: "Montserrat";
+        font-size: 26px;
+        margin-bottom: 30px;
+      }
+      .advantages {
+        flex-direction: column;
+        .advantages_card {
+          width: 100%;
+          margin-bottom: 50px;
+          span {
+            &.number {
+              font-family: "Montserrat";
+              font-size: 26px;
+              line-height: 37px;
+              margin-bottom: 7px;
+            }
+            &.text {
+              font-size: 20px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+    }
+    .recommends {
+      h1 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 150%;
+        color: #000000;
+        margin: 90px 0 40px 0;
+      }
+  
+      .recommends_cards {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+    }
+  }
+  
+  .writersingle_wrapper {
+    .page_intro {
+      margin: 40px auto 40px auto;
+      h1 {
+        font-size: 24px;
+        line-height: 36px;
+        margin: 30px 0;
+      }
+      p {
+        font-size: 15px;
+        line-height: 22px;
+      }
+      img {
+        width: 321px;
+        height: 193px;
+        margin: 0 auto;
+        object-fit: cover;
+      }
+    }
+  
+    .writer_books {
+      h1 {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        text-align: center;
+      }
+      .books {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .book_card {
+          width: 49%;
+          margin-bottom: 30px;
+        }
       }
     }
   }

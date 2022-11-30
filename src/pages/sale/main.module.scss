@@ -1,9 +1,21 @@
 .SaleEvents_wrapper{
+    .see_more{
+        display: none;
+    }
     .ads_ac{
         margin-bottom: 80px;
         h1{
             text-align: center;
             margin: 60px 0 40px 0;
+            font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 49px;
+/* identical to box height */
+
+
+color: #F1AE3D;
         }
         .ads{
             display: flex;
@@ -25,4 +37,56 @@
             margin-bottom: 60px;
         }
     }
+}
+
+@media screen and (max-width:500px){
+    .SaleEvents_wrapper{
+        .see_more{
+            display: block;
+            margin-bottom: 40px;
+            button{
+                padding: 12px 0;
+                width: 100%;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 16px;
+                color: #000000;
+                background: #ECEBEB;
+                border-radius: 20px;
+            }
+        }
+        .pag{
+            display: none;
+        }
+        .ads_ac{
+            margin-bottom: 80px;
+            h1{
+                text-align: center;
+                margin: 40px 0 30px 0;
+                font-size: 24px;
+                line-height: 118%;
+            }
+            .ads{
+                display: flex;
+                align-items: center;
+                overflow-y: scroll;
+                img{
+                    min-width: 80%;
+                    object-fit: cover;
+                    height: 178px;
+                }
+            }
+        }
+        .sale_cards_wrapper{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .sale_card{
+                width: 90%;
+                margin-bottom: 30px;
+            }
+        }
+    } 
 }

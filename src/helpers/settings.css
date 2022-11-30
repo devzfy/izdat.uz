@@ -34,3 +34,18 @@
 .slick-dots li.slick-active button{
     background-color: #FF9A00 !important;
 }
+
+@media screen and (max-width: 500px) {
+    .slick-arrow{
+        top: 434px !important;
+    }
+    
+    .slick-prev{
+        left: 20px !important;
+    }
+    
+    .slick-next{
+        right: 46px !important;
+    }
+   
+}

@@ -1,5 +1,8 @@
 .bookseries_wrapper{
     margin: 60px 0;
+    .filter_btn{
+        display: none;
+    }
     .inner{
         display: flex;
         align-items: flex-start;
@@ -46,5 +49,58 @@
         grid-template-rows: repeat(1, 1fr);
         width: 100%;
         gap: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .bookseries_wrapper{
+        margin: 60px 0;
+        .filter_btn{
+            display: block;
+        }
+        .inner{
+            flex-direction: column;
+        }
+        .sidebar_wrapper{
+            display: none;
+        }
+        .right_side{
+            width: 100%;
+        }
+        .bookseries_wrapper_cards{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .card{
+                margin-bottom: 30px;
+                width: 49%;
+            }
+        }
+    }
+    
+    .series_wrapper{
+        h1{
+            max-width: 660px;
+            text-align: center;
+            margin: 60px auto 20px auto;
+        }
+        p{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 37px;
+            text-align: center;
+            color: #000000;
+            margin-bottom: 60px;
+        }
+        .single_books_wrapper{
+            margin-bottom: 60px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            width: 100%;
+            gap: 10px;
+        }
     }
 }

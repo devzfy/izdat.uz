@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import clas from "./main.module.scss";
 import { Link } from "react-router-dom";
 import { ShopBasket, SearchIcon, Close } from "../../assets/icons";
-import { BurgerBtn } from "../../assets/icons";
+import { BurgerBtn, BurgerBtnRes } from "../../assets/icons";
 import { GetData } from "../../hooks/getdata";
 const Header = () => {
   const ref = useRef(null);
@@ -55,6 +55,13 @@ const Header = () => {
                   onClick={() => setActiveSidebar(!activeSidebar)}
                 >
                   <BurgerBtn />
+                  <BurgerBtnRes/> 
+                </div>
+                <div
+                  className={clas.burger_btn_two}
+                  onClick={() => setActiveSidebar(!activeSidebar)}
+                >
+                  <BurgerBtnRes/> 
                 </div>
                 <div className={clas.logo}>
                   <Link className={clas.logo_link} to={"/"}>

@@ -116,3 +116,47 @@
         }
     }
 }
+
+@media screen and (max-width: 500px){
+    .footer_wrapper{
+        padding: 30px 0 72px 0;
+        .inner{
+            flex-direction: column;
+            .block{
+                width: 100%;
+                margin-bottom: 40px;
+                .logo_link{
+                    font-family: 'montserrat';
+                }
+                .footer_link{
+                    font-family: 'montserrat';
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+                ul{
+                    font-family: 'montserrat';
+                    font-size: 26px;
+                    line-height: 31px;
+                    .locations{
+                        font-family: 'montserrat';
+                        font-size: 20px;
+                        line-height: 24px;
+                    }
+                }
+                .connection_header{
+                    h4{
+                        font-family: 'montserrat';
+                        font-size: 26px;
+                        line-height: 32px;
+                    }
+                    span{
+                        font-family: 'montserrat';
+                        font-size: 18px;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+    }
+    
+}

@@ -6,6 +6,7 @@ import { motion } from 'framer-motion'
 import {GetData} from '../../hooks/getdata'
 import {set_book} from '../../redux/action/action'
 import { useDispatch } from 'react-redux'
+import { Filter } from '../../assets/icons'
 
 
 const BookSeries = ()=>{
@@ -46,6 +47,12 @@ const BookSeries = ()=>{
                     <div className={clas.sidebar_wrapper}>
                         <Sidebar/>
                     </div>
+                    <div className={clas.filter_btn}>
+                        <button>
+                            <span>Фильтр</span>
+                            <Filter/>
+                        </button>
+                    </div>
                     <div className={clas.right_side}>
                         <motion.div className={clas.bookseries_wrapper_cards}
                             initial="hidden"
@@ -56,7 +63,6 @@ const BookSeries = ()=>{
                                 data.items?.map((el, index)=>{
                                     return <motion.div className={clas.card} key={index}
                                         variants={item}
-
                                     >
                                         <Shopcard
                                             image={el.volumeInfo.imageLinks.smallThumbnail}

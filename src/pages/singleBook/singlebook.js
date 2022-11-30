@@ -114,8 +114,8 @@ const SingleBook = () => {
                         <div className={clas.comment}>
                             <div className={clas.comment_card}>
                                 <h3>Kathryn Murphy</h3>
-                                <Rating initialValue={5}/>
-                                <span>19 февраля 2022</span>
+                                <Rating initialValue={5} size={20}/>
+                                <span className={clas.date}>19 февраля 2022</span>
                                 <p>А ещё тщательные исследования конкурентов, вне зависимости от их уровня, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости</p>
                                 <div className={clas.reply_like}>
                                     <button className={clas.reply}>Oтветить</button>

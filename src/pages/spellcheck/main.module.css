@@ -1,0 +1,145 @@
+.SpellCheck_wrapper .inner .holder {
+  text-align: center;
+  margin: 40px 0 60px 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  color: #000000;
+}
+.SpellCheck_wrapper .inner .checking_wrapper {
+  margin-bottom: 60px;
+}
+.SpellCheck_wrapper .inner .checking_wrapper .field_one label {
+  margin-bottom: 10px;
+  display: block;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  color: #000000;
+}
+.SpellCheck_wrapper .inner .checking_wrapper .field_one textarea {
+  border: none;
+  outline: none;
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  height: 327px;
+  width: 100%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  display: block;
+  margin-bottom: 25px;
+}
+.SpellCheck_wrapper .inner .checking_wrapper .field_one textarea::-moz-placeholder {
+  color: #cfcfcf;
+}
+.SpellCheck_wrapper .inner .checking_wrapper .field_one textarea:-ms-input-placeholder {
+  color: #cfcfcf;
+}
+.SpellCheck_wrapper .inner .checking_wrapper .field_one textarea::placeholder {
+  color: #cfcfcf;
+}
+.SpellCheck_wrapper .inner .checking_wrapper .field_one .error_btns {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+.SpellCheck_wrapper .inner .checking_wrapper .field_one .error_btns .btn_one {
+  border-radius: 10px;
+  width: 208px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-right: 25px;
+}
+.SpellCheck_wrapper .inner .checking_wrapper .field_one .error_btns .btn_one span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  border: 2px solid #393A3F;
+  padding: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.SpellCheck_wrapper .inner .checking_wrapper .field_one .error_btns .btn_one button {
+  width: 70px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #c8c5c5;
+  display: block;
+  height: 100%;
+  background-color: #393A3F;
+  padding: 11px;
+}
+.SpellCheck_wrapper .inner .checking_wrapper .changer {
+  display: flex;
+  justify-content: center;
+}
+.SpellCheck_wrapper .inner .checking_wrapper .changer button {
+  width: 88px;
+  height: 64px;
+  background-color: #393A3F;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.SpellCheck_wrapper .inner .checking_wrapper .check_btn {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0;
+}
+.SpellCheck_wrapper .inner .checking_wrapper .check_btn button {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  /* identical to box height */
+  color: #ffffff;
+  background: #F7A302;
+  border-radius: 20px;
+  padding: 12px 35px;
+  cursor: pointer;
+}
+.SpellCheck_wrapper .inner .why_izdat {
+  margin-bottom: 60px;
+}
+.SpellCheck_wrapper .inner .why_izdat h1 {
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  color: #000000;
+  margin-bottom: 40px;
+}
+.SpellCheck_wrapper .inner .why_izdat .content_block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.SpellCheck_wrapper .inner .why_izdat .content_block p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 150%;
+  /* or 38px */
+  color: #000000;
+  max-width: 574px;
+}/*# sourceMappingURL=main.module.css.map */

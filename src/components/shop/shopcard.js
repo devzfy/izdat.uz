@@ -30,7 +30,7 @@ const Shopcard = ({
       </div>
       <Link className={clas.title} to={link}>{title}</Link>
       <div className={clas.rate}>
-        <Rating initialValue={rate} size={15} allowFraction={true}/>
+        <Rating initialValue={rate} size={13} allowFraction={true}/>
         <span className={clas.rateCount}>({rateCount})</span>
       </div>
       <div className={clas.price}>

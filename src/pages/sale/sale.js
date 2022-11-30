@@ -28,7 +28,12 @@ const SaleEvents = ()=>{
                     })
                 }
             </div>
+            <div className={clas.pag}>
             <PaginationCustome/>
+            </div>
+            <div className={clas.see_more}>
+                <button>Показать все</button>
+            </div>
             <Recommend/>
             </div>
             

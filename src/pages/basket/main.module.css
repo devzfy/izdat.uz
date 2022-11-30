@@ -1,0 +1,114 @@
+.Basket_wrapper {
+  margin: 150px 0 50px 0;
+}
+.Basket_wrapper h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 43px;
+  color: #000000;
+  margin-bottom: 40px;
+}
+.Basket_wrapper .table {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid #000;
+}
+.Basket_wrapper .table:last-child {
+  border-bottom: 1px solid transparent;
+}
+.Basket_wrapper .table .image {
+  display: flex;
+  align-items: flex-start;
+}
+.Basket_wrapper .table .image img {
+  margin-right: 30px;
+  height: 150px;
+  width: 120px;
+  border-radius: 4px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Basket_wrapper .table .image .information h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  color: #000000;
+}
+.Basket_wrapper .table .image .information h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 37px;
+  font-size: 20px;
+  color: #333;
+}
+.Basket_wrapper .table .image .information h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 37px;
+  font-size: 17px;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+.Basket_wrapper .table .image .information h4 span {
+  color: #333;
+  display: block;
+  margin-left: 10px;
+}
+.Basket_wrapper .table .image .information .stock {
+  display: flex;
+  align-items: center;
+  width: 80px;
+  justify-content: space-between;
+  padding: 3px 10px;
+  border-radius: 10px;
+  background-color: #D9D9D9;
+  margin-top: 7px;
+}
+.Basket_wrapper .table .image .information .stock span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #000;
+}
+.Basket_wrapper .table .price {
+  text-align: right;
+}
+.Basket_wrapper .table .price span {
+  display: block;
+  text-align: right;
+}
+.Basket_wrapper .table .price .sale {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 37px;
+  color: #000000;
+  text-decoration: line-through;
+}
+.Basket_wrapper .table .price .title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+.Basket_wrapper .table .price .real_price {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 37px;
+  color: #000000;
+}/*# sourceMappingURL=main.module.css.map */

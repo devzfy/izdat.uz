@@ -41,6 +41,9 @@
                 .burger_btn{
                     cursor: pointer;
                 }
+                .burger_btn_two{
+                    display: none;
+                }
             }
         }
         .header_navs_term{
@@ -194,4 +197,48 @@
 
 button{
     cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .Header_wrapper{
+        padding: 20px 0 15px 0;
+        .inner{
+            .header_navs{
+                position: relative;
+                .header_links{
+                    display: none;
+                }
+                &.burger{
+                    display: flex;
+                    align-items: center;
+                    width: 70%;
+                    justify-content: space-between;
+                    .burger_btn{
+                        display: none;
+                    }
+                    .burger_btn_two{
+                        display: block; 
+                    }
+                }
+            }
+            .header_navs_term{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                .lang{
+                    width: 40px;
+                    display: none;
+                    button{
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 22px;
+                        line-height: 27px;
+                        color: #FFFFFF;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
 }

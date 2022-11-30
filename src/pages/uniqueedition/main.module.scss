@@ -21,3 +21,24 @@
         }
     }
 }
+
+@media screen and (max-width:500px){
+    .UniqueEdition_wrapper{
+        margin-top: 60px;
+        h1{
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 30px;
+        }
+        .UniqueEdition_books{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            .book{
+                width: 49%;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
