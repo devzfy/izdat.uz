@@ -54,6 +54,7 @@ const BookSeries = ()=>{
                         </button>
                     </div>
                     <div className={clas.right_side}>
+                        <h1 className={clas.res_holder}>Все товары</h1>
                         <motion.div className={clas.bookseries_wrapper_cards}
                             initial="hidden"
                             animate="visible"
@@ -80,7 +81,9 @@ const BookSeries = ()=>{
                                 })
                             }
                         </motion.div>
-                        <PaginationCustome/>
+                        <div className={clas.pag}>
+                            <PaginationCustome/>
+                        </div>
                     </div>
                 </div>
                

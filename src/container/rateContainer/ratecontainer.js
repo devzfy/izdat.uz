@@ -34,7 +34,7 @@ const RateContainer = ()=>{
                 <Rating initialValue={4} size={20} />
                 <span className={clas.count}>(165)</span>
             </div> 
-            <div className={clas.info_items}>
+            <div className={`${clas.info_items} ${clas.res}`}>
                 <div className={clas.input}>
                     <input placeholder='Оставить отзыв' type="text" name="" id="" />
                     <button><Send/></button>

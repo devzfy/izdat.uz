@@ -27,6 +27,9 @@ const SeriesSingle = ()=>{
                     })
                 }
             </div>
+            <div className={clas.see_more}>
+                <button>Показать все</button>
+            </div>
         </div>
         <Footer/>
     </div>

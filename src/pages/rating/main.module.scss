@@ -2,6 +2,17 @@
     h1{
         margin: 40px 0 60px 0;
         text-align: center;
+        
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 49px;
+/* identical to box height */
+
+
+color: #000000;
+
     }
     .rate_cards{
         .item{
@@ -80,6 +91,63 @@
         margin: 0 auto;
         .card{
             margin-bottom: 60px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    .Rating_wrapper{
+        h1{
+            margin: 40px 0 29px 0;
+            text-align: center;
+            font-size: 24px;
+            line-height: 36px;
+        }
+        .rate_cards{
+            .item{
+                width: 100%;
+                display: flex;
+                height: 150px;
+                margin: 0 auto 0 auto;
+                &:nth-child(even){
+                    flex-direction: row-reverse;
+                    .item_text{
+                        background-color: #F4AC3E;
+                    }
+                }
+                .item_text{
+                    h3{
+                        font-size: 18px;
+                        line-height: 21px;
+                        margin-bottom: 18px;
+                        text-align: center;
+                    }
+                    .item_link{
+                        font-size: 12px;
+                        text-align: center;
+                        line-height: 14px;
+                        &::before{
+                            right: -10px;
+                            width: 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .RatingSingle_wrapper{
+        h6{
+            margin: 40px auto 40px auto;
+            font-size: 24px;
+            line-height: 28px;
+            max-width: 278px;
+        }
+        .RateContainer_wrapper{
+            width: 85%;
+            margin: 0 auto;
+            .card{
+                margin-bottom: 50px;
+            }
         }
     }
 }
