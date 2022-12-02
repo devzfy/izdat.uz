@@ -70,7 +70,7 @@ const Delivery = () => {
                         </p>
                     </div>
                 </div>
-                <h1 className={clas.holder}>Заказать доставку</h1>
+                {/* <h1 className={clas.holder}>Заказать доставку</h1>
                 <div className={clas.order_form}>
                     <div className={clas.image}>
                         <img src={Image} alt="" />
@@ -88,7 +88,7 @@ const Delivery = () => {
                         </form>
                         <button type='submit'>Заказать</button>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
         <div className="container">

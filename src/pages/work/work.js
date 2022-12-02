@@ -37,7 +37,11 @@ const Work = ()=>{
                         </div>
                         })
                     }
+                    <div className={clas.pag}></div>
                     <PaginationCustome/>
+                    </div>
+                    <div className={clas.see_more}>
+                        <button className={clas.see_more_btn}>Показать все</button>
                     </div>
                 </div>
             </div>
