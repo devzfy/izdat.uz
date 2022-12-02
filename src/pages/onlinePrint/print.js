@@ -29,11 +29,18 @@ const Print = () => {
                             </div>
                         })
                     }
+                    <div className={clas.pag}>
                     <PaginationCustome/>
+                    </div>
+                    <div className={clas.see_more}>
+                        <button>Показать все</button>
+                    </div>
                 </div>
             </div>
         </div>
+        <div className="container">
         <Recommend />
+        </div>
         <Footer />
     </React.Fragment>
 }

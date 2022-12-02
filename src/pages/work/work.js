@@ -37,16 +37,18 @@ const Work = ()=>{
                         </div>
                         })
                     }
-                    <div className={clas.pag}></div>
+                    <div className={clas.pag}>
+
                     <PaginationCustome/>
                     </div>
                     <div className={clas.see_more}>
                         <button className={clas.see_more_btn}>Показать все</button>
                     </div>
+                    </div>
                 </div>
             </div>
         </div>
-                    <div className="container"> <Recommend/></div>
+    <div className="container"> <Recommend/></div>
         <Footer/>
     </React.Fragment>
 }

@@ -28,7 +28,9 @@ const SingleWork = ()=>{
                     </div>
             </div>
         </div>
+        <div className="container">
         <Recommend/>
+        </div>
         <Footer/>
     </React.Fragment>
 }
