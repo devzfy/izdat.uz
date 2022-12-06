@@ -63,3 +63,21 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  @media screen and (max-width: 500px) {
+    .like_wrapper{
+      gap: 10px;
+      width: 120px;
+      svg{
+        width: 11px !important;
+        height: 13px;
+      }
+      span{
+        font-size: 10px;
+      }
+    }
+    .like_btn{
+      padding: 0;
+      width: 58px;
+    }
+  }

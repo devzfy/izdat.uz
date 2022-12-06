@@ -77,3 +77,42 @@
         }
     }
 }
+
+@media screen and (max-width: 500px) {
+    .Soon_wrapper{
+        .holder{
+            font-size: 24px;
+            line-height: 36px;
+            margin: 40px 0 30px 0;
+        }
+        .soon_cards_wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .soon_cards{
+                padding: 13px;
+                width: 49%;
+                margin-bottom: 30px;
+                h3{
+                    font-size: 13px;
+                    line-height: 15px;
+                    margin: 9px 0 10px 0;
+                }
+                img{
+                    width: 80%;
+                    height: 163px;
+                }
+                .price{
+                    font-size: 15px;
+                    line-height: 18px;
+                    margin-bottom: 14px;
+                }
+                button{
+                    font-size: 14px;
+                    line-height: 17px;
+                    padding: 7px 14px;
+                }
+            }
+        }
+    }
+}

@@ -3,7 +3,7 @@ import clas from './main.module.scss'
 import React, { useState } from 'react'
 import { Shopcard, PaginationCustome } from '../../components'
 import Image1 from '../../assets/images/s-l500 2.png'
-import { Planet } from '../../assets/icons'
+import { Filter, Planet } from '../../assets/icons'
 const AudioBook = () => {
     const data1 = {
         image: Image1,
@@ -37,7 +37,8 @@ const AudioBook = () => {
                             <div className={clas.cards}>
                                 {
                                     [1, 1, 1, 1, 1].map(() => {
-                                        return <Shopcard
+                                        return <div className={clas.vanilla_card}>
+                                            <Shopcard
                                             image={data1.image}
                                             title={data1.name}
                                             rate={data1.rate}
@@ -47,22 +48,32 @@ const AudioBook = () => {
                                             link={data1.link}
                                             price={data1.price}
                                         />
+                                        </div>
                                     })
                                 }
                             </div>
+                            <div className={clas.pag}>
                             <PaginationCustome />
+                            </div>
                         </div>
                     </div>
                 </div>
 
             </div>
             <div className={clas.classical_music}>
+                
                 <h1 className={clas.holder}>Классическая литература</h1>
                 <div className="container">
+                <button className={clas.filter_btn}>
+                    <span>Фильтр</span>
+                    <Filter/>
+                </button>
+                <h1 className={` ${clas.all_cards}`}>Все товары</h1>
                     <div className={clas.cards}>
                         {
                             [1, 1, 1, 1, 1].map(() => {
-                                return <Shopcard
+                                return <div className={clas.vanilla_card}>
+                                    <Shopcard
                                     image={data1.image}
                                     title={data1.name}
                                     rate={data1.rate}
@@ -72,10 +83,13 @@ const AudioBook = () => {
                                     link={data1.link}
                                     price={data1.price}
                                 />
+                                </div>
                             })
                         }
                     </div>
+                    <div className={clas.pag}>
                     <PaginationCustome />
+                    </div>
                 </div>
             </div>
             <div className="container">
@@ -107,20 +121,24 @@ const AudioBook = () => {
                     <div className={clas.cards}>
                         {
                             [1, 1, 1, 1, 1].map(() => {
-                                return <Shopcard
-                                    image={data1.image}
-                                    title={data1.name}
-                                    rate={data1.rate}
-                                    rateCount={data1.count}
-                                    sale={false}
-                                    saleprice={''}
-                                    link={data1.link}
-                                    price={data1.price}
-                                />
+                                return <div className={clas.vanilla_card}>
+                                <Shopcard
+                                image={data1.image}
+                                title={data1.name}
+                                rate={data1.rate}
+                                rateCount={data1.count}
+                                sale={false}
+                                saleprice={''}
+                                link={data1.link}
+                                price={data1.price}
+                            />
+                            </div>
                             })
                         }
                     </div>
-                    <PaginationCustome />
+                            <div className={clas.pag}>
+                            <PaginationCustome />
+                            </div>
                 </div>
             </div>
             <div className="container">
@@ -137,28 +155,37 @@ const AudioBook = () => {
                                     <div className={clas.cards}>
                                         {
                                             [1, 1, 1, 1, 1].map(() => {
-                                                return <Shopcard
-                                                    image={data1.image}
-                                                    title={data1.name}
-                                                    rate={data1.rate}
-                                                    rateCount={data1.count}
-                                                    sale={false}
-                                                    saleprice={''}
-                                                    link={data1.link}
-                                                    price={data1.price}
-                                                />
+                                                return<div className={clas.vanilla_card}>
+                                                <Shopcard
+                                                image={data1.image}
+                                                title={data1.name}
+                                                rate={data1.rate}
+                                                rateCount={data1.count}
+                                                sale={false}
+                                                saleprice={''}
+                                                link={data1.link}
+                                                price={data1.price}
+                                            />
+                                            </div>
                                             })
                                         }
                                     </div>
+                                        <div className={clas.pag}>
                                         <PaginationCustome />
+                                        </div>
                                 </>
                             })
                         }
                     </div>
                 </div>
+                <div className={clas.mobil_pag}>
+                <PaginationCustome/>
+                </div>
             </div>
         </div>
+        <div className="container">
         <Recommend />
+        </div>
         <Footer />
     </React.Fragment>
 }

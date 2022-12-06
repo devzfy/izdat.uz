@@ -55,7 +55,6 @@ const Header = () => {
                   onClick={() => setActiveSidebar(!activeSidebar)}
                 >
                   <BurgerBtn />
-                  <BurgerBtnRes/> 
                 </div>
                 <div
                   className={clas.burger_btn_two}

@@ -5,9 +5,9 @@ import { Arrow, Arrow2 } from "../../assets/icons";
 const PaginationCustome = ()=>{
     const itemRender = (_, type, originalElement) =>{
         if(type === 'prev'){
-            return <Arrow2/>
-        }else if(type === 'next'){
             return <Arrow/>
+        }else if(type === 'next'){
+            return <Arrow2/>
         }
         return originalElement
     }
