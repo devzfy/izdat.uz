@@ -1,5 +1,5 @@
 import clas from './main.module.scss'
-import { Header, Footer, Recommend} from '../../container'
+import { Recommend} from '../../container'
 import { Shopcard } from '../../components'
 import { data } from '../../data/collection'
 import React, { useState } from 'react'
@@ -17,7 +17,6 @@ const WriterSingle = () => {
     }
 
     return <React.Fragment>
-        <Header />
         <div className={clas.tabbar}>
             <div className="container">
                 <button onClick={tabTrue}  className={tab ? clas.active : ''}>Автор</button>
@@ -102,7 +101,6 @@ const WriterSingle = () => {
                 <Recommend/>
             </div>
         </div>
-        <Footer />
     </React.Fragment>
 }
 

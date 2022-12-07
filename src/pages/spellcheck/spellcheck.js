@@ -1,6 +1,6 @@
 import clas from "./main.module.scss";
-import { Header, Footer, Banner, Recommend } from "../../container";
-import React, { useEffect, useState } from "react";
+import {  Banner, Recommend } from "../../container";
+import React, {  useState } from "react";
 import { UpArrow, DownArrow } from "../../assets/icons";
 import Image from "../../assets/images/Frame 4.png";
 
@@ -158,7 +158,6 @@ const SpellCheck = () => {
 
   return (
     <React.Fragment>
-      <Header />
       <Banner
         image={
           "https://images.unsplash.com/photo-1535905557558-afc4877a26fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
@@ -239,7 +238,6 @@ const SpellCheck = () => {
       <div className="container">
         <Recommend />
       </div>
-      <Footer />
     </React.Fragment>
   );
 };

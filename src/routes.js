@@ -1,11 +1,10 @@
-import { createBrowserRouter } from "react-router-dom";
-import {Work,Basket,AudioBook,Soon,Auction,Delivery,Partners,SpellCheck,Rating,RatingSingle,UniqueEdition, Home , About, Writers, WriterSingle, SaleEvents, BookSeries, SeriesSingle, SingleWork, SinglePrint, Print, SingleBook} from "./pages";
+import {Profile,Work,Basket,AudioBook,Soon,Auction,Delivery,Partners,SpellCheck,Rating,RatingSingle,UniqueEdition, Home , About, Writers, WriterSingle, SaleEvents, BookSeries, SeriesSingle, SingleWork, SinglePrint, Print, SingleBook} from "./pages";
 
 
-export const routes = createBrowserRouter([
+export const routes = [
     {
         path:'/',
-        element: <Home/>
+        element: <Home/>,
     },
     {
         path:'/about',
@@ -102,4 +101,9 @@ export const routes = createBrowserRouter([
         path: '/coming-soon',
         element: <Soon/>
     }
-])
+    ,
+    {
+        path: '/profile',
+        element: <Profile/>
+    }
+]

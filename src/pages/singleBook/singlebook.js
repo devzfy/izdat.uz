@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header, Footer, Recommend } from '../../container'
+import {  Recommend } from '../../container'
 import clas from './main.module.scss'
 import Carousel from 'react-gallery-carousel'
 import 'react-gallery-carousel/dist/index.css';
@@ -18,7 +18,6 @@ const SingleBook = () => {
         src: `https://placedog.net/${number}00/${number}00?id=${number}`
     }));
     return <React.Fragment>
-        <Header />
         <div className={clas.SingleBook_wrapper}>
             <div className={clas.page_holder}>
                 <div className="container">
@@ -161,7 +160,6 @@ const SingleBook = () => {
         <div className="container" style={{marginTop: '40px'}}>
         <Recommend />
         </div>
-        <Footer />
     </React.Fragment>
 }
 

@@ -20,4 +20,5 @@ import Basket from "./basket/basket";
 import AudioBook from "./audiobooks/audiobook";
 import SingleBook from "./singleBook/singlebook";
 import Soon from "./comingSoon/soon";
-export {Basket,Soon,SingleBook,AudioBook,SinglePrint,Print,SingleWork,Work,Auction,Delivery,Partners,SpellCheck,Rating,RatingSingle,SeriesSingle ,Home, About,UniqueEdition, Writers, WriterSingle, SaleEvents, BookSeries}
+import Profile from "./profile/profile";
+export {Profile,Basket,Soon,SingleBook,AudioBook,SinglePrint,Print,SingleWork,Work,Auction,Delivery,Partners,SpellCheck,Rating,RatingSingle,SeriesSingle ,Home, About,UniqueEdition, Writers, WriterSingle, SaleEvents, BookSeries}

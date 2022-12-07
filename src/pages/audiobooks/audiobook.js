@@ -1,4 +1,4 @@
-import { Header, Footer, Banner, Recommend } from '../../container'
+import {Banner, Recommend } from '../../container'
 import clas from './main.module.scss'
 import React, { useState } from 'react'
 import { Shopcard, PaginationCustome } from '../../components'
@@ -18,7 +18,6 @@ const AudioBook = () => {
     const [tab, setTab] = useState(true)
 
     return <React.Fragment>
-        <Header />
         <Banner image={'https://images.unsplash.com/photo-1501808503570-36559610f95e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1971&q=80'} />
         <div className={clas.AudioBook_wrapper}>
             <h1 className={clas.holder}>
@@ -186,7 +185,6 @@ const AudioBook = () => {
         <div className="container">
         <Recommend />
         </div>
-        <Footer />
     </React.Fragment>
 }
 

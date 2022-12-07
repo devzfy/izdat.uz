@@ -1,7 +1,7 @@
 import clas from './main.module.scss'
 import Image from '../../assets/images/banner.png'
 import React from 'react'
-import { Header, Footer, Recommend, Banner } from '../../container'
+import {  Recommend, Banner } from '../../container'
 import { Link } from 'react-router-dom'
 import { writer } from '../../data/collection'
 import { PaginationCustome } from '../../components'
@@ -9,7 +9,6 @@ import { PaginationCustome } from '../../components'
 const Writers = () => {
 
     return <React.Fragment>
-        <Header />
         <div className={clas.Writers_wrapper}>
             <Banner image={Image}/>
             <div className="container">
@@ -58,7 +57,6 @@ const Writers = () => {
                 <Recommend/>
             </div>
         </div>
-        <Footer />
     </React.Fragment>
 }
 

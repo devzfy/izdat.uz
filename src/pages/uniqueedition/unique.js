@@ -1,4 +1,4 @@
-import {Header, Footer, Banner, Recommend} from '../../container'
+import {Banner, Recommend} from '../../container'
 import { Shopcard } from '../../components'
 import React from 'react'
 import clas from './main.module.scss'
@@ -6,7 +6,6 @@ import {newData} from '../../data/collection'
 
 const UniqueEdition = ()=>{
     return <React.Fragment>
-        <Header/>
         <Banner image={'https://images.pexels.com/photos/12064/pexels-photo-12064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'}/>
         <div className={clas.UniqueEdition_wrapper}>
             <div className="container">
@@ -31,7 +30,6 @@ const UniqueEdition = ()=>{
                 <Recommend/>
             </div>
         </div>
-        <Footer/>
     </React.Fragment>
 }
 

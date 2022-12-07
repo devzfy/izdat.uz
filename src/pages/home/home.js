@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header , Shopcontainer, Footer} from '../../container'
+import {  Shopcontainer} from '../../container'
 import clas from './main.module.scss'
 import Slider from 'react-slick'
 import { settings } from '../../helpers/settings'
@@ -16,7 +16,6 @@ import { Shopcard } from '../../components'
 const Home = ()=>{
     const fakeArr = [1,1,1]
     return <React.Fragment>
-        <Header/>
         <div className={clas.home_wrapper}>
             <div className="container">
                 <div className={clas.inner}>
@@ -89,7 +88,6 @@ const Home = ()=>{
                 </div>
             </div>
         </div>
-        <Footer/>
     </React.Fragment>
 }
 

@@ -1,5 +1,5 @@
 import clas from './main.module.scss'
-import {Header, Footer, Banner, Recommend} from '../../container'
+import { Banner, Recommend} from '../../container'
 import React, { useEffect, useState } from 'react'
 import {Rating} from 'react-simple-star-rating'
 
@@ -16,7 +16,6 @@ const Auction = ()=>{
     }
     console.log(data);
     return <React.Fragment>
-        <Header/>
         <Banner image={'https://images.unsplash.com/photo-1517148892120-4d2da39c8dc1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80'}/>
         <h6>Аукцион</h6>
         <div className="container">
@@ -42,7 +41,6 @@ const Auction = ()=>{
             </div>
             <Recommend/>
         </div>
-        <Footer/>
     </React.Fragment>
 }
 

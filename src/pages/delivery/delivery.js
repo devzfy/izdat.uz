@@ -1,4 +1,4 @@
-import { Header, Footer, Banner, Recommend } from '../../container'
+import {  Banner, Recommend } from '../../container'
 import { Money, Car, DelPhone, CheckMoney, Card, MoneyTwo, Transfer, Phone } from '../../assets/icons'
 import clas from './main.module.scss'
 import React from 'react'
@@ -6,7 +6,6 @@ import Image from '../../assets/images/Group 70.png'
 
 const Delivery = () => {
     return <React.Fragment>
-        <Header />
         <Banner image={'https://images.unsplash.com/photo-1617347454431-f49d7ff5c3b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1115&q=80'} />
         <div className="container">
             <h1 className={clas.holder}>Заказывайте доставку удобным для вас способом</h1>
@@ -94,7 +93,6 @@ const Delivery = () => {
         <div className="container">
             <Recommend />
         </div>
-        <Footer />
     </React.Fragment>
 }
 

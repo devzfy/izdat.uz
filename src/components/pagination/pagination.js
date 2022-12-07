@@ -1,4 +1,4 @@
-import { Pagination } from "antd";
+import { Pagination } from 'antd';
 import './main.css'
 import { Arrow, Arrow2 } from "../../assets/icons";
 

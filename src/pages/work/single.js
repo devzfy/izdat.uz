@@ -1,10 +1,9 @@
 import React from "react";
-import { Header, Footer , Banner, Recommend} from "../../container";
+import { Banner, Recommend} from "../../container";
 import clas from './main.module.scss'
 
 const SingleWork = ()=>{
     return <React.Fragment>
-        <Header/>
         <Banner image={'https://images.unsplash.com/photo-1607003881177-9b4e0d844536?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80'}/>
         <div className={clas.SingleWork_wrapper}>
             <div className="container">
@@ -31,7 +30,6 @@ const SingleWork = ()=>{
         <div className="container">
         <Recommend/>
         </div>
-        <Footer/>
     </React.Fragment>
 }
 

@@ -30,6 +30,9 @@
                 object-fit: cover;
             }
             .information{
+                .price{
+                    display: none;
+                }
                 h2{
                     font-family: 'Montserrat';
                     font-style: normal;
@@ -61,22 +64,40 @@
                         margin-left: 10px;
                     }
                 }
-
-                .stock{
+                .del_count{
+                    margin-top: 7px;
                     display: flex;
                     align-items: center;
-                    width: 80px;
-                    justify-content: space-between;
-                    padding: 3px 10px;
-                    border-radius: 10px;
-                    background-color: #D9D9D9;
-                    margin-top: 7px;
-                    span{
-                        font-family: 'Montserrat';
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 20px;
-                        color: #000;
+                    gap: 15px;
+                    .stock{
+                        display: flex;
+                        align-items: center;
+                        width: 80px;
+                        justify-content: space-between;
+                        padding: 3px 10px;
+                        border-radius: 10px;
+                        background-color: #D9D9D9;
+                        span{
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 20px;
+                            color: #000;
+                        }
+                        
+                    }
+                    .delete_btn{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        span{
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: #FF6363;
+                        }
                     }
                 }
             }
@@ -95,6 +116,8 @@
                 line-height: 37px;
                 color: #000000;
                 text-decoration: line-through;
+                text-decoration-thickness: 0.1rem;
+                text-decoration-color: #f00;
             }
             .title{
                 font-family: 'Montserrat';
@@ -111,6 +134,129 @@
                 font-size: 24px;
                 line-height: 37px;
                 color: #000000;
+            }
+        }
+    }
+}
+
+.order{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 30px 0 40px 0;
+    button{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 21px;
+        color: #FFFFFF;
+        background: #393A3F;
+        border-radius: 20px;
+        padding: 12px 30px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .Basket_wrapper{
+        margin: 100px 0 30px 0;
+        h1{
+            font-size: 24px;
+            line-height: 29px;
+        }
+        .table{
+            width: 100%;
+            .image{
+                display: flex;
+                align-items: flex-start;
+                width: 100%;
+                img{
+                    margin-right: 20px;
+                    width: 100px;
+                }
+                .information{
+                    width: 100%;
+                    .price{
+                        margin-top: 10px;
+                        margin-bottom: 5px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        span{
+                            display: block;
+                            text-align: right;
+                        }
+                        .has_in_shop{
+                            display: none;
+                        }
+                        .sale{
+                            font-size: 14px;
+                            line-height: 17px;
+                        }
+                        .title{
+                            display: none;
+                        }
+                        .real_price{
+                            font-size: 15px;
+                            line-height: 18px;
+                        }
+                    }
+                    h2{
+                        font-size: 14px;
+                        line-height: 17px;
+                        margin-bottom: 12px;
+                    }
+                    h3{
+                        line-height: 15px;
+                        font-size: 12px;
+                        margin-bottom: 5px;
+                    }
+                    h4{
+                        line-height: 15px;
+                        font-size: 12px;
+                    }
+                    .del_count{
+                        margin-top: 12px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        .stock{
+                            display: flex;
+                            align-items: center;
+                            width: 77px;
+                            height: 33px;
+                            box-sizing: border-box;
+                            justify-content: space-between;
+                            padding: 3px 10px;
+                            border-radius: 15px;
+                            background-color: #D9D9D9;
+                            svg{
+                                width: 10px;
+                                fill: #000;
+                            }
+                            span{
+                                font-size: 15px;
+                            }
+                            
+                        }
+                        .delete_btn{
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            span{
+                                font-family: 'Montserrat';
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 14px;
+                                line-height: 17px;
+                                color: #FF6363;
+                            }
+                        }
+                    }
+                }
+            }
+            .price{
+                display: none;
             }
         }
     }

@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 import clas from './main.module.scss'
-import {Header, Footer, Recommend, Banner} from '../../container'
+import { Recommend, Banner} from '../../container'
 import { PaginationCustome } from '../../components'
 import { Link } from 'react-router-dom'
 const Work = ()=>{
     return <React.Fragment>
-        <Header/>
         <Banner image={'https://images.unsplash.com/photo-1607003881177-9b4e0d844536?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80'}/>
         <div className={clas.Work_wrapper}>
             <div className="container">
@@ -49,7 +48,6 @@ const Work = ()=>{
             </div>
         </div>
     <div className="container"> <Recommend/></div>
-        <Footer/>
     </React.Fragment>
 }
 

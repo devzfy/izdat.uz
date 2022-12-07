@@ -1,0 +1,75 @@
+.profile_wrapper{
+    margin-top: 150px;
+    .inner{
+        display: flex;
+        align-items: flex-start;
+        gap: 157px;
+        .profile_img{
+            position: relative;
+            img{
+                width: 330px;
+                height: 287px; 
+                object-fit: cover;   
+            }
+            button{
+                position: absolute;
+                top: 0px;
+                right: 8px;
+                svg{
+                    width: 40px;
+                }
+            }
+        }
+        .profile_info{
+            position: relative;
+            &::before{
+                position: absolute;
+                content: '';
+                left: -70px;
+                top: 0;
+                width: 2px;
+                height: 80%;
+                background-color: #393A3F;
+                bottom: 0;
+                margin: auto;
+            }
+            .info_ul{
+                text-align: left;
+                display: flex;
+                align-items: center;
+                li{
+                    display: block;
+                    margin-bottom: 19px;
+                    span{
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 22px;
+                        line-height: 27px;
+                        color: #000;
+                    }
+                    &:nth-child(1){
+                        span{
+                            color: #8D8787;
+                        }
+                        width: 200px;
+                        margin-right: 55px;
+                    }
+                }
+            }
+        }
+    }
+
+    .my_orders{
+        .order_holder{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 43px;
+            color: #000000;
+            text-align: left;
+            margin: 100px 0 40px 0;
+        }
+    }
+}

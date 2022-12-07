@@ -1,17 +1,14 @@
 import React from "react";
 import clas from "./main.module.scss";
-import { Header, Footer, Recommend } from "../../container";
+import { Recommend } from "../../container";
 import Image from '../../assets/images/Rectangle 74.png'
 import Image1 from '../../assets/images/Rectangle 75.png'
 import Image2 from '../../assets/images/Rectangle 76.png'
 import Image3 from '../../assets/images/Rectangle 73.png'
 import { Plus } from "../../assets/icons";
-import { PaginationCustome, Shopcard } from "../../components";
-import {data} from '../../data/collection'
 const About = () => {
   return (
     <React.Fragment>
-      <Header />
       <div className={clas.About_wrapper}>
         <div className="container">
           <div className={clas.holder}>
@@ -71,7 +68,6 @@ const About = () => {
           <Recommend/>
         </div>
       </div>
-      <Footer />
     </React.Fragment>
   );
 };

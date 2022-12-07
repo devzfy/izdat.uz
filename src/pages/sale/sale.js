@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {Header, Footer, Banner, Recommend} from '../../container'
+import { Banner, Recommend} from '../../container'
 import clas from './main.module.scss'
 import { sale_data } from '../../data/collection'
 import { PaginationCustome, SaleCard } from '../../components'
@@ -7,7 +7,6 @@ const SaleEvents = ()=>{
     const [id, setId] = useState(null)
     console.log(id);
     return <React.Fragment>
-        <Header/>
         <Banner image={'https://images.unsplash.com/photo-1568667256549-094345857637?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGxpYnJhcnklMjBib29rc3xlbnwwfHwwfHw%3D&w=1000&q=80'}/>
         <div className={clas.SaleEvents_wrapper}>
             <div className={clas.ads_ac}>
@@ -38,7 +37,6 @@ const SaleEvents = ()=>{
             </div>
             
         </div>
-        <Footer/>
     </React.Fragment>
 }
 

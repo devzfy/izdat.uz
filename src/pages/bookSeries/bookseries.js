@@ -1,5 +1,5 @@
 import clas from './main.module.scss'
-import { Header, Footer, Banner, Recommend, Sidebar } from '../../container'
+import {  Banner, Recommend, Sidebar } from '../../container'
 import React, { useEffect, useState } from 'react'
 import { PaginationCustome, Shopcard } from '../../components'
 import { motion } from 'framer-motion'
@@ -39,7 +39,6 @@ const BookSeries = ()=>{
         dispatch(set_book(book))
       }
     return <React.Fragment>
-        <Header/>
         <Banner image={'https://cdn-v2.asla.org/uploadedImages/CMS/Shop/Bookstore/books.jpg'}/>
         <div className={clas.bookseries_wrapper}>
             <div className="container">
@@ -92,7 +91,6 @@ const BookSeries = ()=>{
                     <div className="container">
                     <Recommend/>
                     </div>
-        <Footer/>
     </React.Fragment>
 }
 export default BookSeries
