@@ -50,6 +50,7 @@
         font-size: 40px;
         line-height: 150%;
         color: #000000;
+        text-align: left;
         span {
           font-weight: 600;
           font-size: 50px;
@@ -57,6 +58,7 @@
         margin-bottom: 30px;
       }
       p {
+        text-align: left;
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
@@ -81,7 +83,7 @@
       }
       &:nth-child(2) {
         height: 335px;
-        width: 315px;
+        width: 30%;
         position: relative;
         margin-top: 75px;
         img {
@@ -89,11 +91,12 @@
           height: 289.85px;
           position: absolute;
           &:nth-child(1) {
-            right: 0;
+            left: 0;
             bottom: -13px;
           }
           &:nth-child(2) {
             top: 20px;
+            left: 20px;
           }
         }
       }
@@ -228,7 +231,190 @@
   }
 }
 
-@media screen and (max-width: 500px){
+
+
+@media screen and (max-width: 1000px) {
+  .tabbar{
+    display: none;
+  }
+  
+  .About_wrapper {
+    margin-top: 100px;
+    .holder {
+      margin-bottom: 20px;
+      h1 {
+        font-size: 27px;
+        line-height: 40px;
+      }
+    }
+    .block_first {
+      margin-bottom: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .side {
+        &:nth-child(1) {
+          width: 59%;
+        }
+        &:nth-child(2) {
+          width: 35%;
+          height: 250px;
+          position: relative;
+          img {
+            position: absolute;
+            width: 200px;
+            height: 237px;
+            &:nth-child(2) {
+              bottom: 0;
+              right: 23px;
+            }
+            &:nth-child(1) {
+              top: -10px;
+              right: 0;
+            }
+          }
+        }
+        h1 {
+          font-size: 22px;
+          line-height: 42px;
+          text-align: left;
+          margin-bottom: 20px;
+          span {
+            font-weight: 600;
+            font-size: 28px;
+          }
+        }
+        p {
+          text-align: left;
+          font-size: 15px;
+          line-height: 22px;
+        }
+      }
+    }
+    .block_second {
+      display: flex;
+      justify-content: space-between;
+      margin-top: -20px;
+      .side {
+        &:nth-child(1) {
+          width: 100%;
+          img {
+            width: 100%;
+            object-fit: cover;
+            height: 209px;
+          }
+        }
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+    .our_advantages {
+      margin: 40px auto 70px auto;
+      max-width: 989px;
+  
+      h1 {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 30px;
+      }
+      .advantages {
+        padding: 18px;
+        .advantages_card {
+          width: 30%;
+          span {
+            display: flex;
+            text-align: center;
+            &.number {
+              font-size: 19px;
+              line-height: 27px;
+            }
+            &.text {
+              font-size: 15px;
+              line-height: 18px;
+            }
+          }
+        }
+      }
+    }
+    .recommends {
+      h1 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 150%;
+        color: #000000;
+        margin: 90px 0 40px 0;
+      }
+  
+      .recommends_cards {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+    }
+  }
+  
+  .writersingle_wrapper {
+    .page_intro {
+      margin: 160px auto 60px auto;
+      width: 100%;
+      max-width: 1076px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h1 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 49px;
+        color: #000000;
+        text-align: center;
+        margin: 40px 0 30px 0;
+      }
+      p {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 150%;
+        color: #000000;
+        text-align: justify;
+      }
+      img {
+        width: 856px;
+        height: 515px;
+        object-fit: cover;
+      }
+    }
+  
+    .writer_books {
+      h1 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 49px;
+        color: #000000;
+        margin-bottom: 40px;
+      }
+      .books {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .book_card {
+          width: 24%;
+          margin-bottom: 60px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px){
   .tabbar{
     display: block;
     margin-top: 110px;
@@ -335,6 +521,7 @@
         .advantages_card {
           width: 100%;
           margin-bottom: 50px;
+          text-align: center;
           span {
             &.number {
               font-family: "Montserrat";
@@ -343,7 +530,9 @@
               margin-bottom: 7px;
             }
             &.text {
+              text-align: center;
               font-size: 20px;
+              width: 100%;
               line-height: 24px;
             }
           }
