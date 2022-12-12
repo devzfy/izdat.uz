@@ -1,159 +1,201 @@
 .shopcard_wrapper {
-    background: #FFFAFA;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-    padding: 19px 15px;
-    box-sizing: border-box;
-    position: relative;
+  background: #fffafa;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 19px 15px;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  .sale {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+  }
+  .image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  .title {
+    font-family: "inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    height: 45px;
+    overflow: hidden;
+    line-height: 22px;
+    white-space: wrap;
+    color: #000;
     display: block;
-    .sale{
-        position: absolute;
-        top: 10px;
-        left: 10px;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  .rate {
+    display: flex;
+    align-items: center;
+
+    .rateCount {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 11px;
+      color: #918888;
+      display: block;
+      margin-left: 10px;
+      margin-top: -2px;
     }
-    img{
-        width: 160px;
-        height: 160px;
-        object-fit: cover;
-    }
-    .image{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 15px;
-    }
-    .title{
-        font-family: 'inter';
+  }
+  .price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 6px;
+    span {
+      &:nth-child(1) {
+        font-family: "inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        color: #000000;
+      }
+      &:nth-child(2) {
+        font-family: "inter";
         font-style: normal;
         font-weight: 500;
-        font-size: 16px;
-        height: 45px;
-        overflow: hidden;
+        font-size: 14px;
         line-height: 22px;
-        white-space: wrap;
-        color: #000;
-        display: block;
-        margin-bottom: 8px;
-    }
-    .rate{
-        display: flex;
-        align-items: center;
-        
-        .rateCount{
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 11px;
-            color: #918888;
-            display: block;
-            margin-left: 10px;
-            margin-top: -2px;
+        color: #000000;
+        position: relative;
+        &::before {
+          height: 1px;
+          transform: rotate(7deg);
+          background-color: #f00;
+          width: 50px;
+          position: absolute;
+          content: "";
+          top: 10px;
+          left: -1px;
         }
-    }
-    .price{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 6px;
-        span{
-            &:nth-child(1){
-                font-family: 'inter';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 18px;
-                line-height: 24px;
-                color: #000000;
-            }
-            &:nth-child(2){
-                font-family: 'inter';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 22px;
-                color: #000000;
-                position: relative;
-                &::before{
-                    height: 1px;
-                    transform: rotate(7deg);
-                    background-color: #f00;
-                    width: 50px;
-                    position: absolute;
-                    content: '';
-                    top: 10px;
-                    left: -1px;
-                }
-            }
-        }
-    }
-    .action_btn{
-        display: flex;
-        align-items: center;
-        margin-top: 15px;
-        justify-content: space-between;
-        .buy_btn{
-            font-family: 'inter';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 22px;
-            line-height: 27px;
-            color: #FFFFFF;
-            padding: 10px 44px;
-            background: #135EF2;
-            border-radius: 20px;
-            cursor: pointer;
-        }
-    }
-    
-  }
-  
-  @media screen and (max-width: 500px) {
-    .shopcard_wrapper {
-        padding: 12px;
-        background: #FFFAFA;
-box-shadow: 0px 0px 12.802px rgba(0, 0, 0, 0.25);
-border-radius: 12.802px;
-        .sale{
-            top: 0px;
-            svg{
-                width: 80px;
-            }
-        }
-        img{
-            width: 80%;
-height: 140px;
-        }
-        .image{
-            margin-bottom: 5px;
-        }
-        .title{
-            font-size: 15px;
-            margin-bottom: 0;
-        }
-        .rate{
-            display: flex;
-            align-items: center;
-            
-            .rateCount{
-                font-size: 13px;
-            }
-        }
-        .price{
-            margin-top: 0px;
-            margin-bottom: 10px;
-            span{
-                &:nth-child(1){
-                    font-size: 15px;
-                }
-                &:nth-child(2){
-                    font-size: 13px;
-                }
-            }
-        }
-        .action_btn{
-            margin-top: 5px;
-            flex-direction: column;
-        }
-        
       }
+    }
   }
+  .action_btn {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    justify-content: space-between;
+    .buy_btn {
+      font-family: "inter";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 27px;
+      color: #ffffff;
+      padding: 10px 44px;
+      background: #135ef2;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+  }
+}
 
+@media screen and (max-width: 1024px) and (min-width: 850px) {
+  .shopcard_wrapper {
+    padding: 10px;
+    img {
+      width: 107px;
+      height: 140px;
+    }
+    .image {
+      margin-bottom: 5px;
+    }
+    .title {
+      font-size: 10px;
+      margin-bottom: 0;
+      height: auto;
+    }
+    .rate {
+      display: flex;
+      align-items: center;
+
+      .rateCount {
+        font-size: 13px;
+      }
+    }
+    .price {
+      margin-top: 0px;
+      font-size: 11px;
+      margin-bottom: 10px;
+      span {
+        &:nth-child(1) {
+          font-size: 15px;
+        }
+        &:nth-child(2) {
+          font-size: 13px;
+        }
+      }
+    }
+    .action_btn {
+      margin-top: 5px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .shopcard_wrapper {
+    padding: 12px;
+    background: #fffafa;
+    box-shadow: 0px 0px 12.802px rgba(0, 0, 0, 0.25);
+    border-radius: 12.802px;
+    .sale {
+      top: 0px;
+      svg {
+        width: 80px;
+      }
+    }
+    img {
+      width: 80%;
+      height: 140px;
+    }
+    .image {
+      margin-bottom: 5px;
+    }
+    .title {
+      font-size: 15px;
+      margin-bottom: 0;
+    }
+    .rate {
+      display: flex;
+      align-items: center;
+
+      .rateCount {
+        font-size: 13px;
+      }
+    }
+    .price {
+      margin-top: 0px;
+      margin-bottom: 10px;
+      span {
+        &:nth-child(1) {
+          font-size: 15px;
+        }
+        &:nth-child(2) {
+          font-size: 13px;
+        }
+      }
+    }
+    .action_btn {
+      margin-top: 5px;
+      flex-direction: column;
+    }
+  }
+}

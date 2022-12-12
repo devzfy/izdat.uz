@@ -1,6 +1,7 @@
 import { Pagination } from 'antd';
 import './main.css'
 import { Arrow, Arrow2 } from "../../assets/icons";
+import 'antd/dist/reset.css';
 
 const PaginationCustome = ()=>{
     const itemRender = (_, type, originalElement) =>{

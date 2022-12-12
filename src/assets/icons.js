@@ -671,6 +671,19 @@ const Edit = ()=>{
   
 }
 
+const See = ()=>{
+  return <svg version="1.1" id="Uploaded to svgrepo.com"  x="0px" y="0px"
+  width="32px" height="32px" viewBox="0 0 32 32"  >
+
+<g>
+ <circle class="duotone_een" cx="16" cy="16" r="2" fill='#232323'/>
+ <path class="duotone_twee" fill='#232323' d="M16,8C9.373,8,4,14,4,16c0,3,5.373,8,12,8s12-6,12-8S22.627,8,16,8z M16,20.5
+   c-2.485,0-4.5-2.015-4.5-4.5s2.015-4.5,4.5-4.5s4.5,2.015,4.5,4.5S18.485,20.5,16,20.5z"/>
+</g>
+</svg>
+}
+
+
 
 export {
   Plus,
@@ -713,5 +726,6 @@ export {
   BurgerBtnRes,
   Filter,
   Delete,
-  Edit
+  Edit,
+  See
 };

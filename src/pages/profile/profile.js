@@ -2,37 +2,54 @@ import React from 'react';
 import { Edit } from '../../assets/icons'
 import clas from './main.module.scss'
 import { Space, Table, Tag } from 'antd';
-import 'antd/dist/reset.css';
-import { useEffect } from 'react'
-import { useState } from 'react';
 const Profile = ()=>{
+  const data = [
+    {
+      key: '1',
+      name: 'John Brown',
+      age: "32.000 сум",
+      address: 'New York No. 1 Lake Park',
+      tags: ['в ожидании'],
+    },
+    {
+      key: '2',
+      name: 'Jim Green',
+      age: "29.000 сум",
+      address: 'London No. 1 Lake Park',
+      tags: ['доставили курьеру'],
+    },
+    {
+      key: '3',
+      name: 'Joe Black',
+      age: "76.000 сум",
+      address: 'Sidney No. 1 Lake Park',
+      tags: ['доставлен'],
+    },
+  ];
     const columns = [
         {
-          title: 'Name',
+          title: 'Имя',
           dataIndex: 'name',
           key: 'name',
-          render: (text) => <a>{text}</a>,
+          render: (text) => <h2>{text}</h2>,
         },
         {
-          title: 'Age',
+          title: 'Цена',
           dataIndex: 'age',
           key: 'age',
         },
         {
-          title: 'Address',
-          dataIndex: 'address',
-          key: 'address',
-        },
-        {
-          title: 'Tags',
+          title: 'Статус',
           key: 'tags',
           dataIndex: 'tags',
           render: (_, { tags }) => (
             <>
               {tags.map((tag) => {
                 let color = tag.length > 5 ? 'geekblue' : 'green';
-                if (tag === 'loser') {
+                if (tag === 'в ожидании') {
                   color = 'volcano';
+                }else if(tag === 'доставлен'){
+                  color = 'green';
                 }
                 return (
                   <Tag color={color} key={tag}>
@@ -44,28 +61,15 @@ const Profile = ()=>{
           ),
         },
         {
-          title: 'Action',
+          title: 'Действие',
           key: 'action',
           render: (_, record) => (
             <Space size="middle">
-              <a>Invite {record.name}</a>
-              <a>Delete</a>
+              <button>Подробнее</button>
             </Space>
           ),
         },
       ];
-    const [tableData, setTableData] = useState([{
-
-    }])
-    useEffect(()=>{
-        getData()
-    })
-    const getData = async ()=>{
-        const fecthBook = await fetch('https://www.googleapis.com/books/v1/volumes?q=romance&filter=paid-ebooks&key=AIzaSyC9ROl3QupFvo-5ZqG3AD7LS_ECZqy8GsI') 
-        const data  = await fecthBook.json()
-
-        console.log(data.items);
-    }
     return <div className={clas.profile_wrapper}>
         <div className="container">
             <div className={clas.inner}>
@@ -104,9 +108,9 @@ const Profile = ()=>{
                 </div>
             </div>
             <div className={clas.my_orders}>
-                <h1 className={clas.order_holder}>Моя корзина</h1>
+                <h1 className={clas.order_holder}>Мои заказы</h1>
                 <div className={clas.order_list}>
-
+                <Table dataSource={data} columns={columns} />;
                 </div>
             </div>
         </div>

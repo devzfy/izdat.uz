@@ -2,7 +2,7 @@
     margin-top: 150px;
     .inner{
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         gap: 157px;
         .profile_img{
             position: relative;
@@ -37,6 +37,7 @@
                 text-align: left;
                 display: flex;
                 align-items: center;
+                margin-bottom: 0;
                 li{
                     display: block;
                     margin-bottom: 19px;
