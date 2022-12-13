@@ -1,3 +1,10 @@
+.leave_comment{
+    text-align: left;
+}
+.description{
+    text-align: left;
+}
+
 .SingleBook_wrapper{
     .page_holder{
         padding: 150px 0 40px 0;
@@ -327,9 +334,231 @@
         }
     }
 }
-
-
-@media screen and (max-width: 500px){
+@media screen and (max-width: 1251px) {
+    .SingleBook_wrapper{
+        .page_holder{
+            padding: 120px 0 40px 0;
+            h2{
+                font-size: 22px;
+                line-height: 22px;
+            }
+            .has_stock{
+                span{
+                    font-size: 16px;
+                }
+            }
+        }
+    
+        .book_info{
+            margin: 20px 0 70px 0;
+            .inner{
+                .book_image{
+                    width: 40%;
+                }
+                .book_short{
+                    h5{
+                        font-size: 22px;
+                        text-align: left;
+                    }
+    
+                    .book_price{
+                        ul{
+                            margin-bottom: 20px;
+                            li{
+                                font-size: 20px;
+                                line-height: 18px;
+                                &:last-child{
+                                    padding-left: 10px;
+                                }
+                            }
+                        }
+                        .rating{
+                            margin-bottom: 18px;
+                            span{
+                                font-size: 14px;
+                            }
+                        }
+                        .price{
+                            font-size: 17px;
+                            line-height: 20px;
+                            text-align: left;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .book_payment{
+            .counter{
+                width: 86px;
+                padding: 4px 12px;
+                margin-bottom: 8px;
+                button{
+                    font-size: 25px;
+                }
+                span{
+                    font-size: 13px;
+                    line-height: 30px;
+                    font-weight: bold;
+                }
+            }
+            .add_basket{
+                margin-bottom: 8px;
+                button{
+                    padding: 6px 20px;
+                    svg{
+                        width: 20px;
+                    }
+                    span{
+                        font-size: 11px;
+                        line-height: 13px;
+                    }
+                }
+            }
+            .order{
+                font-size: 11px;
+                line-height: 13px;
+                padding: 12px 29px;
+                display: block;
+            }
+            .payment_ways{
+                margin-top: 16px;
+                h3{
+                    font-size: 11px;
+                    line-height: 14px;
+                    text-align: left;
+                }
+                ul{
+                    gap: 10px;
+                    img{
+                        width: 50px;
+                    }
+                }
+            }
+        }
+    
+        .description{
+            position: relative;
+            &::before{
+                top: 40px;
+            }
+            h1{
+                text-align: left;
+                font-size: 20px;
+                line-height: 24px;
+                margin-bottom: 36px;
+            }
+            p{
+                font-size: 15px;
+                line-height: 22px;
+                text-align: left;
+            }
+        }
+    
+        .leave_comment{
+            margin-top: 40px;
+            text-align: left;
+            &::before{
+                top: 40px;
+            }
+            h1{
+                font-size: 20px;
+                line-height: 24px;
+                margin-bottom: 36px;
+            }
+            .comments_wrapper{
+                .add_comment{
+                    padding: 7px 29px;
+                    svg{
+                        width: 13px;
+                    }
+                    span{
+                        font-size:11px;
+                        line-height: 14px;
+                        padding-left: 10px;
+                    }
+                }
+                .comment{
+                    margin: 30px 60px;
+                    .comment_card{
+                        h3{
+                            font-size: 12px;
+                            line-height: 14px;
+                        }
+                        .date{
+                            font-size: 11px;
+                            line-height: 13px;
+                        }
+                        p{
+                            font-size: 14px;
+                            line-height: 21px;
+                            margin-bottom: 15px;
+                        }
+                        .reply_like{
+                            .reply{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1000px) {
+    .SingleBook_wrapper{
+        .page_holder{
+            padding: 120px 0 40px 0;
+            h2{
+                font-size: 22px;
+                line-height: 22px;
+            }
+            .has_stock{
+                span{
+                    font-size: 16px;
+                }
+            }
+        }
+    
+        .book_info{
+            margin: 20px 0 70px 0;
+            .inner{
+                .book_image{
+                    width: 280px;
+                }
+                .book_short{
+                    h5{
+                        font-size: 17px;
+                    }
+                    .book_price{
+                        ul{
+                            margin-bottom: 13px;
+                            li{
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media  screen and (max-width: 750px) and (min-width:601px) {
+    .SingleBook_wrapper{
+        .book_info{
+            .inner{
+                flex-wrap: wrap;
+                gap: 40px;
+                justify-content: flex-start;
+                .book_image{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px){
     .SingleBook_wrapper{
         .page_holder{
             padding: 100px 0 30px 0;
@@ -353,6 +582,9 @@
             margin: 35px 0 82px 0;
             .inner{
                 flex-direction: column;
+                .book_image{
+                    width: 100%;
+                }
                 .book_short{
                     margin-top: 50px;
                     h5{
@@ -407,6 +639,7 @@
         }
     
         .description{
+            text-align: left;
             position: relative;
             &.active{
                 display: none;
@@ -429,7 +662,7 @@
     
         .leave_comment{
             margin-top: 30px;
-            
+            text-align: left;
             &.active{
                 display: none;
             }

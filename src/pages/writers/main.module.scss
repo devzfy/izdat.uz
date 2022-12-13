@@ -185,3 +185,143 @@
         }
     }
 }
+
+
+@media screen and (max-width: 1024px) {
+    .Writers_wrapper{
+        .writers_wrapper{
+            .writers_container{
+                h1{
+                    font-size: 27px;
+                    line-height: 32px;
+                    margin-bottom: 20px;
+                    margin-top: 40px;
+                }
+                .writers_card_wrapper{
+                    margin-bottom: 60px;
+                    .card{
+                        .top_place{
+                            height: 155px;
+                            h3{
+                                font-size: 18px;
+                                line-height: 22px;
+                                margin-bottom: 8px;
+                            }
+                            p{
+                                font-size: 15px;
+                                line-height: 18px;
+                                margin-bottom: 12px;
+                            }
+                            .single_navigate_link{
+                                font-size: 15px;
+                                line-height: 12px;
+                                &::before{
+                                    width: 6px;
+                                    height: 10px;
+                                    background-repeat: no-repeat;
+                                }
+                            }
+                        }
+                        .bottom_place{
+                            height: 155px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    
+}
+
+@media screen and (max-width: 650px){
+    .Writers_wrapper{
+        .writers_wrapper{
+            .pag{
+                display: none;
+            }
+            .see_more{
+                display: block;
+                width: 100%;
+                &:last-child{
+                    margin-bottom: 40px;
+                }
+                button{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: #000000;
+                    background: #ECEBEB;
+                    border-radius: 20px;
+                    width: 100%;
+                    padding: 12px 0;
+                }
+            }
+            .writers_container{
+                h1{
+                    font-size: 24px;
+                    line-height: 36px;
+                    margin-bottom: 29px;
+                    margin-top: 40px;
+                }
+                .writers_card_wrapper{
+                    margin-bottom: 30px;
+                    flex-wrap: wrap;
+                    .card{
+                        width: 50%;
+                        height: 300px;
+                        display: flex;
+                        flex-direction: column;
+                        &:nth-child(3){
+                            display: flex;
+                            flex-direction: row;
+                            width: 100%;
+                            height: 150px;
+                            .top_place{
+                                width: 50%;
+                            }
+                            .bottom_place{
+                                width: 50%;
+                            }
+                        }
+                        .top_place{
+                            height: 150px;
+                            padding: 12px 5px;
+                            box-sizing: border-box;
+                            h3{
+                                font-size: 18px;
+                                line-height: 21px;
+                                margin-bottom: 10px;
+                                text-align: center;
+                            }
+                            p{
+                                font-size: 14px;
+                                line-height: 17px;
+                                margin-bottom: 20px;
+                            }
+                            .single_navigate_link{
+                                font-size: 12px;
+                                line-height: 14px;
+                                &::before{
+                                    width: 4px;
+                                    background-repeat: no-repeat;
+                                }
+                            }
+                        }
+                        .bottom_place{
+                            width: 100%;
+                            height: 150px;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

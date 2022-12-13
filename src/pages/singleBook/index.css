@@ -16,7 +16,7 @@
     justify-content: center !important;
 }
 
-@media  screen and (max-width:500px) {
+@media  screen and (max-width:1200px) {
     ._2ILZE{
         width: 100% !important;
         height: 350px !important;
