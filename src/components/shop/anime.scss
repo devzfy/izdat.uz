@@ -230,36 +230,41 @@ width: 100% !important;
 	#F7A302;
 }
 
-@media screen and (max-width:1024px) and (min-width:850px) {
+@media screen and (max-width:1024px) and (min-width:800px) {
 	.btn{
-		padding: 5px 22px;
-		font-size: 14px;
+		padding: 0 25px;
 		margin-bottom: 0;
 		font-size: 12px;
+		line-height: 23px;
 		}
 		.cart-button {
 			border: 2px solid #F7A302;
-			padding: 10px;
-			height: 39px;
+			padding: 5px;
+			height: 25px;
+			width: 36px;
 			border-radius: 20px;
 		}
 		
 		.cart-button .fa-shopping-cart {
-			font-size: 1.6em;
+			font-size: 1em;
+			left: -40%;
 		}
 		.cart-button .fa-box {
-			font-size: 1em;
+			font-size: 0.5em;
+		}
+		.cart-button span  {
+			top: 60%;
 		}
 	
 		.cart-button span svg {
-			width: 23px;
-			height: 23px;
+			width: 15px;
+			height: 15px;
 		}
 	
 		.vanilla{
 			.heart{
 				transform: scale(1);
-				top: 3px;
+				top: 5px;
 				svg{
 					width: 23px;
 				}
