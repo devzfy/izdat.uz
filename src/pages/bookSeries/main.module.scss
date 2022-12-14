@@ -81,8 +81,86 @@ border-radius: 20px;
     }
 } 
 }
+@media screen and (max-width: 1200px) {
+  .bookseries_wrapper {
+    .sidebar_wrapper {
+      width: 25%;
+    }
+    .right_side {
+      .pag {
+        display: none;
+      }
+      width: 70%;
+    }
+    .bookseries_wrapper_cards {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .card {
+        margin-bottom: 30px;
+        width: 24%;
+      }
+    }
 
-@media screen and (max-width: 500px) {
+    
+    
+  }
+  
+}
+
+@media screen and (max-width: 1200px) {
+  .bookseries_wrapper {
+    .sidebar_wrapper {
+      width: 25%;
+    }
+    .right_side {
+      width: 70%;
+    }
+    .bookseries_wrapper_cards {
+      .card {
+        width: 32%;
+      }
+    }
+    
+  }
+  .series_wrapper{
+    .single_books_wrapper{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .books{
+        width: 24%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 850px) {
+  .bookseries_wrapper {
+    .sidebar_wrapper {
+      width: 30%;
+    }
+    .right_side {
+      width: 65%;
+    }
+    .bookseries_wrapper_cards {
+      .card {
+        width: 48%;
+      }
+    }
+    
+  }
+  .series_wrapper{
+    .single_books_wrapper{
+      .books{
+        width: 32%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 749px) {
   .bookseries_wrapper {
     margin: 30px 0;
     .filter_btn {
@@ -136,7 +214,7 @@ border-radius: 20px;
       flex-wrap: wrap;
       .card {
         margin-bottom: 30px;
-        width: 49%;
+        width: 32%;
       }
     }
     
@@ -166,11 +244,31 @@ border-radius: 20px;
       justify-content: space-between;
       flex-wrap: wrap;
       .books{
-        width: 48%;
+        width: 32%;
       }
     }
     .see_more{
         display: block;
+    }
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .bookseries_wrapper {
+    .bookseries_wrapper_cards {
+      .card {
+        width: 49%;
+      }
+    }
+    
+  }
+
+  .series_wrapper {
+    .single_books_wrapper {
+      .books{
+        width: 48%;
+      }
     }
   }
 }

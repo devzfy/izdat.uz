@@ -136,10 +136,93 @@
           font-weight: 400;
           font-size: 25px;
           line-height: 150%;
-          /* or 38px */
-
           color: #000000;
           max-width: 574px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1100px) {
+  .SpellCheck_wrapper{
+    
+    .inner{
+      .holder{
+        margin: 40px 0 30px 0;
+        font-size: 27px;
+        line-height: 41px
+      } 
+      .checking_wrapper {
+        margin-bottom: 20px;
+        .field_one {
+          margin-bottom: 25px;
+          label {
+            font-size: 24px;
+            line-height: 27px;
+          }
+          textarea {
+            font-size: 14px;
+            line-height: 17px;
+            padding: 15px;
+            height: 164px;
+          }
+          .error_btns {
+            margin-top: 17px;
+            .btn_one {
+              width: 114px;
+              margin-right: 20px;
+              overflow: hidden;
+              &:nth-child(2){
+                width: 120px;
+              }
+              span {
+                font-size: 10px;
+                line-height: 12px;
+              }
+              button {
+                width: 31px;
+                font-size: 12px;
+                box-sizing: border-box;
+                line-height: 22px;
+                padding: 7px 0;
+              }
+            }
+          }
+        }
+        .changer {
+          button {
+            width: 50px;
+            height: 36px;
+            svg{
+              width: 8px;
+              height: 18px;
+            }
+          }
+        }
+        .check_btn {
+          margin: 20px 0 ;
+          button {
+            font-size: 17px;
+            line-height: 20px;
+          }
+        }
+      }
+      .why_izdat{
+        h1{
+          font-size: 24px;
+        }
+        .content_block{
+          flex-direction: column-reverse;
+          p{
+            max-width: 100%;
+            font-size: 17px;
+            margin-bottom: 20px;
+          }
+          img{
+            margin-bottom: 40px;      
+            width: 60%;
+          }
         }
       }
     }

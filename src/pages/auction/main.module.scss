@@ -89,6 +89,68 @@ h6{
     }
 }
 
+@media screen and (max-width: 1024px) {
+    h6{
+        margin: 40px 0 20px 0;
+        font-size: 27px;
+        line-height: 32px;
+    }
+    
+    .inner{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 0;
+        .auction_card{
+            box-sizing: border-box;
+            padding: 15px 20px;
+            width: 32%;
+            p{
+                font-size: 14px;
+                line-height: 21px;
+                margin-bottom: 5px;
+            }
+            h2{
+                font-size: 16px;
+                line-height: 21px;
+                height: 46px;
+            }
+            .rating{
+                margin-bottom: 18px;
+                span{
+                    font-size: 14px;
+                    line-height: 17px;
+                }
+            }
+            .submit_btn{
+                button{
+                    font-size: 14px;
+                    line-height: 21px;
+                    padding: 7px 28px;
+                }
+            }
+            img{
+                width: 200px;
+                height: 170px;
+                object-fit: cover;
+            }
+            .image{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .inner{
+        .auction_card{
+            width:48%;
+        }
+    }
+}
+
 @media screen and (max-width: 500px) {
     h6{
         margin: 40px 0 30px 0;
@@ -99,7 +161,8 @@ h6{
         display: flex;
         flex-wrap: wrap;
         .auction_card{
-            margin-bottom: 30px;                
+            margin-bottom: 30px;    
+            width: 100%;            
             p{
                 font-size: 15px;
                 line-height: 22px;
