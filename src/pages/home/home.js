@@ -97,7 +97,6 @@ const Home = () => {
                 </div>
 
                 <div className={clas.filter}>
-                    <div className="container">
                         <div className={clas.filter_btn}>
                             <button>
                                 <span>Фильтр</span>
@@ -122,7 +121,6 @@ const Home = () => {
                                 })
                             }
                         </div>
-                    </div>
                 </div>
             </div>
         </div>

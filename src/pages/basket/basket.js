@@ -5,7 +5,6 @@ import { useSelector } from 'react-redux'
 
 const Basket = () => {
     const books = useSelector(state => state.data)
-    console.log(books, 'books');
     return <React.Fragment>
         <div className="container">
             <div className={clas.Basket_wrapper}>
