@@ -248,6 +248,27 @@ button{
             }
         }
     }
+    .search_engine{
+        &.active{
+            display: block;
+            z-index: 999;
+            opacity: 1;
+        }
+        .inner{
+            width: 100%;
+        }
+        .search_results{
+            width: 70%;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .search_engine{
+        .search_results{
+            width: 100%;
+        }
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -269,17 +290,19 @@ button{
                     }
                     .burger_btn_two{
                         display: block; 
+                        width: 30px;
+                        height: 12px;
                     }
                 }
                 .logo{
-                    width: 78px;
+                    width: 135px;
                     position: absolute;
-                    top: 0;
-                    bottom: 0;
                     left: 0;
                     right: 0;
                     margin: auto;
                     .logo_link{
+                        font-size: 35px;
+                        line-height: 50px;
                     }
                 }
             }
@@ -287,10 +310,13 @@ button{
                 display: flex;
                 align-items: center;
                 gap: 10px;
+                svg{
+                    width: 25px;
+                    height: 25px;
+                }
                 .lang{
                     width: 40px;
                     display: none;
-
                     button{
                         font-family: 'Inter';
                         font-style: normal;
@@ -299,6 +325,41 @@ button{
                         line-height: 27px;
                         color: #FFFFFF;
                         cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .search_engine{
+        .inner{
+            margin: 10px auto 0 auto;
+            input{
+                width: 80%;
+            }
+        }
+        .search_results{
+            width: 100%;
+            .result_cards{
+                align-items: flex-start;
+                .name{
+                    align-items: flex-start;
+                    img{
+                        display: none;
+                    }
+                    h3{
+                        margin-bottom: 0;
+                        font-size: 14px;
+                    }
+                    span{
+                        font-size: 10px;
+                    }
+                }
+                .info{
+                    span{
+                        &:nth-child(1){
+                            font-size: 12px
+                        }
                     }
                 }
             }

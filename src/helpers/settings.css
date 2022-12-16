@@ -65,7 +65,7 @@
 
 @media screen and (max-width: 600px) {
     .slick-arrow{
-        top: 350px !important;
+        top: 380px !important;
         z-index: 999;
     }
     .slick-arrow{
@@ -73,7 +73,8 @@
         height: 45px !important;
     }
     .slick-arrow svg{
-        width: 100%;
+        width: 45px !important;
+        height: 45px !important;
     }
     
     .slick-prev{
