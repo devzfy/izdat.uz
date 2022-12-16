@@ -72,13 +72,74 @@
                 font-size: 20px;
                 line-height: 24px;
                 color: #FFFFFF;
-                padding: 10px 22px;
+                padding: 10px 0;
+                width: 100%;
             }
         }
     }
 }
 
-@media screen and (max-width: 500px) {
+
+
+@media screen and (max-width:1024px) {
+    .Soon_wrapper{
+        .holder{
+            font-size: 27px;
+            line-height: 32px;
+            margin: 20px 0 30px 0;
+        }
+        .soon_cards_wrapper{
+            .soon_cards{
+                padding: 10px;
+                width: 24%;
+                h3{
+                    font-size: 10px;
+                    line-height: 12px;
+                    margin: 9px 0 0px 0;
+                }
+                img{
+                    width: 108px;
+                    height: 136px;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center ;
+                }
+                .rating{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 0px;
+                    svg{
+                        width: 8px;
+                        height: 8px;
+                    }
+                    .rate{
+                        font-size: 9px;
+                        line-height: 10px;
+                        margin-left: 3px;
+                        margin-top: 2px;
+                    }
+                }
+                .price{
+                    font-size: 11px;
+                    line-height: 14px;
+                    margin-bottom: 12px;
+                }
+                button{
+                    font-size: 11px;
+                    line-height: 12px;
+                    padding:6px 0;
+                    width: 100%;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
     .Soon_wrapper{
         .holder{
             font-size: 24px;

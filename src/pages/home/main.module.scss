@@ -8,7 +8,8 @@ h1 {
     padding: 200px 0 100px 0;
     .banner {
       margin: 0 auto;
-      width: 1076px;
+      width: 100%;
+      max-width: 1076px;
       height: 517.92px;
       .slider_wrapper {
         background-color: #fff;
@@ -222,57 +223,6 @@ h1 {
     .home_wrapper {
         .inner {
           padding: 200px 0 100px 0;
-          .banner {
-            margin: 0 auto;
-            width: 577px;
-            height: 517.92px;
-            .slider_wrapper {
-              background-color: #fff;
-              width: 100%;
-              height: 100%;
-              border-radius: 15px;
-              margin: 0 auto;
-              overflow: hidden;
-              background-size: contain;
-              background-repeat: no-repeat;
-              padding: 70px 81px 0 98px;
-              box-sizing: border-box;
-              .slider_cards {
-                width: 100%;
-                height: 100%;
-                background-size: cover;
-                display: flex !important;
-                align-items: center !important;
-                justify-content: space-between;
-                h1 {
-                  font-family: "Inter";
-                  font-style: normal;
-                  font-weight: 600;
-                  font-size: 30px;
-                  line-height: 150%;
-                  color: #000000;
-                  max-width: 500px;
-                  margin-bottom: 70px;
-                }
-                button {
-                  background: #393a3f;
-                  border-radius: 20px;
-                  font-family: "inter";
-                  font-style: normal;
-                  font-weight: 500;
-                  font-size: 22px;
-                  line-height: 27px;
-                  color: #ffffff;
-                  padding: 12px 32px;
-                }
-                img {
-                  width: 429px;
-                  height: 325px;
-                  object-fit: contain;
-                }
-              }
-            }
-          }
         }
         .products {
           .inner {
@@ -297,57 +247,6 @@ h1 {
     .home_wrapper {
         .inner {
           padding: 200px 0 100px 0;
-          .banner {
-            margin: 0 auto;
-            width: 577px;
-            height: 517.92px;
-            .slider_wrapper {
-              background-color: #fff;
-              width: 100%;
-              height: 100%;
-              border-radius: 15px;
-              margin: 0 auto;
-              overflow: hidden;
-              background-size: contain;
-              background-repeat: no-repeat;
-              padding: 70px 81px 0 98px;
-              box-sizing: border-box;
-              .slider_cards {
-                width: 100%;
-                height: 100%;
-                background-size: cover;
-                display: flex !important;
-                align-items: center !important;
-                justify-content: space-between;
-                h1 {
-                  font-family: "Inter";
-                  font-style: normal;
-                  font-weight: 600;
-                  font-size: 30px;
-                  line-height: 150%;
-                  color: #000000;
-                  max-width: 500px;
-                  margin-bottom: 70px;
-                }
-                button {
-                  background: #393a3f;
-                  border-radius: 20px;
-                  font-family: "inter";
-                  font-style: normal;
-                  font-weight: 500;
-                  font-size: 22px;
-                  line-height: 27px;
-                  color: #ffffff;
-                  padding: 12px 32px;
-                }
-                img {
-                  width: 429px;
-                  height: 325px;
-                  object-fit: contain;
-                }
-              }
-            }
-          }
         }
         .products {
           .inner {
@@ -371,54 +270,38 @@ h1 {
 @media screen and (max-width: 1024px){
     .home_wrapper {
         .inner {
-          padding: 200px 0 100px 0;
+          padding: 100px 0 60px 0;
           .banner {
             margin: 0 auto;
-            width: 577px;
-            height: 517.92px;
+            width: 100%;
+            max-width: 577px;
+            height: 254px;
             .slider_wrapper {
-              background-color: #fff;
-              width: 100%;
-              height: 100%;
-              border-radius: 15px;
-              margin: 0 auto;
-              overflow: hidden;
-              background-size: contain;
-              background-repeat: no-repeat;
-              padding: 70px 81px 0 98px;
-              box-sizing: border-box;
+              padding: 0;
+              position: relative;
               .slider_cards {
-                width: 100%;
-                height: 100%;
-                background-size: cover;
-                display: flex !important;
-                align-items: center !important;
-                justify-content: space-between;
+                padding: 60px 0 0 48px;
+                box-sizing: border-box;
                 h1 {
-                  font-family: "Inter";
-                  font-style: normal;
-                  font-weight: 600;
-                  font-size: 30px;
-                  line-height: 150%;
-                  color: #000000;
-                  max-width: 500px;
-                  margin-bottom: 70px;
+                  font-size: 17px;
+                  line-height: 25px;
+                  width: 266px;
+                  margin-bottom: 34px;
                 }
                 button {
-                  background: #393a3f;
-                  border-radius: 20px;
-                  font-family: "inter";
-                  font-style: normal;
-                  font-weight: 500;
-                  font-size: 22px;
-                  line-height: 27px;
-                  color: #ffffff;
-                  padding: 12px 32px;
+                  font-size: 12px;
+                  line-height: 14px;
+                  padding: 7px 16px;
                 }
                 img {
-                  width: 429px;
-                  height: 325px;
+                  width:280px;
+                  height: 187px;
                   object-fit: contain;
+                  position: absolute;
+                  right: 48px;
+                  top: 60px;
+                  bottom: 0;
+                  margin: auto;
                 }
               }
             }
@@ -446,58 +329,8 @@ h1 {
 @media screen and (max-width: 800px){
     .home_wrapper {
         .inner {
-          padding: 200px 0 100px 0;
-          .banner {
-            margin: 0 auto;
-            width: 577px;
-            height: 517.92px;
-            .slider_wrapper {
-              background-color: #fff;
-              width: 100%;
-              height: 100%;
-              border-radius: 15px;
-              margin: 0 auto;
-              overflow: hidden;
-              background-size: contain;
-              background-repeat: no-repeat;
-              padding: 70px 81px 0 98px;
-              box-sizing: border-box;
-              .slider_cards {
-                width: 100%;
-                height: 100%;
-                background-size: cover;
-                display: flex !important;
-                align-items: center !important;
-                justify-content: space-between;
-                h1 {
-                  font-family: "Inter";
-                  font-style: normal;
-                  font-weight: 600;
-                  font-size: 30px;
-                  line-height: 150%;
-                  color: #000000;
-                  max-width: 500px;
-                  margin-bottom: 70px;
-                }
-                button {
-                  background: #393a3f;
-                  border-radius: 20px;
-                  font-family: "inter";
-                  font-style: normal;
-                  font-weight: 500;
-                  font-size: 22px;
-                  line-height: 27px;
-                  color: #ffffff;
-                  padding: 12px 32px;
-                }
-                img {
-                  width: 429px;
-                  height: 325px;
-                  object-fit: contain;
-                }
-              }
-            }
-          }
+          padding: 100px 0 60px 0;
+          
         }
         .products {
           .inner {
@@ -522,47 +355,8 @@ h1 {
   .home_wrapper {
     background-color: #fff;
     .inner {
-      padding: 0;
-      .banner {
-        padding: 100px 0 70px 0;
-        width: 100%;
-        height: 469px;
-        .slider_wrapper {
-          padding: 0;
-          background-image: url("../../assets/images/Union (4).png") !important;
-          background-size: 404px, 469px !important;
-          background-position: center;
-          svg {
-            width: 45px !important;
-            height: 45px !important;
-          }
-          .slider_cards {
-            flex-direction: column-reverse !important;
-            justify-content: center !important;
-            align-items: center !important;
-            h1 {
-              font-size: 24px;
-              text-align: center;
-              margin-bottom: 33px;
-            }
-            button {
-              font-size: 17px;
-            }
-            img {
-              width: 300px;
-              height: 200px;
-              margin-bottom: 11px;
-              object-fit: contain;
-            }
-            .left_side {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: center;
-            }
-          }
-        }
-      }
+      padding: 100px 0 60px 0;
+      
     }
     .sales_ads {
       display: flex;
@@ -636,6 +430,40 @@ h1 {
 
 @media screen and (max-width: 600px) {
   .home_wrapper {
+    .inner{
+      .banner{
+        height: auto;
+        .slider_wrapper{
+          background: #F7C16E;
+          background-image: none !important;
+          height: 440px;
+          clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+          border-radius: 20px;
+          overflow: hidden;
+          .slider_cards{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column-reverse;
+            text-align: center;
+            padding: 20px 0;
+            h1{
+              font-size: 24px;
+              line-height: 150%;
+              width: 100%;
+            }
+            img{
+              position: static;
+            }
+            button{
+              padding: 12px 33px;
+              font-size: 17px;
+              line-height: 21px;
+            }
+          }
+        }
+      }
+    }
     .filter {
       .filter_results {
         .result_card {

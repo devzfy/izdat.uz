@@ -35,17 +35,53 @@
     background-color: #FF9A00 !important;
 }
 
-@media screen and (max-width: 500px) {
+
+
+@media screen and (max-width:1024px) {
+    .slick-slider, .slick-list{
+        height: 100% !important;
+    }
+    .slick-dots{
+        bottom: 10px !important;
+    }
+
     .slick-arrow{
-        top: 434px !important;
+        top: 40% !important;
+        width: 35px !important;
+        height: 35px !important;
+    }
+    .slick-arrow svg{
+        width: 100%;
     }
     
     .slick-prev{
-        left: 20px !important;
+        left: 10px !important;
     }
     
     .slick-next{
-        right: 46px !important;
+        right: 10px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .slick-arrow{
+        top: 350px !important;
+        z-index: 999;
+    }
+    .slick-arrow{
+        width: 45px !important;
+        height: 45px !important;
+    }
+    .slick-arrow svg{
+        width: 100%;
+    }
+    
+    .slick-prev{
+        left: 40px !important;
+    }
+    
+    .slick-next{
+        right:40px !important;
     }
    
 }

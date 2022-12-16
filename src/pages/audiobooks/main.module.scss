@@ -13,10 +13,12 @@
     display: none;  
 }
 .cards {
-  gap: 30px;
   display: flex;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  align-items: flex-start;
+  justify-content: space-between;
+  .vanilla_card{
+    width:19%;
+  }
 }
 .filter_btn {
   display: none;
@@ -31,10 +33,12 @@
     .change_blocks {
       .first_block {
         .cards {
-          gap: 30px;
           display: flex;
-          grid-template-columns: repeat(1, 1fr);
-          grid-template-rows: repeat(5, 1fr);
+          align-items: flex-start;
+          justify-content: space-between;
+          .vanilla_card{
+            width: 19%;
+          }
         }
       }
     }
@@ -106,7 +110,117 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width:1200px) {
+.cards {
+  .vanilla_card{
+    width:24%;
+    &:last-child{
+      display: none;
+    }
+  }
+}
+.AudioBook_wrapper {
+  .audio_books {
+    .change_blocks {
+      .first_block {
+        .cards {
+          .vanilla_card{
+            width: 24%;
+          }
+        }
+      }
+    }
+  }
+
+  .categories {
+    overflow: scroll;
+    width: 100%;
+    gap: 24px;
+    .category {
+      &:nth-child(1){
+        min-width: 280px;
+      }
+      &:nth-child(2){
+        min-width: 501px;
+      }
+      &:nth-child(3){
+        min-width: 239px;
+      }
+      &:nth-child(4){
+        min-width: 242px;
+      }
+    }
+  }
+}
+}
+
+@media screen and (max-width:830px) {
+  .holder,
+.all_cards {
+  font-size: 27px;
+  line-height: 32px;
+  margin: 20px 0 30px 0;
+}
+  .cards {
+    .vanilla_card{
+      width:32%;
+      &:last-child{
+        display: none;
+      }
+      &:nth-child(4){
+        display: none;
+      }
+    }
+  }
+  .AudioBook_wrapper {
+    .audio_books {
+      .change_blocks {
+        .first_block {
+          .cards {
+            .vanilla_card{
+              width: 32%;
+            }
+          }
+        }
+      }
+      
+    }
+    .ads{
+      height: 120px;
+    }
+  
+    .categories {
+      overflow: scroll;
+      width: 100%;
+      gap: 14px;
+      .category {
+        span{
+          font-size: 14px;
+          line-height: 17px;
+        }
+        svg{
+          width: 33px;
+          height: 33px;
+        }
+        &:nth-child(1){
+          min-width: 157px;
+        }
+        &:nth-child(2){
+          min-width: 290px;
+        }
+        &:nth-child(3){
+          min-width: 139px;
+        }
+        &:nth-child(4){
+          min-width: 142px;
+        }
+      }
+    }
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
   .holder,
   .all_cards {
     font-size: 24px;

@@ -1,3 +1,11 @@
+ul{
+    margin-bottom: 0;
+}
+button{
+    cursor: pointer;
+}
+
+
 .Header_wrapper{
     background: #222;
     padding: 20px 0;
@@ -193,31 +201,85 @@
     }
 }
 
-
-
-button{
-    cursor: pointer;
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width:1024px) {
     .Header_wrapper{
-        padding: 20px 0 15px 0;
+        padding: 10px 0;
         .inner{
             .header_navs{
-                position: relative;
+                .logo{
+                    .logo_link{
+                        font-size: 20px;
+                        line-height: 28px;
+                    }
+                }
+                .header_links{
+                    gap: 27px;
+                    .link{
+                        font-size: 12px;
+                        line-height: 14px;
+                    }
+                }
+                &.burger{
+                    .burger_btn{
+                        width: 21px;
+                        height: 13px;
+                        svg{
+                            width: 21px;
+                            height: 13px;
+                        }
+                    }
+                }
+            }
+            .header_navs_term{
+                svg{
+                    width: 17px;
+                    height: 17px;
+                    margin-top: 6px;
+                }
+                gap: 13px;
+                .lang{
+                    width: 22px;
+                    height: 17px;
+                    button{
+                        font-size: 12px;
+                        line-height: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .Header_wrapper{
+        padding: 15px 0;
+        .inner{
+            position: relative;
+            .header_navs{
+                position: static;
                 .header_links{
                     display: none;
                 }
                 &.burger{
                     display: flex;
                     align-items: center;
-                    width: 70%;
                     justify-content: space-between;
                     .burger_btn{
                         display: none;
                     }
                     .burger_btn_two{
                         display: block; 
+                    }
+                }
+                .logo{
+                    width: 78px;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    .logo_link{
                     }
                 }
             }
@@ -228,6 +290,7 @@ button{
                 .lang{
                     width: 40px;
                     display: none;
+
                     button{
                         font-family: 'Inter';
                         font-style: normal;

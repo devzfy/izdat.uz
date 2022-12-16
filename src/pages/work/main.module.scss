@@ -137,7 +137,7 @@
       font-weight: 600;
       font-size: 30px;
       line-height: 37px;
-      color: #000000;
+      color: #F7A302;
       margin-bottom: 25px;
     }
     span {
@@ -191,7 +191,112 @@
   }
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width: 1024px) {
+  .Work_wrapper {
+    overflow-x: hidden;
+    .see_more{
+      display: none;
+    }
+    .holder {
+      margin: 40px 0 30px 0;
+      font-size: 27px;
+      line-height: 32px;
+    }
+    .inner {
+      .work_cards {
+        padding: 20px;
+        margin-bottom: 30px;
+        .top {
+          margin-bottom: 12px;
+          h4 {
+            font-size: 17px;
+            line-height: 20px;
+            &.summa {
+              color: #f7a302;
+            }
+          }
+        }
+        .middle {
+          margin-bottom: 20px;
+          h5 {
+            font-size: 13px;
+            line-height: 15px;
+          }
+        }
+        p {
+          font-size: 15px;
+          line-height: 22px;
+          margin-bottom: 25px;
+        }
+        .bottom {
+          .btns {
+            gap: 25px;
+            button,
+            .single_link {
+              font-size: 12px;
+              line-height: 14px;
+              padding: 6px 13px;
+            }
+            .single_link {
+              background: #393a3f;
+            }
+          }
+          .views {
+            gap: 25px;
+            span {
+              font-size: 13px;
+              line-height: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .full_content {
+    margin: 40px;
+    h2 {
+      font-size: 22px;
+      line-height: 26px;
+    }
+    .info {
+      padding-top: 40px;
+      h3 {
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 13px;
+      }
+      span {
+        margin-bottom: 25px;
+        font-size: 13px;
+        line-height: 15px;
+      }
+      p {
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 22px;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 13px;
+        li {
+          font-size: 13px;
+          line-height: 17px;
+        }
+      }
+      button {
+        font-size: 13px;
+        line-height: 15px;
+        margin-top: 35px;
+        padding: 7px 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:600px){
     .Work_wrapper {
         .pag{
             display: none;
