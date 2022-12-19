@@ -4,6 +4,9 @@ ul{
 button{
     cursor: pointer;
 }
+header{
+    display: flex;
+}
 
 
 .Header_wrapper{
@@ -13,6 +16,10 @@ button{
     position: fixed;
     top: 0;
     z-index: 10;
+    transition: .2s;
+    &.active{
+        left: 200px;
+    }
     .inner{
         display: flex;
         align-items: center;

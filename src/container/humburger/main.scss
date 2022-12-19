@@ -1,0 +1,42 @@
+.overlay{
+    background-color: transparent;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    transition: .2s;
+    cursor: pointer;
+    &.active{
+        background-color:  rgba($color: #000000, $alpha: .6);
+        backdrop-filter: blur(2px);
+        z-index: 1;
+    }
+}
+
+.Humburger{
+    min-width: 375px;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    z-index: -1;
+    transition: .3s;
+    box-sizing: border-box;
+    padding: 40px 30px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    &.active{
+        z-index: 1;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    .Humburger{
+        min-width: 275px;
+        padding: 30px 20px;
+    }
+}

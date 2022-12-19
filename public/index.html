@@ -48,12 +48,19 @@
     }
     #root{
       transition: 0.5s;
-    }
+      background-color: #fff;
+      }
     #root.active{
-      transform: translate3d(340px,0,0);
+      transform: translate(375px,0);
     }
     .vanilla{
       background-color: transparent !important;
+    }
+
+    @media screen and (max-width: 768px) {
+      #root.active{
+      transform: translate(275px,0);
+    }
     }
   </style>
   <body>

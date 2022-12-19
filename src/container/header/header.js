@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { ShopBasket, SearchIcon, Close } from "../../assets/icons";
 import { BurgerBtn, BurgerBtnRes } from "../../assets/icons";
 import { GetData } from "../../hooks/getdata";
+import Humburger from "../humburger/humb";
 const Header = () => {
   const ref = useRef(null);
   const [search, setSearch] = useState("");
@@ -166,6 +167,7 @@ const Header = () => {
             </div>
           </div>
         </div>
+        <Humburger setState={setActiveSidebar} active={activeSidebar}/>
       </header>
     </React.Fragment>
   );

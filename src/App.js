@@ -1,11 +1,17 @@
 import {routes} from './routes'
 import React from "react";
 import { Header, Footer } from './container';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 function App() {
+  const location  = useLocation()
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  }, [location.pathname])
+
   return (
       <div className='App'>
-        <Router>
         <Header/>
         <Routes>
           {
@@ -15,7 +21,6 @@ function App() {
           }
         </Routes>
       <Footer/>
-      </Router>
       </div>
   );
 }
