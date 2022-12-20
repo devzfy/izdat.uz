@@ -225,6 +225,20 @@
                     }
                     form{
                         max-width: 100%;
+                        input, textarea{
+                            padding: 18px;
+                            font-size: 17px;
+                            line-height: 20px;
+                        }
+                        textarea{
+                            height: 140px;
+                        }
+
+                        button{
+                            padding: 12px 36px;
+                            font-size: 17px;
+                            line-height: 20px;
+                        }
                     }
                 }
             }

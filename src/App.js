@@ -4,6 +4,7 @@ import { Header, Footer } from './container';
 import { Routes, Route } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
+import './main.scss'
 function App() {
   const location  = useLocation()
   useEffect(()=>{

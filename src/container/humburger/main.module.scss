@@ -33,6 +33,13 @@
         display: flex;
         align-items: center;
         gap: 10px;
+        button{
+            transform: rotate(90deg);
+            img{
+                width: 10px;
+                margin-left: 3px;
+            }
+        }
     }
   }
 }

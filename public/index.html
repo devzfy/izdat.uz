@@ -40,27 +40,16 @@
       outline: none;
       list-style: none;
     }
-    body{
-      background-color: #fff;
-    }
     body.active{
       overflow: hidden;
-    }
-    #root{
-      transition: 0.5s;
-      background-color: #fff;
-      }
-    #root.active{
-      transform: translate(375px,0);
+      min-height: 100vh;
     }
     .vanilla{
       background-color: transparent !important;
     }
-
-    @media screen and (max-width: 768px) {
-      #root.active{
-      transform: translate(275px,0);
-    }
+    #root{
+      overflow: hidden;
+      background-color: #fff;
     }
   </style>
   <body>
