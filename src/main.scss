@@ -16,3 +16,11 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .App{
+        &.active{
+            transform: translate(275px, 0);
+        }
+    }
+}
