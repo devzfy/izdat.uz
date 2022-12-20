@@ -110,7 +110,9 @@ const Profile = ()=>{
             <div className={clas.my_orders}>
                 <h1 className={clas.order_holder}>Мои заказы</h1>
                 <div className={clas.order_list}>
-                <Table dataSource={data} columns={columns} />;
+                  <div className={clas.table}>
+                  <Table dataSource={data} columns={columns} />;
+                  </div>
                 </div>
             </div>
         </div>

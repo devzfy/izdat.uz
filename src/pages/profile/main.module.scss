@@ -13,7 +13,7 @@
             }
             button{
                 position: absolute;
-                top: 0px;
+                top: 8px;
                 right: 8px;
                 svg{
                     width: 40px;
@@ -71,6 +71,156 @@
             color: #000000;
             text-align: left;
             margin: 100px 0 40px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .profile_wrapper{
+        margin-top: 100px;
+        .inner{
+            .profile_img{
+                img{
+                    width: 197px;
+                    height: 171px; 
+                }
+                button{
+                    position: absolute;
+                    top: 5px;
+                    right: 5px;
+                    svg{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+            .profile_info{
+                &::before{
+                    left: -70px;
+                    height: 80%;
+                    bottom: 0;
+                }
+                .info_ul{
+                    li{
+                        margin-bottom: 12px;
+                        span{
+                            font-size: 14px;
+                            line-height: 17px;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .my_orders{
+            .order_holder{
+                font-size: 27px;
+                line-height: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .profile_wrapper{
+        .inner{
+            gap: 57px;
+            .profile_img{
+                img{
+                    width: 197px;
+                    height: 170px; 
+                }
+                button{
+                    top: 5px;
+                    right: 5px;
+                    svg{
+                        width: 20px;
+                    }
+                }
+            }
+            .profile_info{
+                &::before{
+                    left: -30px;
+                }
+                .info_ul{
+                    li{
+                        margin-bottom: 10px;
+                        span{
+                            font-size: 18px;
+                            line-height: 21px;
+                        }
+                        &:nth-child(1){
+                            span{
+                                color: #8D8787;
+                            }
+                            width: 120px;
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .my_orders{
+            .order_holder{
+                font-size: 20px;
+                margin: 40px 0 20px 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .profile_wrapper{
+        margin-top: 100px;
+        .inner{
+            flex-direction: column;
+            .profile_img{
+                position: relative;
+                img{
+                    width: 280px;
+                    height: 243px; 
+                }
+            }
+            .profile_info{
+                &::before{
+                    display: none;
+                }
+                .info_ul{
+                    li{
+                        margin-bottom: 18px;
+                        span{
+                            font-size: 18px;
+                            line-height: 21px;
+                        }
+                        &:nth-child(1){
+                            width: 170px;
+                            margin-right: 55px;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .my_orders{
+            .order_holder{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 35px;
+                line-height: 43px;
+                color: #000000;
+                text-align: left;
+                margin: 100px 0 40px 0;
+            }
+            .order_list{
+                overflow: scroll;
+                width: 100%;
+            }
+            .table{
+                min-width: 600px;
+                overflow: scroll;
+            }
         }
     }
 }
