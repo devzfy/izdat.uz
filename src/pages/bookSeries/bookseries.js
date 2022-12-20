@@ -7,10 +7,10 @@ import {GetData} from '../../hooks/getdata'
 import {set_book} from '../../redux/action/action'
 import { useDispatch } from 'react-redux'
 import { Filter } from '../../assets/icons'
-
+import FilterContent from '../../container/filter/filter'
 
 const BookSeries = ()=>{
-    // const [page, setPage] = useState('16')
+    const [filter, setFilter] = useState(false)
     const dispatch = useDispatch()
     const [loading,data, error] = GetData('https://www.googleapis.com/books/v1/volumes?q=fiction&filter=paid-ebooks&key=AIzaSyC9ROl3QupFvo-5ZqG3AD7LS_ECZqy8GsI' + `&maxResults=${'16'}`)
     if(loading) return 'Loading ...'
@@ -47,8 +47,8 @@ const BookSeries = ()=>{
                         <Sidebar/>
                     </div>
                     <div className={clas.filter_btn}>
-                        <button>
-                            <span>Фильтр</span>
+                        <button onClick={()=> setFilter(true)}>
+                            <span>Каталог</span>
                             <Filter/>
                         </button>
                     </div>
@@ -91,6 +91,7 @@ const BookSeries = ()=>{
                     <div className="container">
                     <Recommend/>
                     </div>
+                    <FilterContent state={filter} setState={setFilter}/>
     </React.Fragment>
 }
 export default BookSeries

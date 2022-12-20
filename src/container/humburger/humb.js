@@ -33,29 +33,59 @@ const Humburger = ({ active, setState }) => {
             opacity: 1,
         },
     };
-    const [mini_items, setMini_items] = useState(' ')
-    
-    const ref = useRef(null);
+    const [mini_items, setMini_items] = useState({
+        first: false,
+        second: true,
+        thirt: false
+    })
+
+    const clickOne = () => {
+        setMini_items({
+             first: !mini_items.first,
+             second: false,
+             thirt: false 
+        })
+    }
+    const clickTwo = () => {
+        setMini_items({
+            first: false,
+            second: !mini_items.second,
+            thirt: false 
+       })
+    }
+    const clickThirt = () => {
+        setMini_items({
+            first: false,
+            second: false,
+            thirt: !mini_items.thirt 
+       })
+    }
+
     const refTwo = useRef(null);
     useEffect(() => {
         const home = document.querySelector(".App");
         const body = document.querySelector("body");
         if (active) {
+            refTwo.current.classList.add("active");
             setTimeout(() => {
-                refTwo.current.classList.add("active");
-            }, 400);
+            }, 300);
             home.classList.add("active");
             body.classList.add("active");
         } else {
-            refTwo.current.classList.remove("active");
+            setTimeout(() => {
+                refTwo.current.classList.remove("active");
+            }, 0);
             home.classList.remove("active");
             body.classList.remove("active");
         }
     }, [active]);
 
+
+
     return ReactDOM.createPortal(
         <React.Fragment>
             <div ref={refTwo} className="Humburger">
+                <button onClick={() => setState(false)} className={clas.close_btn}>&times;</button>
                 <Link to={'/profile'} className={clas.enter_profile}>Войти в личный кабинет</Link>
                 <motion.ul
                     variants={container}
@@ -68,9 +98,9 @@ const Humburger = ({ active, setState }) => {
                             <Link to={"/writers"} className={`${clas.menu_link} ${clas.arrow}`}>
                                 Авторы
                             </Link>
-                            <button onClick={() => setMini_items('first')}><img src={Arrow} alt="" /></button>
+                            <button onClick={clickOne}><img src={Arrow} alt="" /></button>
                         </div>
-                        <div className={`${clas.mini_items2} ${mini_items === 'first' ? clas.active : ''}`}>
+                        <div className={`${clas.mini_items2} ${mini_items.first ? clas.active : ''}`}>
                             <ul>
                                 <li><button>Произведения авторов</button></li>
                                 <li><button>Молодые писатели</button></li>
@@ -88,9 +118,9 @@ const Humburger = ({ active, setState }) => {
                             <Link to={'/'} className={`${clas.menu_link} ${clas.arrow}`}>
                                 Каталог
                             </Link>
-                            <button onClick={() => setMini_items('second')}><img src={Arrow} alt="" /></button>
+                            <button onClick={clickTwo}><img src={Arrow} alt="" /></button>
                         </div>
-                        <div className={`${clas.mini_items} ${mini_items === 'second' ? clas.active : ''}`}>
+                        <div className={`${clas.mini_items} ${mini_items.second ? clas.active : ''}`}>
                             <ul>
                                 <li><button>Художественная литература</button></li>
                                 <li><button>Психология и мотивация</button></li>
@@ -126,9 +156,9 @@ const Humburger = ({ active, setState }) => {
                             <Link to={"/rating"} className={`${clas.menu_link} ${clas.arrow}`}>
                                 Рейтинги
                             </Link>
-                            <button onClick={() => setMini_items('thirt')}><img src={Arrow} alt="" /></button>
+                            <button onClick={clickThirt}><img src={Arrow} alt="" /></button>
                         </div>
-                        <div className={`${clas.mini_items3} ${mini_items === 'thirt' ? clas.active : ''}`}>
+                        <div className={`${clas.mini_items3} ${mini_items.thirt ? clas.active : ''}`}>
                             <ul>
                                 <li><button>Авторов</button></li>
                                 <li><button>Издательств</button></li>

@@ -45,16 +45,16 @@ const Shopcard = ({
             add(id)
           }}
           disabled={active}
-          class={`cart-button ${active ? "clicked" : ""}`}
+          className={`cart-button ${active ? "clicked" : ""}`}
         >
-          <span class="add-to-cart">
+          <span className="add-to-cart">
             <Korzina />{" "}
           </span>
-          <span class="added">
+          <span className="added">
             <True />
           </span>
-          <i class="fas fa-shopping-cart fa-2xs" style={{color: '#F7A302'}}></i>
-          <i class="fas fa-box"></i>
+          <i className="fas fa-shopping-cart fa-2xs" style={{color: '#F7A302'}}></i>
+          <i className="fas fa-box"></i>
         </button>
       </div>
     </div>

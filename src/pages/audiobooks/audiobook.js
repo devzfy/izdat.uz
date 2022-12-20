@@ -4,7 +4,9 @@ import React, { useState } from 'react'
 import { Shopcard, PaginationCustome } from '../../components'
 import Image1 from '../../assets/images/s-l500 2.png'
 import { Filter, Planet } from '../../assets/icons'
+import FilterContent from '../../container/filter/filter'
 const AudioBook = () => {
+    const [filter, setFilter] = useState(false)
     const data1 = {
         image: Image1,
         name: 'Тонкое искусство пофигизма. Марк Мэнсон',
@@ -63,8 +65,8 @@ const AudioBook = () => {
                 
                 <h1 className={clas.holder}>Классическая литература</h1>
                 <div className="container">
-                <button className={clas.filter_btn}>
-                    <span>Фильтр</span>
+                <button className={clas.filter_btn} onClick={()=> setFilter(true)}>
+                    <span>Каталог</span>
                     <Filter/>
                 </button>
                 <h1 className={` ${clas.all_cards}`}>Все товары</h1>
@@ -185,6 +187,7 @@ const AudioBook = () => {
         <div className="container">
         <Recommend />
         </div>
+        <FilterContent state={filter} setState={setFilter}/>
     </React.Fragment>
 }
 

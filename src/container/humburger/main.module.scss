@@ -9,7 +9,13 @@
   line-height: 27px;
   color: #ffffff;
   margin-bottom: 25px;
-  display: block;
+  display: inline-block;
+}
+.close_btn{
+  font-size: 30px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
 }
 .menu_ul {
   height: 100%;
@@ -28,6 +34,7 @@
       line-height: 30px;
       color: #161616;
       position: relative;
+      text-align: left;
     }
     .menu_heading{
         display: flex;
@@ -58,6 +65,7 @@
         font-size: 15px;
         line-height: 27px;
         color: #737171;
+        text-align: left;
       }
     }
   }
