@@ -1,88 +1,98 @@
 .slick-arrow::before {
-    display: none !important;
+  display: none !important;
 }
-.slick-arrow{
-    top: 140px !important;
-}
-
-.slick-prev{
-    left: -102px !important;
+.slick-arrow {
+  top: 140px !important;
 }
 
-.slick-next{
-    right: -30px !important;
+.slick-prev {
+  left: -102px !important;
 }
 
-.slick-dots{
-    bottom: -50px !important;
+.slick-next {
+  right: -30px !important;
 }
 
-.slick-dots li button{
-    width: 10px !important;
-    height: 10px !important;
-    background-color: #fff !important;
-    border-radius: 50% !important;
+.slick-dots {
+  bottom: -50px !important;
 }
 
-.slick-dots li button::before{
-    display: none !important;
-}
-.slick-dots li{
-    margin: 0 !important;
-}
-
-.slick-dots li.slick-active button{
-    background-color: #FF9A00 !important;
+.slick-dots li button {
+  width: 10px !important;
+  height: 10px !important;
+  background-color: #fff !important;
+  border-radius: 50% !important;
 }
 
+.slick-dots li button::before {
+  display: none !important;
+}
+.slick-dots li {
+  margin: 0 !important;
+}
 
+.slick-dots li.slick-active button {
+  background-color: #ff9a00 !important;
+}
 
-@media screen and (max-width:1024px) {
-    .slick-slider, .slick-list{
-        height: 100% !important;
-    }
-    .slick-dots{
-        bottom: 10px !important;
-    }
+@media screen and (max-width: 1024px) {
+  .slick-slider,
+  .slick-list {
+    height: 100% !important;
+  }
+  .slick-dots {
+    bottom: 10px !important;
+  }
 
-    .slick-arrow{
-        top: 40% !important;
-        width: 35px !important;
-        height: 35px !important;
-    }
-    .slick-arrow svg{
-        width: 100%;
-    }
-    
-    .slick-prev{
-        left: 10px !important;
-    }
-    
-    .slick-next{
-        right: 10px !important;
-    }
+  .slick-arrow {
+    top: 40% !important;
+    width: 35px !important;
+    height: 35px !important;
+  }
+  .slick-arrow svg {
+    width: 100%;
+  }
+
+  .slick-prev {
+    left: 10px !important;
+  }
+
+  .slick-next {
+    right: 10px !important;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .slick-arrow{
-        top: 380px !important;
-        z-index: 999;
-    }
-    .slick-arrow{
-        width: 45px !important;
-        height: 45px !important;
-    }
-    .slick-arrow svg{
-        width: 45px !important;
-        height: 45px !important;
-    }
-    
-    .slick-prev{
-        left: 40px !important;
-    }
-    
-    .slick-next{
-        right:40px !important;
-    }
-   
+  .slick-arrow {
+    top: 380px !important;
+    z-index: 999;
+  }
+  .slick-arrow {
+    width: 45px !important;
+    height: 45px !important;
+  }
+  .slick-arrow svg {
+    width: 45px !important;
+    height: 45px !important;
+  }
+
+  .slick-prev {
+    left: 40px !important;
+  }
+
+  .slick-next {
+    right: 40px !important;
+  }
+  .slick-dots {
+    margin-bottom: -10px;
+  }
+  .slick-dots li button {
+    width: 7px !important;
+    height: 7px !important;
+    padding: 0 !important;
+  }
+  .slick-dots li {
+    width: 15px !important;
+    height: 15px !important;
+  }
 }

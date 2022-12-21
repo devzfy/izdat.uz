@@ -22,15 +22,15 @@ const SampleNextArrow = (props)=> {
 
 export const settings = {
     dots: true,
-      fade: true,
+      fade: false,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 3000,
-      nextArrow: <SampleNextArrow />,
-      prevArrow: <SamplePrevArrow />
+      nextArrow: false,
+      prevArrow: false
 
 }
 

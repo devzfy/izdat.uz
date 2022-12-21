@@ -434,29 +434,32 @@ h1 {
       .banner{
         height: auto;
         .slider_wrapper{
-          background: #F7C16E;
-          background-image: none !important;
-          height: 440px;
-          clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+          background-image:none !important;
+          height: 310px;
           border-radius: 20px;
           overflow: hidden;
+          background-color: #F7C16E;
           .slider_cards{
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column-reverse;
             text-align: center;
-            padding: 20px 0;
+            padding:  0;
             h1{
-              font-size: 24px;
+              font-size: 22px;
               line-height: 150%;
               width: 100%;
+              text-align: center;
+              margin-bottom: 15px;
             }
             img{
               position: static;
+              width: 229px;
+height: 153px;
             }
             button{
-              padding: 12px 33px;
+              padding: 10px 33px;
               font-size: 17px;
               line-height: 21px;
             }
