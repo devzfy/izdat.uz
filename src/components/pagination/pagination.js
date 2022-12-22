@@ -1,22 +1,21 @@
 import { Pagination } from 'antd';
-import './main.css'
+import './main.scss'
 import { Arrow, Arrow2 } from "../../assets/icons";
 import 'antd/dist/reset.css';
 
 const PaginationCustome = ()=>{
-    const itemRender = (_, type, originalElement) =>{
-        if(type === 'prev'){
-            return <Arrow/>
-        }else if(type === 'next'){
-            return <Arrow2/>
-        }
-        return originalElement
-    }
-    const change = ()=>[
-        console.log('changed')
-    ]
     return <div className="pagination-wrapper">
-        <Pagination size="small" total={40} defaultPageSize={16} itemRender={itemRender} onChange={change}/>
+        <div className={"arrow"}>
+            {/* <button><Arrow/></button> */}
+        </div>
+        <div className={"steps"}>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+        </div>
+        <div className={"arrow"}>
+            <button><Arrow2/></button>
+        </div>
     </div>
 }
 

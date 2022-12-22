@@ -1,4 +1,4 @@
-import { ArrowNext, ArrowPrev } from "../assets/icons";
+import { ArrowNext, ArrowPrev, Arrow, Arrow2 } from "../assets/icons";
 
 const SampleNextArrow = (props)=> {
     const { className, onClick } = props;
@@ -20,6 +20,27 @@ const SampleNextArrow = (props)=> {
     );
   }
 
+
+  const Arrow1 = (props)=> {
+    const { className, onClick } = props;
+    return (
+      <button
+        className={className}
+        onClick={onClick}
+      ><Arrow/></button>
+    );
+  }
+
+  const Arrow21 = (props)=> {
+    const { className, onClick } = props;
+    return (
+      <button
+        className={className}
+        onClick={onClick}
+      ><Arrow2/></button>
+    );
+  }
+
 export const settings = {
     dots: true,
       fade: false,
@@ -27,10 +48,20 @@ export const settings = {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 3000,
-      nextArrow: false,
-      prevArrow: false
+      nextArrow: <SampleNextArrow/>,
+      prevArrow: <SamplePrevArrow/>
 
+}
+
+export const settings2 = {
+    dots: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplaySpeed: 3000,
+    nextArrow: <Arrow21/>,
+    prevArrow: <Arrow1/>
 }
 

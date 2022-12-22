@@ -1,0 +1,87 @@
+import "./maintwo.scss";
+const SnowTwo = () => {
+  return (
+    <div className="snowing" >
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+    </div>
+  );
+};
+
+export default SnowTwo;

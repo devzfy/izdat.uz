@@ -5,7 +5,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         .icons{
             gap: 20px;
             display: flex;
@@ -22,11 +22,9 @@
         margin-bottom: 0;
     }
     .shopCards{
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
         .card{
-            width: 19%;
+            width: 90%;
+            height: 100%;
         }
     }
 }

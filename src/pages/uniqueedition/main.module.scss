@@ -12,11 +12,10 @@
     }
     .UniqueEdition_books{
         display: flex;
-        justify-content: space-between;
+        gap: 15px;
         flex-wrap: wrap;
-        align-items: flex-start;
         .book{
-            width: 24%;
+            width: 19%;
             margin-bottom: 60px;
         }
     }

@@ -5,6 +5,7 @@ import { ShopBasket, SearchIcon, Close } from "../../assets/icons";
 import { BurgerBtn, BurgerBtnRes } from "../../assets/icons";
 import { GetData } from "../../hooks/getdata";
 import Humburger from "../humburger/humb";
+import Santa from '../../assets/icons/santa_hat_icon_176569.png'
 const Header = () => {
   const ref = useRef(null);
   const [search, setSearch] = useState("");
@@ -64,6 +65,7 @@ const Header = () => {
                   <BurgerBtnRes/> 
                 </div>
                 <div className={clas.logo}>
+                  <img src={Santa} alt="" />
                   <Link className={clas.logo_link} to={"/"}>
                     Izdat.uz
                   </Link>
@@ -105,7 +107,7 @@ const Header = () => {
                   {lang ? (
                     <button onClick={changeLang}>ЎЗ</button>
                   ) : (
-                    <button onClick={changeLang}>Рус</button>
+                    <button onClick={changeLang}>РУ</button>
                   )}
                 </div>
                 <Link to={'/basket'} className={clas.korzinka}>

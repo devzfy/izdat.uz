@@ -12,9 +12,9 @@ const SaleEvents = ()=>{
             <div className={clas.ads_ac}>
                 <h1>Акции</h1>
                 <div className={clas.ads}>
-                    <img src="https://images.pexels.com/photos/256477/pexels-photo-256477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
-                    <img src="https://images.pexels.com/photos/256477/pexels-photo-256477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
-                    <img src="https://images.pexels.com/photos/256477/pexels-photo-256477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+                    <img src="https://images.pexels.com/photos/6995133/pexels-photo-6995133.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+                    <img src="https://images.pexels.com/photos/4392871/pexels-photo-4392871.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+                    <img src="https://images.pexels.com/photos/4393533/pexels-photo-4393533.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
                 </div>
             </div>
             <div className="container">

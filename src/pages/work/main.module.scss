@@ -16,7 +16,7 @@
   .inner {
     position: relative;
     .work_cards {
-      padding: 40px;
+      padding: 35px;
       width: 100%;
       box-sizing: border-box;
       background: #ffffff;
@@ -28,12 +28,12 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         h4 {
           font-family: "Montserrat";
           font-style: normal;
           font-weight: 600;
-          font-size: 30px;
+          font-size: 25px;
           line-height: 37px;
           &.summa {
             color: #f7a302;
@@ -44,12 +44,12 @@
         display: flex;
         align-items: center;
         gap: 45px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         h5 {
           font-family: "Montserrat";
           font-style: normal;
           font-weight: 400;
-          font-size: 22px;
+          font-size: 18px;
           line-height: 27px;
           color: #444343;
         }
@@ -58,7 +58,7 @@
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
-        font-size: 25px;
+        font-size: 20px;
         line-height: 150%;
         color: #000000;
         margin-bottom: 45px;
@@ -96,7 +96,7 @@
             font-family: "Montserrat";
             font-style: normal;
             font-weight: 600;
-            font-size: 22px;
+            font-size: 18px;
             line-height: 27px;
             color: #444343;
           }

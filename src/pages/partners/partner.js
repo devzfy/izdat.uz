@@ -2,6 +2,7 @@ import clas from './main.module.scss'
 import { Banner, Recommend} from '../../container'
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { PaginationCustome } from '../../components'
 
 const Partners = ()=>{
     return <React.Fragment>
@@ -32,13 +33,16 @@ const Partners = ()=>{
                                     <li>Время работы:</li>
                                     <li>09:00-18:00</li>
                                 </ul>
-                                <Link  to={'/partners'} className={clas.go_website}>Go website</Link>
+                                <a  href='https://kun.uz' target="_blank" className={clas.go_website}>перейти в вебсайт</a>
                             </div>
                         </div>
                     })
                 }
             </div>
             </div>
+        </div>
+        <div className={clas.pag}>
+            <PaginationCustome/>
         </div>
         <div className="container">
             <Recommend/>

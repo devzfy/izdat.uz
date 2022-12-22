@@ -1,37 +1,38 @@
-.slick-arrow::before {
+.slider_container .slick-arrow::before {
   display: none !important;
 }
-.slick-arrow {
+.slider_container .slick-arrow {
   top: 140px !important;
 }
 
-.slick-prev {
+.slider_container .slick-prev {
   left: -102px !important;
 }
 
-.slick-next {
+.slider_container .slick-next {
   right: -30px !important;
 }
 
-.slick-dots {
+.slider_container .slick-dots {
   bottom: -50px !important;
 }
 
-.slick-dots li button {
-  width: 10px !important;
-  height: 10px !important;
+.slider_container .slick-dots li button {
+  width: 8px !important;
+  height: 8px !important;
   background-color: #fff !important;
   border-radius: 50% !important;
+  padding: 0 !important;
 }
 
-.slick-dots li button::before {
+.slider_container .slick-dots li button::before {
   display: none !important;
 }
-.slick-dots li {
+.slider_container .slick-dots li {
   margin: 0 !important;
 }
 
-.slick-dots li.slick-active button {
+.slider_container .slick-dots li.slick-active button {
   background-color: #ff9a00 !important;
 }
 
@@ -77,11 +78,11 @@
   }
 
   .slick-prev {
-    left: 40px !important;
+    display: none !important;
   }
 
   .slick-next {
-    right: 40px !important;
+    display: none !important;
   }
   .slick-dots {
     margin-bottom: -10px;

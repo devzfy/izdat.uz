@@ -3,21 +3,25 @@ import clas from './main.module.scss'
 import { Shopcard} from '../../components'
 import React from 'react'
 import { Arrow, Arrow2 } from '../../assets/icons'
+import Slider from 'react-slick'
+import {  settings2 } from '../../helpers/settings'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import './slick.css'
 
 const Recomend = ()=>{
     return (
-        <div className={clas.Shopcontainer_wrapper}>
+        <div className='slick_carousel_container'>
+            <div className={clas.Shopcontainer_wrapper}>
         <div className={clas.contaner_heder}>
         <h1>Рекомендуем</h1>
-        <div className={clas.icons}>
-            <Arrow/>
-            <Arrow2/>
-        </div>
         </div>
         <div className={clas.shopCards}>
+         <Slider {...settings2}>
             {
                 data[0].products.map((el)=>{
-                    return <div className={clas.card}>
+                       return <div>
+                        <div className={clas.card}>
                         <Shopcard 
                         image={el.image}
                         title={el.title}
@@ -28,10 +32,13 @@ const Recomend = ()=>{
                         saleprice={el.saleprice}
                         />
                     </div>
+                       </div>
                 })
             }
+            </Slider>
        
     </div></div>
+        </div>
     )
 } 
 

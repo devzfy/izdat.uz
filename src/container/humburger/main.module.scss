@@ -42,6 +42,10 @@
         gap: 10px;
         button{
             transform: rotate(90deg);
+            transition: .2s;
+            &.active{
+              transform: rotate(270deg);
+            }
             img{
                 width: 10px;
                 margin-left: 3px;

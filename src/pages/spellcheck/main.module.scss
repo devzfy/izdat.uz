@@ -49,12 +49,18 @@
           align-items: center;
           margin-top: 40px;
           .btn_one {
-            border-radius: 10px;
-            width: 208px;
             display: flex;
             align-items: center;
-            overflow: hidden;
             margin-right: 25px;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            &:first-child{
+              width: 174px;
+            }
+            &:last-child{
+              width: 208px;
+            }
             span {
               font-family: "Montserrat";
               font-style: normal;
@@ -62,10 +68,11 @@
               font-size: 16px;
               line-height: 20px;
               color: #000000;
-              border: 2px solid #393A3F;
-              padding: 10px;
+              padding: 6px 20px;
               border-top-right-radius: 10px;
               border-bottom-right-radius: 10px;
+              border: 2px solid #393A3F;
+              margin-left: -10px;
             }
             button {
               width: 70px;
@@ -76,9 +83,9 @@
               line-height: 22px;
               color: #c8c5c5;
               display: block;
-              height: 100%;
               background-color: #393A3F;
-              padding: 11px;
+              padding: 7px 10px;
+              border-radius: 10px;
             }
           }
         }
@@ -86,6 +93,7 @@
       .changer {
         display: flex;
         justify-content: center;
+        margin: 30px 0;
         button {
           width: 88px;
           height: 64px;

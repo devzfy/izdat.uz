@@ -17,6 +17,15 @@
     }
 }
 
+.cursor{
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+}
+
 @media screen and (max-width: 768px) {
     .App{
         &.active{

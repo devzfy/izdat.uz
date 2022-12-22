@@ -1,13 +1,13 @@
 import clas from './main.module.scss'
 import {  Banner, Recommend, Sidebar } from '../../container'
-import React, { useEffect, useState } from 'react'
+import React, {useState } from 'react'
 import { PaginationCustome, Shopcard } from '../../components'
-import { motion } from 'framer-motion'
 import {GetData} from '../../hooks/getdata'
 import {set_book} from '../../redux/action/action'
 import { useDispatch } from 'react-redux'
 import { Filter } from '../../assets/icons'
 import FilterContent from '../../container/filter/filter'
+
 
 const BookSeries = ()=>{
     const [filter, setFilter] = useState(false)
@@ -16,24 +16,7 @@ const BookSeries = ()=>{
     if(loading) return 'Loading ...'
     if(error) return null
     console.log(data);
-    const container = {
-        hidden: { opacity: 1, scale: 0 },
-        visible: {
-          opacity: 1,
-          scale: 1,
-          transition: {
-            delayChildren: 0.3,
-            staggerChildren: 0.2
-          }
-        }
-      };
-      const item = {
-        hidden: { y: 20, opacity: 0 },
-        visible: {
-          y: 0,
-          opacity: 1
-        }
-      };
+   
       const addCard = async (id)=>{
         const book = await data?.items.find(el => el.id === id)
         dispatch(set_book(book))
@@ -41,6 +24,7 @@ const BookSeries = ()=>{
     return <React.Fragment>
         <Banner image={'https://cdn-v2.asla.org/uploadedImages/CMS/Shop/Bookstore/books.jpg'}/>
         <div className={clas.bookseries_wrapper}>
+            <h1>Серии</h1>
             <div className="container">
                 <div className={clas.inner}>
                     <div className={clas.sidebar_wrapper}>
@@ -54,15 +38,11 @@ const BookSeries = ()=>{
                     </div>
                     <div className={clas.right_side}>
                         <h1 className={clas.res_holder}>Все товары</h1>
-                        <motion.div className={clas.bookseries_wrapper_cards}
-                            initial="hidden"
-                            animate="visible"
-                            variants={container}
+                        <div className={clas.bookseries_wrapper_cards}
                         >
                             {
                                 data.items?.map((el, index)=>{
-                                    return <motion.div className={clas.card} key={index}
-                                        variants={item}
+                                    return <div className={clas.card} key={index}
                                     >
                                         <Shopcard
                                             image={el.volumeInfo.imageLinks.smallThumbnail}
@@ -76,18 +56,18 @@ const BookSeries = ()=>{
                                             add={addCard}
                                             id={el.id}
                                         />
-                                    </motion.div>
+                                    </div>
                                 })
                             }
-                        </motion.div>
-                        <div className={clas.pag}>
-                            <PaginationCustome/>
                         </div>
                     </div>
                 </div>
                
             </div>
         </div>
+                        <div className={clas.pag}>
+                            <PaginationCustome/>
+                        </div>
                     <div className="container">
                     <Recommend/>
                     </div>

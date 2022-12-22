@@ -5,14 +5,18 @@ import { Routes, Route } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import './main.scss'
+import Snow from './components/snow/snow';
+import SnowTwo from './components/snow/snowTwo';
+import AnimatedCursor from "react-animated-cursor"
+
 function App() {
   const location  = useLocation()
   useEffect(()=>{
     window.scrollTo(0,0)
   }, [location.pathname])
-
   return (
       <div className='App'>
+        {/* <AnimatedCursor/> */}
         <Header/>
         <Routes>
           {
@@ -22,6 +26,9 @@ function App() {
           }
         </Routes>
       <Footer/>
+      <Snow/>
+      <SnowTwo/>
+      
       </div>
   );
 }

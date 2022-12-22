@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import clas from "./main.module.scss";
 import "./main.scss";
-import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
@@ -14,28 +13,10 @@ const Humburger = ({ active, setState }) => {
     useEffect(() => {
         setState(false)
     }, [location])
-    const container = {
-        hidden: { opacity: 1, scale: 0 },
-        visible: {
-            opacity: 1,
-            scale: 1,
-            transition: {
-                delayChildren: 0.2,
-                staggerChildren: 0.1,
-            },
-        },
-    };
-
-    const item = {
-        hidden: { x: 20, opacity: 0 },
-        visible: {
-            x: 0,
-            opacity: 1,
-        },
-    };
+    
     const [mini_items, setMini_items] = useState({
         first: false,
-        second: true,
+        second: false,
         thirt: false
     })
 
@@ -87,18 +68,15 @@ const Humburger = ({ active, setState }) => {
             <div ref={refTwo} className="Humburger">
                 <button onClick={() => setState(false)} className={clas.close_btn}>&times;</button>
                 <Link to={'/profile'} className={clas.enter_profile}>Войти в личный кабинет</Link>
-                <motion.ul
-                    variants={container}
-                    initial="hidden"
-                    animate="visible"
+                <ul
                     className={clas.menu_ul}
                 >
-                    <motion.li variants={item}>
+                    <li>
                         <div className={clas.menu_heading}>
                             <Link to={"/writers"} className={`${clas.menu_link} ${clas.arrow}`}>
                                 Авторы
                             </Link>
-                            <button onClick={clickOne}><img src={Arrow} alt="" /></button>
+                            <button onClick={clickOne} className={`${clas.btn} ${mini_items.first ? clas.active : ''}`}><img src={Arrow} alt="" /></button>
                         </div>
                         <div className={`${clas.mini_items2} ${mini_items.first ? clas.active : ''}`}>
                             <ul>
@@ -107,18 +85,18 @@ const Humburger = ({ active, setState }) => {
                                 <li><button>Популярные писатели</button></li>
                             </ul>
                         </div>
-                    </motion.li>
-                    <motion.li variants={item}>
+                    </li>
+                    <li >
                         <Link to={"/about"} className={clas.menu_link}>
                             О нас
                         </Link>
-                    </motion.li>
-                    <motion.li variants={item}>
+                    </li>
+                    <li >
                         <div className={clas.menu_heading}>
                             <Link to={'/'} className={`${clas.menu_link} ${clas.arrow}`}>
                                 Каталог
                             </Link>
-                            <button onClick={clickTwo}><img src={Arrow} alt="" /></button>
+                            <button className={mini_items.second ? clas.active : ''} onClick={clickTwo}><img src={Arrow} alt="" /></button>
                         </div>
                         <div className={`${clas.mini_items} ${mini_items.second ? clas.active : ''}`}>
                             <ul>
@@ -134,29 +112,29 @@ const Humburger = ({ active, setState }) => {
                                 <li><button>Скоро в продаже</button></li>
                             </ul>
                         </div>
-                    </motion.li>
-                    <motion.li variants={item}>
+                    </li>
+                    <li >
                         <Link to={"/edition"} className={clas.menu_link}>
                             Букинистика
                         </Link>
-                    </motion.li>
-                    <motion.li variants={item}>
+                    </li>
+                    <li >
                         <Link to={"/sale"} className={clas.menu_link}>
                             Акции
                         </Link>
-                    </motion.li>
-                    <motion.li variants={item}>
+                    </li>
+                    <li >
                         <Link to={"/book-series"} className={clas.menu_link}>
                             Серии
                         </Link>
-                    </motion.li>
-                    <motion.li variants={item}>
+                    </li>
+                    <li>
 
                         <div className={clas.menu_heading}>
                             <Link to={"/rating"} className={`${clas.menu_link} ${clas.arrow}`}>
                                 Рейтинги
                             </Link>
-                            <button onClick={clickThirt}><img src={Arrow} alt="" /></button>
+                            <button className={mini_items.thirt ? clas.active : ''} onClick={clickThirt}><img src={Arrow} alt="" /></button>
                         </div>
                         <div className={`${clas.mini_items3} ${mini_items.thirt ? clas.active : ''}`}>
                             <ul>
@@ -165,38 +143,38 @@ const Humburger = ({ active, setState }) => {
                                 <li><button>Книг и журналов</button></li>
                             </ul>
                         </div>
-                    </motion.li>
-                    <motion.li variants={item}>
+                    </li>
+                    <li >
                         <Link to={"/auction"} className={clas.menu_link}>
                             Аукцион
                         </Link>
-                    </motion.li>
-                    <motion.li variants={item}>
+                    </li>
+                    <li>
                         <Link to={"/spell-checking"} className={clas.menu_link}>
                             Проверка орфографии
                         </Link>
-                    </motion.li>
-                    <motion.li variants={item}>
+                    </li>
+                    <li>
                         <Link to={"/partners"} className={clas.menu_link}>
                             Нашим партнерам
                         </Link>
-                    </motion.li>
-                    <motion.li variants={item}>
+                    </li>
+                    <li >
                         <Link to={"/delivery"} className={clas.menu_link}>
                             Доставка
                         </Link>
-                    </motion.li>
-                    <motion.li variants={item}>
+                    </li>
+                    <li >
                         <Link to={"/work"} className={clas.menu_link}>
                             Работа специалистам
                         </Link>
-                    </motion.li>
-                    <motion.li variants={item}>
+                    </li>
+                    <li >
                         <Link to={"/print"} className={clas.menu_link}>
                             Онлайн печать
                         </Link>
-                    </motion.li>
-                </motion.ul>
+                    </li>
+                </ul>
             </div>
         </React.Fragment>,
         document.getElementById("portal")

@@ -425,7 +425,7 @@ const Dislike = ()=>{
 
 const Send = ()=>{
   return <svg width="19" height="20" viewBox="0 0 19 20" fill="none" >
-  <path fillRule="evenodd" clipRule="evenodd" d="M1 1L18 10L1 19L6 10L1 1Z" stroke="#135EF2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path fillRule="evenodd" clipRule="evenodd" d="M1 1L18 10L1 19L6 10L1 1Z" stroke="#393A3F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
   </svg>
 }
 const UpArrow = ()=>{
@@ -651,27 +651,9 @@ const Delete = ()=>{
 }
 
 const Edit = ()=>{
-  return <svg width="58" height="56" viewBox="0 0 58 56" fill="none">
-  <g filter="url(#filter0_d_149_5804)">
-  <ellipse cx="29" cy="28" rx="24" ry="23" fill="white"/>
-  </g>
-  <path d="M37.71 23.0401C38.1 22.6501 38.1 22.0001 37.71 21.6301L35.37 19.2901C35 18.9001 34.35 18.9001 33.96 19.2901L32.12 21.1201L35.87 24.8701M20 33.2501V37.0001H23.75L34.81 25.9301L31.06 22.1801L20 33.2501Z" fill="#393A3F"/>
-  <defs>
-  <filter id="filter0_d_149_5804" x="0" y="0" width="58" height="56" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-  <feFlood floodOpacity="0" result="BackgroundImageFix"/>
-  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-  <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_149_5804"/>
-  <feOffset/>
-  <feGaussianBlur stdDeviation="2"/>
-  <feComposite in2="hardAlpha" operator="out"/>
-  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_149_5804"/>
-  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_149_5804" result="shape"/>
-  </filter>
-  </defs>
+  return <svg width="19" height="19" viewBox="0 0 19 19" fill="none" >
+  <path d="M17.71 5.04006C18.1 4.65006 18.1 4.00006 17.71 3.63006L15.37 1.29006C15 0.900059 14.35 0.900059 13.96 1.29006L12.12 3.12006L15.87 6.87006M0 15.2501V19.0001H3.75L14.81 7.93006L11.06 4.18006L0 15.2501Z" fill="#393A3F"/>
   </svg>
-  
-  
   
 }
 
@@ -687,9 +669,33 @@ const See = ()=>{
 </svg>
 }
 
+const UploadIcon = ()=> {
+  return <svg  viewBox="0 0 32 32" width="50" height="50">
+  <g fill="none" stroke="#393A3F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2 15 L2 25 30 25 30 15 26 7 6 7 Z M2 15 L10 15 C10 15 11 20 16 20 21 20 22 15 22 15 L30 15" />
+  </g>
+</svg>
+}
+
+const Incr = ()=>{
+  return <svg width="16" height="11" viewBox="0 0 17 12" fill="none">
+  <path d="M7.72229 0.962171C8.12253 0.466996 8.87747 0.466996 9.27771 0.962171L16.2769 9.62138C16.8054 10.2753 16.34 11.25 15.4992 11.25H1.50084C0.659994 11.25 0.194556 10.2753 0.72313 9.62138L7.72229 0.962171Z" fill="#393A3F"/>
+  </svg>
+  
+}
+
+const Decr = ()=>{
+  return <svg width="16" height="11" viewBox="0 0 17 12" fill="none">
+  <path d="M7.72229 11.0378C8.12253 11.533 8.87747 11.533 9.27771 11.0378L16.2769 2.37862C16.8054 1.72468 16.34 0.75 15.4992 0.75H1.50084C0.659994 0.75 0.194556 1.72468 0.72313 2.37862L7.72229 11.0378Z" fill="#393A3F"/>
+  </svg>
+  
+}
 
 
 export {
+  Incr,
+  Decr,
+  UploadIcon,
   Plus,
   ShopBasket,
   SearchIcon,

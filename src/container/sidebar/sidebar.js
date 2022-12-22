@@ -16,19 +16,21 @@ const Sidebar = ({ activeSidebar, setActiveSidebar }) => {
         categories.push(element.volumeInfo.categories[0])
     }
     console.log(categories);
-    const newData = new Array(...new Set(categories))
+    const newData = ["Детективы", "Народные повести", "Фантастика", "Триллер"]
 
     return <div className={clas.sidebar}>
-        <ul className={clas.sidebar_ul}>
-            <li><button className={clas.sidebar_btn}>Bсе</button></li>
-            {
-                newData?.map(el => {
-                    return <>
-                        <li><button className={clas.sidebar_btn}>{el}</button></li>
-                    </>
-                })
-            }
-        </ul>
-    </div>
+
+<ul className={clas.category_ul}>
+    {
+        newData.map((el) => {
+            return <li>
+                <span className={clas.category_tag}>{el.substring(0,2)}</span>
+                <button className={clas.category_btn}>{el}</button>
+                <span className={clas.category_count}>393</span>
+            </li>
+        })
+    }
+</ul>
+</div>
 }
 export default Sidebar

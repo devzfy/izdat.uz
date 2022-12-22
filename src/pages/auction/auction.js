@@ -30,7 +30,7 @@ const Auction = ()=>{
                             <p>{el.volumeInfo.description}</p>
                             <div className={clas.rating}>
                                 <Rating initialValue={Math.floor(Math.random() * 5)} size={25}/>
-                                <span>({el.volumeInfo.pageCount})</span>
+                                <span className={clas.rating_count}>({el.volumeInfo.pageCount})</span>
                             </div>
                             <div className={clas.submit_btn}>
                                 <button>Учавствовать</button>

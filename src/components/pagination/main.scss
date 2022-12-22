@@ -1,0 +1,25 @@
+.pagination-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    .steps{
+        display: flex;
+        gap: 19px;
+        button{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 36px;
+            color: #000000;
+            width: 41px;
+            height: 41px;
+            border-radius: 50%;
+            &:nth-child(1){
+                border: 1px solid #000;
+
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.slick_carousel_container .slick-slide{
+    transition: .2s !important;
+}
+
+.slick_carousel_container .slick-arrow::before{
+    display: none !important;
+}
+
+.slick_carousel_container .slick-arrow{
+    top: -80px !important;
+    right: 0 !important;
+    left: auto !important;
+}
+
+.slick_carousel_container .slick-arrow.slick-prev{
+    right: 60px !important;
+}
+
+.slick_carousel_container .slick-slide.slick-current{
+    transform: scale(1.1);
+}
+.slick_carousel_container .slick-list{
+    padding: 40px 100px;
+}

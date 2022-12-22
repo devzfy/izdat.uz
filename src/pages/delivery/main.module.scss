@@ -102,11 +102,13 @@
           position: absolute;
           top: 0;
           bottom: 0;
-          right: 260px;
+          right: 300px;
           width: 26px;
           height: 23px;
           content: "";
           margin: auto;
+          background-repeat: no-repeat;
+          background-size: contain;
           background-image: url("../../assets/icons/Layer 2.svg");
         }
         &:nth-child(1) {
@@ -124,6 +126,7 @@
           color: #000000;
           display: block;
           margin-top: 20px;
+          max-width: 204px;
         }
       }
     }
