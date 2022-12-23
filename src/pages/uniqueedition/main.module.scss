@@ -12,7 +12,7 @@
     }
     .UniqueEdition_books{
         display: flex;
-        gap: 15px;
+        justify-content: space-between;
         flex-wrap: wrap;
         .book{
             width: 19%;
@@ -21,10 +21,23 @@
     }
 }
 
-@media screen and (max-width: 849px) and (min-width: 501px) {
+@media screen and (max-width:1024px) {
+    .UniqueEdition_wrapper{
+        .UniqueEdition_books{
+            margin: 0 50px;
+            .book{
+                width: 24%;
+                margin-bottom:40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 740px) and (min-width: 551px) {
     .UniqueEdition_wrapper{
         margin-top: 40px;
         .UniqueEdition_books{
+            margin: 0;
             .book{
                 width: 32%;
             }
@@ -32,7 +45,7 @@
     }
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:550px){
     .UniqueEdition_wrapper{
         margin-top: 60px;
         h1{
@@ -41,6 +54,7 @@
             margin-bottom: 30px;
         }
         .UniqueEdition_books{
+            margin: 0;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;

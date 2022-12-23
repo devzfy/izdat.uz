@@ -23,3 +23,25 @@
         }
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .pagination-wrapper{
+        gap: 20px;
+        .steps{
+            display: flex;
+            gap: 15px;
+            button{
+                font-size: 20px;
+                line-height: 26px;
+                width: 31px;
+                height: 31px;
+            }
+        }
+        .arrow{
+            
+            svg{
+                width: 30px;
+            }
+        }
+    }   
+}

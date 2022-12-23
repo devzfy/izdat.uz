@@ -34,7 +34,7 @@ const About = () => {
             </div>
             <div className={clas.side}>
               <img src={Image1} alt="" />
-              <img src={Image} alt="" />
+              <img src={Image2} alt="" />
             </div>
           </div>
           <div className={clas.block_second}>

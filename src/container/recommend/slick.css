@@ -8,12 +8,12 @@
 
 .slick_carousel_container .slick-arrow{
     top: -80px !important;
-    right: 0 !important;
+    right: 25px !important;
     left: auto !important;
 }
 
 .slick_carousel_container .slick-arrow.slick-prev{
-    right: 60px !important;
+    right: 85px !important;
 }
 
 .slick_carousel_container .slick-slide.slick-current{
@@ -21,4 +21,13 @@
 }
 .slick_carousel_container .slick-list{
     padding: 40px 100px;
+}
+
+@media screen and (max-width: 1024px) {
+    .slick_carousel_container .slick-list{
+        padding: 30px 100px;
+    }
+    .slick_carousel_container .slick-arrow{
+        top: -57px !important;
+    }
 }

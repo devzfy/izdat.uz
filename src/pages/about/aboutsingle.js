@@ -4,6 +4,8 @@ import { Shopcard } from "../../components";
 import { data } from "../../data/collection";
 import React, { useState } from "react";
 import { useWindowDimensions } from "../../hooks/useDimensions";
+import Image from '../../assets/images/Rectangle 94.png'
+import Image2 from '../../assets/images/Rectangle 94.png'
 
 const WriterSingle = () => {
   console.log(data[0].products);
@@ -40,29 +42,26 @@ const WriterSingle = () => {
                     alt=""
                   />
                   <h1>Гафур Гулям</h1>
-                  <p>
-                    Гафур Гулям родился 27 апреля (10 мая) 1903 год в Ташкенте.
-                    Его отец читал стихотворения узбекских и персидских поэтов,
-                    знал русский язык и сам писал стихи. В их доме бывали поэты
-                    Мукими, Фуркат, Асири, Хислат и другие. С осени 1916 года
-                    Гафур стал обучаться в училище. После смерти отца, а затем и
-                    матери был беспризорником. Перепробовал десятки профессий. В
-                    годы Гражданской войны был принят в детский дом. Стал
-                    работать наборщиком в типографии и учиться на педагогических
-                    курсах. Окончил Ташкентский педагогический институт. В
-                    1919—1927 годах работал учителем, директором школы,
-                    председателем Союза работников просвещения, занимался
-                    организацией детских интернатов и приёмных пунктов. С 1923
-                    года начал печатать свои первые стихотворения, а также
-                    очерки и юмористические рассказы. Первое стихотворение Г.
-                    Гуляма «Дети Феликса», рассказывающее о детях-сиротах было
-                    опубликовано в журнале «Маориф ва укитувчи» в 1923 году. По
-                    словам самого Г. Гуляма на его творчество сильное влияние
-                    оказало творчество В. В. Маяковского. Переводил на узбекский
-                    язык произведения А. С. Грибоедова, М. Ю. Лермонтова, В. В.
-                    Маяковского, Н. Хикмета, Ш. Руставели, Низами, Данте, П.
-                    Бомарше, У. Шекспира.
-                  </p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit est consequuntur a sequi cumque accusamus molestias consequatur corporis. Illo sed, architecto dicta unde odit esse modi! Praesentium vero repudiandae a?</p>
+                  <div className={clas.text_image}>
+                    <div className={clas.images}>
+                    <img src={Image} alt="" />
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4SvLmKKLdZlNaMw_2kaBuZt_9vP2vamv3PQ&usqp=CAU" alt="" />
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTODEHubHfxjqXkejp_FVTF_J12RLg4L1QFm08baNWYDSKAznY_93rrEakhzwDmWtbdQjo&usqp=CAU" alt="" />
+                      <img src={Image2} alt="" /> 
+                    </div>
+                    <p>
+                      Гафур Гулям родился 27 апреля (10 мая) 1903 год в Ташкенте.
+                      Его отец читал стихотворения узбекских и персидских поэтов,
+                      знал русский язык и сам писал стихи. В их доме бывали поэты
+                      Мукими, Фуркат, Асири, Хислат и другие. С осени 1916 года
+                      Гафур стал обучаться в училище. После смерти отца, а затем и
+                      матери был беспризорником. Перепробовал десятки профессий. В
+                      годы Гражданской войны был принят в детский дом. Стал
+                      работать наборщиком в типографии и учиться на педагогических
+                      курсах.
+                    </p>
+                  </div>
                 </div>
               ) : (
                 <div className={clas.writer_books}>
@@ -70,17 +69,17 @@ const WriterSingle = () => {
                   <div className={clas.books}>
                     {data[0].products.map((el) => {
                       return <div className={clas.book_card}>
-                          <Shopcard
-                            image={el.image}
-                            title={el.title}
-                            rate={el.rate}
-                            rateCount={el.rateCount}
-                            price={el.price}
-                            sale={el.sale}
-                            saleprice={el.saleprice}
-                          />
-                        </div>
-                      
+                        <Shopcard
+                          image={el.image}
+                          title={el.title}
+                          rate={el.rate}
+                          rateCount={el.rateCount}
+                          price={el.price}
+                          sale={el.sale}
+                          saleprice={el.saleprice}
+                        />
+                      </div>
+
                     })}
                   </div>
                 </div>
@@ -94,28 +93,26 @@ const WriterSingle = () => {
                   alt=""
                 />
                 <h1>Гафур Гулям</h1>
-                <p>
-                  Гафур Гулям родился 27 апреля (10 мая) 1903 год в Ташкенте.
-                  Его отец читал стихотворения узбекских и персидских поэтов,
-                  знал русский язык и сам писал стихи. В их доме бывали поэты
-                  Мукими, Фуркат, Асири, Хислат и другие. С осени 1916 года
-                  Гафур стал обучаться в училище. После смерти отца, а затем и
-                  матери был беспризорником. Перепробовал десятки профессий. В
-                  годы Гражданской войны был принят в детский дом. Стал работать
-                  наборщиком в типографии и учиться на педагогических курсах.
-                  Окончил Ташкентский педагогический институт. В 1919—1927 годах
-                  работал учителем, директором школы, председателем Союза
-                  работников просвещения, занимался организацией детских
-                  интернатов и приёмных пунктов. С 1923 года начал печатать свои
-                  первые стихотворения, а также очерки и юмористические
-                  рассказы. Первое стихотворение Г. Гуляма «Дети Феликса»,
-                  рассказывающее о детях-сиротах было опубликовано в журнале
-                  «Маориф ва укитувчи» в 1923 году. По словам самого Г. Гуляма
-                  на его творчество сильное влияние оказало творчество В. В.
-                  Маяковского. Переводил на узбекский язык произведения А. С.
-                  Грибоедова, М. Ю. Лермонтова, В. В. Маяковского, Н. Хикмета,
-                  Ш. Руставели, Низами, Данте, П. Бомарше, У. Шекспира.
-                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium illum, ipsum cum veniam voluptate ipsa sunt eligendi excepturi doloremque beatae iusto dolore suscipit iure, enim voluptatibus quia? Quaerat, et aperiam.</p>
+                <div className={clas.text_image}>
+                    <div className={clas.images}>
+                      <img src={Image} alt="" />
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4SvLmKKLdZlNaMw_2kaBuZt_9vP2vamv3PQ&usqp=CAU" alt="" />
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTODEHubHfxjqXkejp_FVTF_J12RLg4L1QFm08baNWYDSKAznY_93rrEakhzwDmWtbdQjo&usqp=CAU" alt="" />
+                      <img src={Image2} alt="" />
+                    </div>
+                    <p>
+                      Гафур Гулям родился 27 апреля (10 мая) 1903 год в Ташкенте.
+                      Его отец читал стихотворения узбекских и персидских поэтов,
+                      знал русский язык и сам писал стихи. В их доме бывали поэты
+                      Мукими, Фуркат, Асири, Хислат и другие. С осени 1916 года
+                      Гафур стал обучаться в училище. После смерти отца, а затем и
+                      матери был беспризорником. Перепробовал десятки профессий. В
+                      годы Гражданской войны был принят в детский дом. Стал
+                      работать наборщиком в типографии и учиться на педагогических
+                      курсах.
+                    </p>
+                  </div>
               </div>
 
               <div className={clas.writer_books}>

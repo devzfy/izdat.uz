@@ -113,6 +113,19 @@
         }
       }
 }
+@media screen and (max-width: 900px) {
+  .Rating_wrapper {
+    .rate_cards {
+      .item {
+        .item_text {
+          h3 {
+            max-width: 240px;
+          }
+        }
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 600px) {
   .Rating_wrapper {

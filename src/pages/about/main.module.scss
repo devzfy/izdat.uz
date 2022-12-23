@@ -31,15 +31,15 @@
         position: relative;
         img {
           position: absolute;
-          width: 358px;
-          height: 430px;
-          &:nth-child(2) {
-            bottom: -60px;
-            right: 43px;
-          }
+          width: 80%;
+          height: 80%;
           &:nth-child(1) {
-            top: -10px;
+            top: 0;
             right: 0;
+          }
+          &:nth-child(2) {
+            bottom: 0;
+            left: 0;
           }
         }
       }
@@ -183,9 +183,9 @@
 
 .writersingle_wrapper {
   .page_intro {
-    margin: 160px auto 60px auto;
+    margin: 120px auto 60px auto;
     width: 100%;
-    max-width: 1076px;
+    max-width: 1076px;  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -203,16 +203,63 @@
     p {
       font-family: "Montserrat";
       font-style: normal;
-      font-weight: 400;
+      font-weight: 500;
       font-size: 25px;
       line-height: 150%;
       color: #000000;
       text-align: justify;
+      font-style: italic;
     }
     img {
-      width: 856px;
-      height: 515px;
+      width: 756px;
+      height: 415px;
       object-fit: cover;
+    }
+    .text_image{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      margin-top: 60px;
+      p {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        color: #000000;
+        text-align: justify;
+      }
+      .images{
+        width: 40%;
+        height: 350px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        img{
+          border-radius: 10px;
+          height: 45%;
+          transition: .2s;
+          &:nth-child(1){
+            width: 35%;
+          }
+          &:nth-child(2){
+            width: 60%;
+          }
+          &:nth-child(4){
+            width: 35%;
+          }
+          &:nth-child(3){
+            width: 60%;
+          }
+          &:hover{
+            transform: scale(1.1);
+          }
+        }
+      }
+      p{
+        width: 55%;
+      }
     }
   }
 
@@ -238,9 +285,70 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .About_wrapper {
+    .block_first{
+      margin: 0 30px 0 30px;
+      .side{
+        &:nth-child(2) {
+          width: 35%;
+          height: 400px;
+          position: relative;
+          img {
+            width: 80%;
+            height: 80%;
+            &:nth-child(1) {
+              top: 0;
+              right: 0;
+            }
+            &:nth-child(2) {
+              bottom: 0;
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+    .block_second {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 30px 0 30px;
+      align-items: flex-end;
+      .side {
+        &:nth-child(1) {
+          width: 60%;
+          img {
+            width: 100%;
+            object-fit: cover;
+            height: 309px;
+          }
+        }
+        &:nth-child(2) {
+          height: 270px;
+          width: 37%;
+          position: relative;
+          margin-top: 0;
+          img {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            &:nth-child(2) {
+              left: 0;
+              top: 0;
+            }
+            &:nth-child(1) {
+              bottom: 0px;
+              right: 0;
+            }}
+        }
+      }
+    }
+  }
+}
 
 
-@media screen and (max-width: 1000px) {
+
+@media screen and (max-width: 1024px) {
   .tabbar{
     display: none;
   }
@@ -255,35 +363,35 @@
       }
     }
     .block_first {
-      margin-bottom: 60px;
+      margin: 0 20px 60px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       .side {
         &:nth-child(1) {
-          width: 59%;
+          width: 50%;
         }
         &:nth-child(2) {
-          width: 35%;
+          width: 45%;
           height: 250px;
           position: relative;
           img {
             position: absolute;
-            width: 200px;
+            width: 80%;
             height: 237px;
             &:nth-child(2) {
               bottom: 0;
-              right: 23px;
+              left: 0;
             }
             &:nth-child(1) {
-              top: -10px;
+              top: -20px;
               right: 0;
             }
           }
         }
         h1 {
-          font-size: 22px;
-          line-height: 42px;
+          font-size: 20px;
+          line-height: 32px;
           text-align: left;
           margin-bottom: 20px;
           span {
@@ -317,7 +425,7 @@
       }
     }
     .our_advantages {
-      margin: 40px auto 70px auto;
+      margin: 40px auto;
       max-width: 989px;
   
       h1 {
@@ -326,7 +434,7 @@
         margin-bottom: 30px;
       }
       .advantages {
-        padding: 18px;
+        padding: 30px;
         .advantages_card {
           width: 30%;
           span {
@@ -365,7 +473,7 @@
   
   .writersingle_wrapper {
     .page_intro {
-      margin: 140px auto 60px auto;
+      margin: 120px auto 60px auto;
       width: 100%;
       max-width: 1076px;
       display: flex;
@@ -378,12 +486,26 @@
         margin: 40px 0 30px 0;
       }
       p {
-        font-size: 15px;
+        font-size: 20px;
         line-height: 22px;
+        width: 85%;
       }
       img {
-        width: 100%;
+        width: 70%;
         height: 276px;
+      }
+
+      .text_image{
+        flex-direction: column;
+        margin-top: 30px;
+        .images{
+          width: 65%;
+          margin-bottom: 20px;
+        }
+        p{
+          width: 85%;
+          font-size: 17px;
+        }
       }
     }
   
@@ -405,6 +527,10 @@
           width: 24%;
           margin-bottom: 60px;
         }
+      }
+
+      .text_image{
+        flex-direction: column-reverse;
       }
     }
   }
@@ -519,6 +645,9 @@
           width: 100%;
           margin-bottom: 50px;
           text-align: center;
+          &:last-child{
+            margin-bottom: 8px;
+          }
           span {
             &.number {
               font-family: "Montserrat";
@@ -529,7 +658,7 @@
             &.text {
               text-align: center;
               font-size: 20px;
-              width: 100%;
+              width: 60%;
               line-height: 24px;
             }
           }
@@ -573,6 +702,12 @@
         height: 193px;
         margin: 0 auto;
         object-fit: cover;
+      }
+      .text_image{
+        .images{
+          width: 80%;
+          height: 250px;
+        }
       }
     }
   

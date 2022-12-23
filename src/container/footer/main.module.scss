@@ -52,7 +52,7 @@
                     margin-top: 10px;
                     align-items: center;
                     &:first-child{
-                        margin-top: 29px;
+                        margin-top: 20ppx;
                     }
                     svg{
                         width: 20px;
@@ -200,6 +200,9 @@
                 margin-bottom: 40px;
                 &:last-child{
                     margin-bottom: 0;
+                }
+                &:nth-child(1){
+                    margin-bottom: 30px;
                 }
                 .logo_link{
                     font-family: 'montserrat';
