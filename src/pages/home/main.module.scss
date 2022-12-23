@@ -5,11 +5,11 @@ h1 {
 .home_wrapper {
   background-color: #fff;
   .inner {
-    padding: 200px 0 100px 0;
+    padding: 120px 0 60px 0;
     .banner {
       margin: 0 auto;
       width: 100%;
-      max-width: 1076px;
+      max-width: 1176px;
       height: 517.92px;
       .slider_wrapper {
         background-color: #fff;
@@ -253,7 +253,7 @@ h1 {
             padding: 20px 0 0 20px;
             width: 78%;
             .showing_cards {
-              width: 32%;
+              width: 24%;
               margin-bottom: 40px;
             }
           }
@@ -312,7 +312,7 @@ h1 {
             padding: 20px 0 0 20px;
             width: 78%;
             .showing_cards {
-              width: 32%;
+              width: 24%;
               margin-bottom: 40px;
             }
           }
@@ -326,7 +326,7 @@ h1 {
       }
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 950px){
     .home_wrapper {
         .inner {
           padding: 100px 0 60px 0;
@@ -337,7 +337,7 @@ h1 {
             padding: 20px 0 0 20px;
             width: 70%;
             .showing_cards {
-              width: 48%;
+              width: 32%;
               margin-bottom: 40px;
             }
           }
@@ -362,8 +362,10 @@ h1 {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 60px;
-      overflow-y: scroll;
+      margin-bottom: 40px;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      height: 160px;
       .sale_card {
         min-width: 80%;
         img {
@@ -393,13 +395,13 @@ h1 {
         line-height: 118%;
         color: #393a3f;
         text-align: center;
-        margin: 30px 0;
+        margin: 20px 0;
       }
       .filter_btn {
         button {
           display: flex;
           align-items: center;
-          padding: 10px 32px;
+          padding: 7px 20px;
           box-sizing: border-box;
           border: 2px solid #393a3f;
           border-radius: 15px;
@@ -428,8 +430,11 @@ h1 {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 530px) {
   .home_wrapper {
+    .sales_ads{
+      height: 130px;
+    }
     .inner{
       .banner{
         height: auto;
