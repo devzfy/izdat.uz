@@ -20,8 +20,8 @@ const Shopcard = ({
   const [active, setActive] = useState(false);
   const [active2, setActive2] = useState(false);
   return (
-    <Title className="vanilla">
-        <div className={`${clas.shopcard_wrapper}`}
+    <Title   className="vanilla">
+        <div  className={`${clas.shopcard_wrapper}`}
     >
       <div className={clas.sale}>{sale ? <Sale /> : null}</div>
       <div className={clas.liked}><button onClick={()=> setActive2(true)} className={`heart ${active2 ? 'active' : ''}`}><AnimeHeart/></button></div>

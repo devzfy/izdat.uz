@@ -13,7 +13,7 @@ import Sale1 from '../assets/images/sale1.png'
 
 
 
-export const data = [
+export const    data = [
     {
         name: 'Художественная литература 1',
         products: [

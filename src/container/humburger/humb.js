@@ -7,8 +7,12 @@ import { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import Arrow from '../../assets/icons/free.png'
+import AOS from 'aos'
 
 const Humburger = ({ active, setState }) => {
+    useEffect(()=>{
+        AOS.init()
+    },[])
     const location = useLocation()
     useEffect(() => {
         setState(false)
@@ -100,16 +104,16 @@ const Humburger = ({ active, setState }) => {
                         </div>
                         <div className={`${clas.mini_items} ${mini_items.second ? clas.active : ''}`}>
                             <ul>
-                                <li><button>Художественная литература</button></li>
-                                <li><button>Психология и мотивация</button></li>
-                                <li><button>Досуг и хобби</button></li>
-                                <li><button>Бизнес</button></li>
-                                <li><button>Детская литература</button></li>
-                                <li><button>Для родителей</button></li>
-                                <li><button>Для школы</button></li>
-                                <li><button>Для подростков</button></li>
-                                <li><button>Научно-популярные издания</button></li>
-                                <li><button>Скоро в продаже</button></li>
+                                <li data-aos="fade-right" ><button>Художественная литература</button></li>
+                                <li data-aos="fade-right" ><button>Психология и мотивация</button></li>
+                                <li data-aos="fade-right"  ><button>Досуг и хобби</button></li>
+                                <li data-aos="fade-right"  ><button>Бизнес</button></li>
+                                <li data-aos="fade-right"  ><button>Детская литература</button></li>
+                                <li data-aos="fade-right"  ><button>Для родителей</button></li>
+                                <li data-aos="fade-right"  ><button>Для школы</button></li>
+                                <li data-aos="fade-right"  ><button>Для подростков</button></li>
+                                <li data-aos="fade-right" ><button>Научно-популярные издания</button></li>
+                                <li data-aos="fade-right" ><button>Скоро в продаже</button></li>
                             </ul>
                         </div>
                     </li>
