@@ -52,24 +52,21 @@ const Home = () => {
                   >
                     <Slider {...settings}>
                       {
-                        data.items?.map(el => {
+                        data.items?.map((el, index) => {
                           return <div className={clas.slider_wrapper_slides}>
                             <div data-aos="fade-right" data-aos-duration="1000" className={clas.bla_bla}>
-                            <div className={clas.slider_text}>
+                              <div className={clas.slider_text}>
                                 <h3> Выгодное Предложение</h3>
                                 <p>
                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos odit voluptatem numquam repellat earum soluta ratione, voluptas voluptatibus vitae necessitatibus rem fugit aperiam reiciendis quaerat delectus, nesciunt quos omnis.
                                 </p>
                               </div>
                               <div className={clas.slider_image}>
-                                {/* <div className={clas.sale_text}
-                                  style={{
-                                    backgroundImage: `url(${SaleImage})`
-                                  }}
-                                >
-                                  <h1>10%</h1>
-                                  <span>Скидка</span>
-                                </div> */}
+                                <div className={clas.count_slide}>
+                                  {
+                                    index < 9 ? <span>0{index + 1}</span> : <span>{index + 1}</span>
+                                  }
+                                </div>
                                 <img data-aos="flip-left"
                                   data-aos-easing="ease-out-cubic"
                                   data-aos-duration="2000" src={Book} alt="" />
@@ -87,7 +84,7 @@ const Home = () => {
           </div>
         </div>
         <div className={clas.sales_ads}>
-          {fakeArr.map((el, index) => {
+          {fakeArr.map((el, index) => { 
             return (
               <div key={index} className={clas.sale_card}>
                 <img src={Image} alt="" />

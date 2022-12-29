@@ -1,4 +1,4 @@
-import { ArrowNext, ArrowPrev, Arrow, Arrow2 } from "../assets/icons";
+import { CustomeArrowIconTwo, CustomeArrowIcon, Arrow, Arrow2 } from "../assets/icons";
 
 const SampleNextArrow = (props)=> {
     const { className, onClick } = props;
@@ -6,7 +6,7 @@ const SampleNextArrow = (props)=> {
       <button
         className={className}
         onClick={onClick}
-      ><ArrowNext/></button>
+      ><CustomeArrowIcon/></button>
     );
   }
 
@@ -16,7 +16,7 @@ const SampleNextArrow = (props)=> {
       <button
         className={className}
         onClick={onClick}
-      ><ArrowPrev/></button>
+      ><CustomeArrowIconTwo/></button>
     );
   }
 
