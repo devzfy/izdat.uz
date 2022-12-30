@@ -62,21 +62,20 @@ const Home = () => {
                                 </p>
                               </div>
                               <div className={clas.slider_image}>
-                                <div className={clas.count_slide}>
-                                  {
-                                    index < 9 ? <span>0{index + 1}</span> : <span>{index + 1}</span>
-                                  }
-                                </div>
+
                                 <img data-aos="flip-left"
                                   data-aos-easing="ease-out-cubic"
                                   data-aos-duration="2000" src={Book} alt="" />
                               </div>
                             </div>
-                            <button>Подробнее</button>
+                            <button className={clas.btn_16}>Подробнее</button>
                           </div>
                         })
                       }
                     </Slider>
+                    <div className={clas.count_slide}>
+                      <span>1</span>
+                    </div>
                   </div>
                 </div>
               </motion.div>
@@ -84,7 +83,7 @@ const Home = () => {
           </div>
         </div>
         <div className={clas.sales_ads}>
-          {fakeArr.map((el, index) => { 
+          {fakeArr.map((el, index) => {
             return (
               <div key={index} className={clas.sale_card}>
                 <img src={Image} alt="" />
