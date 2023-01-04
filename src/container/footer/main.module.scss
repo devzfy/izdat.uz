@@ -99,8 +99,15 @@
                         margin-bottom: 15px;
                         border: none;
                         outline: none;
+                        transition: .2s;
+                        border: 1px solid transparent;
                         &::placeholder{
                             color: #A4A3A3;
+                        }
+                        &:focus{
+                            background-color: transparent;
+                            border: 1px solid #ffffff;
+                            color: #fff;
                         }
                     }
                     textarea{

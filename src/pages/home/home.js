@@ -13,11 +13,17 @@ import { categories } from "../../data/base";
 import { motion } from "framer-motion";
 import BackImage from '../../assets/icons/pexels-josh-sorenson-990432.jpg'
 import Book from '../../assets/images/Open-Book-Transparent-Background-PNG-2 1.png'
-import SaleImage from '../../assets/icons/1.png'
+import SaleImage from '../../assets/images/ves-vedmak-komplekt-iz-7-knig_753-1500x700.png'
 import AOS from "aos";
 import 'aos/dist/aos.css'
 import { GetData } from "../../hooks/getdata";
 import Loading from "../../container/loading/loading";
+import Image1 from '../../assets/images/bud-luchei-versieei-seba.png'
+import Image2 from '../../assets/images/594-5941010_the-haunted-series-3d-book-eye-shadow-hd-removebg-preview.png'
+import Image3 from "../../assets/images/3D-Book-Transparent.png";
+import Image4 from "../../assets/images/dog+stars+3d-removebg-preview (1).png";
+import Image5 from "../../assets/images/48-482463_lifestyle-builders-book-cover-3d-final-book-cover-removebg-preview (1).png";
+import Image6 from '../../assets/images/Лермонтов_Герой-нашего-времени-removebg-preview (1).png'
 const Home = () => {
 
   useEffect(() => {
@@ -124,7 +130,7 @@ const Home = () => {
               </ul>
             </div>
             <div className={clas.inner}>
-              {data.items?.map((el, index) => {
+              {data.items?.slice(0,8).map((el, index) => {
                 return <div data-aos="fade-up" className={clas.showing_cards} key={index}
                 >
                   <Shopcard
@@ -142,6 +148,47 @@ const Home = () => {
               })}
             </div>
           </div>
+          
+         <div className={clas.most_cate}>
+          <h1>Лучшие категории</h1>
+          <div className={clas.cates_wrapper}>
+            <div className={clas.big_cate}>
+              <img src={SaleImage} alt="" />
+              <span>Фантастика</span>
+            </div>
+            <div className={clas.small_cates}>
+              <div className={clas.cate}>
+                <img src={Image1} alt="" />
+                <span>Психология и  мотивация</span>
+              </div>
+              <div className={clas.cate}>
+                <img src={Image2} alt="" />
+                <span>Tриллер</span>
+              </div>
+              <div className={clas.cate}>
+                <img src={Image3} alt="" />
+                <span>Детектив</span>
+              </div>
+              <div className={clas.cate}>
+                <img src={Image4} alt="" />
+              </div>
+              <div className={clas.cate}>
+                
+              </div>
+              <div className={clas.cate}>
+                <img src={Image5} alt="" />
+                <span>Бизнес</span>
+              </div>
+              <div className={clas.cate}>
+                <img src={Image6} alt="" />
+                <span>Художественная литература</span>
+              </div>
+              <div className={clas.cate}></div>
+            </div>
+          </div>
+         </div>
+
+
 
           <div className={clas.filter}>
             <div className={clas.filter_btn}>
