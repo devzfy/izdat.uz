@@ -39,7 +39,10 @@
   .rate {
     display: flex;
     align-items: center;
-
+    svg{
+      width: 20px;
+      height: 20px;
+    }
     .rateCount {
       font-family: "Montserrat";
       font-style: normal;
@@ -133,7 +136,7 @@
       align-items: center;
       height: 14px;
       svg{
-        width: 10px;
+        width: 15px;
       }
       .rateCount {
         font-size: 10px;
