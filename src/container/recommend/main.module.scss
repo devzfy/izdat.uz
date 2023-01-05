@@ -5,7 +5,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 40px;
         .icons{
             gap: 20px;
             display: flex;
@@ -32,15 +31,15 @@
 @media screen and (max-width: 1024px) {
     .Shopcontainer_wrapper{
         .contaner_heder{
-            margin-bottom: 40px;
             .icons{
                 display: none;
             }
         }
         h1{
             font-family: 'montserrat';
-            font-size: 22px;
+            font-size: 35px;
             line-height: 118%;
+            margin-bottom: 20px;
         }
     }
 }

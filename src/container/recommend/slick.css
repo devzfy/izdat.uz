@@ -7,7 +7,7 @@
 }
 
 .slick_carousel_container .slick-arrow{
-    top: -80px !important;
+    top: -30px !important;
     right: 25px !important;
     left: auto !important;
 }
@@ -28,6 +28,8 @@
         padding: 30px 100px;
     }
     .slick_carousel_container .slick-arrow{
-        top: -57px !important;
+        top: -37px !important;
+        width: 45px;
+        height: 45px;
     }
 }

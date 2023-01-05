@@ -24,13 +24,15 @@ import Image3 from "../../assets/images/3D-Book-Transparent.png";
 import Image4 from "../../assets/images/dog+stars+3d-removebg-preview (1).png";
 import Image5 from "../../assets/images/48-482463_lifestyle-builders-book-cover-3d-final-book-cover-removebg-preview (1).png";
 import Image6 from '../../assets/images/Лермонтов_Герой-нашего-времени-removebg-preview (1).png'
+import Image7 from '../../assets/images/16642110_1-removebg-preview (1).png'
+import Image8 from '../../assets/images/61fL0wtmhXL-removebg-preview (1).png'
 const Home = () => {
 
   useEffect(() => {
     AOS.init()
   }, [])
   const [filter, setFilter] = useState(false);
-  const [loading, data, error] = GetData('https://www.googleapis.com/books/v1/volumes?q=fiction&filter=paid-ebooks&key=AIzaSyC9ROl3QupFvo-5ZqG3AD7LS_ECZqy8GsI' + `&maxResults=${'16'}`)
+  const [loading, data, error] = GetData('https://www.googleapis.com/books/v1/volumes?q=thriller&filter=paid-ebooks&key=AIzaSyC9ROl3QupFvo-5ZqG3AD7LS_ECZqy8GsI' + `&maxResults=${'16'}`)
   if (loading) return <Loading />
   if (error) return null
   const fakeArr = [1, 1, 1];
@@ -80,7 +82,7 @@ const Home = () => {
                       }
                     </Slider>
                     <div className={clas.count_slide}>
-                      <span>1</span>
+                      <span>01</span>
                     </div>
                   </div>
                 </div>
@@ -159,7 +161,7 @@ const Home = () => {
             <div className={clas.small_cates}>
               <div className={clas.cate}>
                 <img src={Image1} alt="" />
-                <span>Психология и  мотивация</span>
+                <span>Психология и <br />  мотивация</span>
               </div>
               <div className={clas.cate}>
                 <img src={Image2} alt="" />
@@ -173,7 +175,7 @@ const Home = () => {
                 <img src={Image4} alt="" />
               </div>
               <div className={clas.cate}>
-                
+                <img src={Image7} alt="" />
               </div>
               <div className={clas.cate}>
                 <img src={Image5} alt="" />
@@ -183,12 +185,32 @@ const Home = () => {
                 <img src={Image6} alt="" />
                 <span>Художественная литература</span>
               </div>
-              <div className={clas.cate}></div>
+              <div className={clas.cate}>
+                <img src={Image8} alt="" />
+                <span>Kомедийный</span>
+              </div>
             </div>
           </div>
          </div>
 
-
+          <div className={clas.continue_cards}>
+          {data.items?.slice(0,12).map((el, index) => {
+                return <div data-aos="fade-up" className={clas.showing_cards} key={index}
+                >
+                  <Shopcard
+                    image={el.volumeInfo.imageLinks.smallThumbnail}
+                    title={el.volumeInfo.title}
+                    rate={el.volumeInfo.averageRating}
+                    rateCount={el.volumeInfo.ratingsCount ? el.volumeInfo.ratingsCount : 0}
+                    price={el.saleInfo.retailPrice ? el.saleInfo.retailPrice.amount : 0}
+                    sale={false}
+                    saleprice={''}
+                    link={'/book-series/1'}
+                    id={el.id}
+                  />
+                </div>
+              })}
+          </div>
 
           <div className={clas.filter}>
             <div className={clas.filter_btn}>

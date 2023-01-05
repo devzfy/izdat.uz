@@ -67,21 +67,20 @@
     bottom: 10px !important;
   }
 
-  .slick-arrow {
-    top: 40% !important;
-    width: 15px !important;
-    height: 15px !important;
+  .slider_container .slick-arrow {
+    bottom: -90px !important;
+    width: 35px !important;
+    height: 25px !important;
+  }
+
+  .slider_container .slick-next{
+    right: 20px !important;
+  }
+  .slider_container .slick-prev{
+    right: 55px !important;
   }
   .slick-arrow svg {
     width: 100%;
-  }
-
-  .slick-prev {
-    left: 10px !important;
-  }
-
-  .slick-next {
-    right: 10px !important;
   }
 }
 
