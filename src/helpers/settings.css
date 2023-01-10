@@ -58,6 +58,12 @@
   background-color: #ff9a00 !important;
 }
 
+@media screen and (max-width: 700px) {
+  .slick-slider .slick-list{
+    padding: 50px 0;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .slick-slider,
   .slick-list {

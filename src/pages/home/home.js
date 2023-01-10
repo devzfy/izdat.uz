@@ -148,10 +148,7 @@ const Home = () => {
                   />
                 </div>
               })}
-            </div>
-          </div>
-          
-         <div className={clas.most_cate}>
+              <div className={clas.most_cate}>
           <h1>Лучшие категории</h1>
           <div className={clas.cates_wrapper}>
             <div className={clas.big_cate}>
@@ -211,6 +208,11 @@ const Home = () => {
                 </div>
               })}
           </div>
+            </div>
+            
+          </div>
+          
+         
 
           <div className={clas.filter}>
             <div className={clas.filter_btn}>
