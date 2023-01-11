@@ -37,7 +37,7 @@ header{
                     transform: rotate(-10deg);
                 }
                 .logo_link{
-                    font-family: 'Inter';
+                    font-family: "montserrat";
                     font-style: normal;
                     font-weight: 600;
                     font-size: 35px;
@@ -50,7 +50,7 @@ header{
                 align-items: center;
                 gap: 50px;
                 .link{
-                    font-family: 'Inter';
+                    font-family: "montserrat";
                     font-style: normal;
                     font-weight: 500;
                     font-size: 20px;
@@ -75,7 +75,7 @@ header{
             gap: 20px;
             .lang{
                 button{
-                    font-family: 'Inter';
+                    font-family: "montserrat";
                     font-style: normal;
                     font-weight: 500;
                     font-size: 22px;
@@ -157,7 +157,7 @@ header{
                 gap: 20px;
                 align-items: center;
                 h3{
-                    font-family: 'Montserrat';
+                    font-family: '"montserrat"';
                     font-style: normal;
                     font-weight: 500;
                     font-size: 18px;
@@ -166,7 +166,7 @@ header{
                     max-width: 250px;
                 }
                 span{
-                    font-family: 'Montserrat';
+                    font-family: '"montserrat"';
                     font-style: normal;
                     font-weight: 500;
                     font-size: 12px;
@@ -180,7 +180,7 @@ header{
                 align-items: flex-end;
                 span{
                     &:nth-child(1){
-                        font-family: 'Montserrat';
+                        font-family: '"montserrat"';
                         font-style: normal;
                         font-weight: 500;
                         font-size: 14px;
@@ -188,7 +188,7 @@ header{
                         color: #fff;
                     }
                     &:nth-child(2){
-                        font-family: 'Montserrat';
+                        font-family: '"montserrat"';
                         font-style: normal;
                         font-weight: 500;
                         font-size: 12px;
@@ -336,7 +336,7 @@ header{
                     width: 40px;
                     display: none;
                     button{
-                        font-family: 'Inter';
+                        font-family: "montserrat";
                         font-style: normal;
                         font-weight: 500;
                         font-size: 22px;

@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import { settings } from "../../helpers/settings";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Filter } from "../../assets/icons";
+import { Filter, Loupe, Fantasy, Motivation, Comedic, Business, Pen, Thriller } from "../../assets/icons";
 import FilterContent from "../../container/filter/filter";
 import "../../helpers/settings.css";
 import Image from "../../assets/images/Rectangle 10.png";
@@ -13,15 +13,11 @@ import { categories } from "../../data/base";
 import { motion } from "framer-motion";
 import BackImage from '../../assets/icons/pexels-josh-sorenson-990432.jpg'
 import Book from '../../assets/images/Open-Book-Transparent-Background-PNG-2 1.png'
-import SaleImage from '../../assets/images/ves-vedmak-komplekt-iz-7-knig_753-1500x700.png'
 import AOS from "aos";
 import 'aos/dist/aos.css'
 import { GetData } from "../../hooks/getdata";
 import Loading from "../../container/loading/loading";
-import Image1 from '../../assets/images/bud-luchei-versieei-seba.png'
-import Image2 from '../../assets/images/594-5941010_the-haunted-series-3d-book-eye-shadow-hd-removebg-preview.png'
-import Image3 from "../../assets/images/3D-Book-Transparent.png";
-import Image4 from "../../assets/images/dog+stars+3d-removebg-preview (1).png";
+import Image2 from "../../assets/images/3D-Book-Transparent.png";
 import Image5 from "../../assets/images/48-482463_lifestyle-builders-book-cover-3d-final-book-cover-removebg-preview (1).png";
 import Image6 from '../../assets/images/Лермонтов_Герой-нашего-времени-removebg-preview (1).png'
 import Image7 from '../../assets/images/16642110_1-removebg-preview (1).png'
@@ -148,42 +144,36 @@ const Home = () => {
                   />
                 </div>
               })}
-              <div className={clas.most_cate}>
+          <div className={clas.most_cate}>
           <h1>Лучшие категории</h1>
           <div className={clas.cates_wrapper}>
             <div className={clas.big_cate}>
-              <img src={SaleImage} alt="" />
+              <Fantasy/>
               <span>Фантастика</span>
             </div>
             <div className={clas.small_cates}>
               <div className={clas.cate}>
-                <img src={Image1} alt="" />
+                <Motivation/>
                 <span>Психология и <br />  мотивация</span>
               </div>
               <div className={clas.cate}>
-                <img src={Image2} alt="" />
+                <Thriller/>
                 <span>Tриллер</span>
               </div>
               <div className={clas.cate}>
-                <img src={Image3} alt="" />
+              <Loupe/>
                 <span>Детектив</span>
               </div>
               <div className={clas.cate}>
-                <img src={Image4} alt="" />
-              </div>
-              <div className={clas.cate}>
-                <img src={Image7} alt="" />
-              </div>
-              <div className={clas.cate}>
-                <img src={Image5} alt="" />
+                <Business/>
                 <span>Бизнес</span>
               </div>
               <div className={clas.cate}>
-                <img src={Image6} alt="" />
+                <Pen/>
                 <span>Художественная литература</span>
               </div>
               <div className={clas.cate}>
-                <img src={Image8} alt="" />
+                <Comedic/>
                 <span>Kомедийный</span>
               </div>
             </div>

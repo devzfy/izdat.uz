@@ -1,7 +1,7 @@
 .shopcard_wrapper {
   background: #fffafa;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
+  border-radius: 17px;
   padding: 19px 15px;
   box-sizing: border-box;
   position: relative;
@@ -23,10 +23,10 @@
     margin-bottom: 15px;
   }
   .title {
-    font-family: "inter";
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     height: 45px;
     overflow: hidden;
     line-height: 22px;
@@ -40,8 +40,8 @@
     display: flex;
     align-items: center;
     svg{
-      width: 18px;
-      height: 18px;
+      width: 15px;
+      height: 15px;
     }
     .rateCount {
       font-family: "Montserrat";
@@ -61,7 +61,7 @@
     margin-top: 6px;
     span {
       &:nth-child(1) {
-        font-family: "inter";
+        font-family: "montserrat";
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
@@ -69,7 +69,7 @@
         color: #000000;
       }
       &:nth-child(2) {
-        font-family: "inter";
+        font-family: "montserrat";
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
@@ -95,7 +95,7 @@
     margin-top: 15px;
     justify-content: space-between;
     .buy_btn {
-      font-family: "inter";
+      font-family: "montserrat";
       font-style: normal;
       font-weight: 600;
       font-size: 22px;

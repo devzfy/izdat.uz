@@ -92,7 +92,7 @@ h1 {
               font-family: "Lato", sans-serif;
               font-weight: 500;
               background: #fff;
-              cursor: pointer;
+              cursor: pomontserrat;
               transition: all 0.3s ease;
               position: relative;
               display: inline-block;
@@ -147,7 +147,7 @@ h1 {
                 justify-content: center;
                 flex-direction: column;
                 h1 {
-                  font-family: "Inter";
+                  font-family: "montserrat";
                   font-style: normal;
                   font-weight: 700;
                   font-size: 60px;
@@ -156,7 +156,7 @@ h1 {
                   margin-bottom: 0;
                 }
                 span {
-                  font-family: "Inter";
+                  font-family: "montserrat";
                   font-style: normal;
                   font-weight: 500;
                   font-size: 30px;
@@ -227,7 +227,7 @@ h1 {
         text-align: left;
         h2 {
           margin: 0;
-          font-family: "inter";
+          font-family: "montserrat";
           font-style: normal;
           font-weight: 400;
           font-size: 18px;
@@ -244,7 +244,7 @@ h1 {
         gap: 63px;
         h3 {
           margin: 0;
-          font-family: "Inter";
+          font-family: "montserrat";
           font-style: normal;
           font-weight: 500;
           font-size: 14px;
@@ -258,7 +258,7 @@ h1 {
           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
           padding: 12px 30px;
           border-radius: 30px;
-          font-family: "Inter";
+          font-family: "montserrat";
           font-style: normal;
           font-weight: 500;
           font-size: 14px;
@@ -327,7 +327,7 @@ h1 {
             display: flex;
             align-items: center;
             justify-content: center;
-            font-family: "Inter";
+            font-family: "montserrat";
             font-style: normal;
             font-weight: 700;
             font-size: 16px;
@@ -336,7 +336,7 @@ h1 {
           }
           .category_btn {
             text-align: left;
-            font-family: "Inter";
+            font-family: "montserrat";
             font-style: normal;
             font-weight: 400;
             font-size: 13px;
@@ -345,7 +345,7 @@ h1 {
             width: 130px;
           }
           .category_count {
-            font-family: "Inter";
+            font-family: "montserrat";
             font-style: normal;
             font-weight: 400;
             font-size: 12px;
@@ -358,6 +358,7 @@ h1 {
   }
   .most_cate {
     margin-bottom: 60px;
+    width: 100%;
     h1 {
       font-family: "Montserrat";
       font-style: normal;
@@ -376,20 +377,16 @@ h1 {
         padding: 0 10px;
         border-radius: 10px;
         box-sizing: border-box;
-        width: 34%;
+        width: 32%;
         justify-content: center;
         flex-direction: column;
-        background: rgba(25, 22, 44, 0.66);
+        background: #7a739178;
         height: 210px;
         overflow: hidden;
         display: flex;
         align-items: center;
-        img {
-          width: 100%;
-          object-fit: cover;
-          margin-bottom: 20px;
-        }
         span {
+          margin-top: 20px;
           display: block;
           padding-left: 5px;
           font-family: "Montserrat";
@@ -404,12 +401,13 @@ h1 {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        width: 65%;
+        width: 67%;
         .cate {
+          background: #7a739178;
           border-radius: 10px;
           height: 100px;
           display: flex;
-          padding: 0 20px;
+          padding: 0 10px;
           box-sizing: border-box;
           align-items: center;
           img {
@@ -419,60 +417,38 @@ h1 {
           }
           span {
             display: block;
-            padding-left: 20px;
+            padding-left: 15px;
             word-break: break-all;
             max-width: 140px;
             font-size: 15px;
             font-weight: 500;
             color: #fff;
             font-family: "Montserrat";
+           
           }
           &:nth-child(1) {
-            background: rgba(25, 22, 44, 0.66);
-            width: 38%;
-            margin-bottom: 10px;
+            width: 36%;
+            margin-bottom: 8px;
           }
           &:nth-child(2) {
-            background: rgba(25, 22, 44, 0.66);
-            width: 38%;
+            width: 36%;
           }
-          &:nth-child(3) {
-            background: rgba(25, 22, 44, 0.66);
-            width: 27%;
-            display: none;
-          }
-          &:nth-child(4) {
-            background: rgba(25, 22, 44, 0.66);
-            width: 20%;
-            img {
-              width: 100%;
-              object-fit: contain;
-            }
+          &:nth-child(3), &:nth-child(4) {
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            span{
+              padding-top: 5px;
+              padding-left: 0;
+            };
           }
           &:nth-child(5) {
-            background: rgba(25, 22, 44, 0.66);
-            width: 20%;
-            img {
-              width: 100%;
-              object-fit: contain;
-            }
+            width: 36%;
           }
           &:nth-child(6) {
-            background: rgba(25, 22, 44, 0.66);
-            width: 38%;
-            display: none;
-          }
-
-          &:nth-child(7) {
-            background: rgba(25, 22, 44, 0.66);
-            width: 38%;
-            span {
-              padding-left: 5px;
-            }
-          }
-          &:nth-child(8) {
-            background: rgba(25, 22, 44, 0.66);
-            width: 38%;
+            width: 36%;
           }
         }
       }
@@ -582,6 +558,57 @@ h1 {
         width: 24%;
       }
     }
+
+
+    .most_cate{
+      .cates_wrapper{
+        position: relative;
+        height: 377px;
+        .big_cate{
+          width: 45%;
+        }
+        .small_cates{
+          width: 53%;
+          flex-wrap: wrap;
+          .cate{
+            &:nth-child(1){
+              width: 100%;
+            }
+            &:nth-child(2){
+              width: 100%;
+            }
+            &:nth-child(3){
+              width: 45%;
+              position: absolute;
+              bottom: 56px;
+              left: 0;
+            }
+            &:nth-child(4){
+              position: absolute;
+              width: 45%;
+              bottom: -56px;
+              left: 0;
+            }
+            &:nth-child(5){
+              position: absolute;
+              width: 53%;
+              bottom: 56px;
+              right: 0;
+            }
+            &:nth-child(6){
+              position: absolute;
+              width: 53%;
+              bottom: -56px;
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+
+
+
+
     .inner {
       .banner {
         .slider_wrapper {
@@ -644,20 +671,6 @@ h1 {
           width: 24%;
           margin-bottom: 40px;
         }
-        .most_cate{
-          .cates_wrapper{
-            .small_cates{
-              .cate{
-                &:nth-child(3){
-                  display: block;
-                }
-                &:nth-child(6){
-                  display: block;
-                }
-              }
-            }
-          }
-        }
       }
       .sidebar {
         width: 30%;
@@ -679,80 +692,6 @@ h1 {
     }
     .filter {
       display: none;
-    }
-
-
-
-
-    .most_cate {
-      margin-bottom: 50px;
-      min-height: 501px;
-      position: relative;
-      h1 {
-        font-size: 25px;
-        margin-top: 0;
-      }
-      .cates_wrapper {
-        .big_cate {
-          margin-bottom: 20px;
-          padding: 0 20px;
-          width: 49%;
-          span {
-            padding-left: 10px;
-            font-size: 16px;
-          }
-        }
-        .small_cates {
-          width: 49%;
-          flex-wrap: wrap;
-          .cate {
-            padding: 0 10px;
-            span {
-              padding-left: 15px;
-              max-width: 123px;
-              font-size: 13px;
-            }
-
-            &:nth-child(1) {
-              width: 67%;
-            }
-            &:nth-child(2) {
-              width: 30%;
-            }
-            &:nth-child(3) {
-              width: 67%;
-            }
-            &:nth-child(4) {
-              width: 30%;
-            }
-            &:nth-child(5) {
-              width: 49%;
-              left: 0;
-              position: absolute;
-              bottom: 111px;
-            }
-            &:nth-child(6) {
-              width: 49%;
-              position: absolute;
-              bottom: 0;
-              left: 0;
-            }
-  
-            &:nth-child(7) {
-              width: 49%;
-              position: absolute;
-              bottom: 111px;
-              right: 0;
-            }
-            &:nth-child(8) {
-              width: 49%;
-              position: absolute;
-              bottom: 0;
-              right: 0;
-            }
-          }
-        }
-      }
     }
   }
 }
@@ -821,6 +760,7 @@ h1 {
     }
     .filter {
       display: block;
+      margin-top: 40px;
       h1 {
         font-family: "Montserrat";
         font-style: normal;
@@ -858,57 +798,6 @@ h1 {
         .showing_cards {
           width: 32%;
           margin-bottom: 30px;
-        }
-      }
-    }
-    .most_cate {
-      min-height: 400px;
-      .cates_wrapper {
-        .big_cate {
-          height: 160px;
-        }
-        .small_cates {
-          width: 49%;
-          height: 150px;
-          flex-wrap: wrap;
-          .cate {
-            height: 75px;
-            padding: 0 10px;
-            span {
-              padding-left: 15px;
-              max-width: 123px;
-              font-size: 13px;
-            }
-            img{
-              height: 65px;
-            }
-
-            &:nth-child(1) {
-              width: 100%;
-            }
-            &:nth-child(2) {
-              display: none;
-            }
-            &:nth-child(3) {
-              width: 100%;
-            }
-            &:nth-child(4) {
-              display: none;
-            }
-            &:nth-child(5) {
-              width: 49%;
-              left: 0;
-              position: absolute;
-              bottom: 86px;
-            }
-  
-            &:nth-child(7) {
-              width: 49%;
-              position: absolute;
-              bottom: 86px;
-              right: 0;
-            }
-          }
         }
       }
     }
@@ -1029,6 +918,7 @@ h1 {
       // }
     }
     .filter {
+      
       .filter_results {
         .showing_cards {
           width: 48%;
