@@ -1,4 +1,4 @@
-import {Profile,Work,Basket,AudioBook,Soon,Auction,Delivery,Partners,SpellCheck,Rating,RatingSingle,UniqueEdition, Home , About, Writers, WriterSingle, SaleEvents, BookSeries, SeriesSingle, SingleWork, SinglePrint, Print, SingleBook} from "./pages";
+import {Profile,Balance,Work,Basket,AudioBook,Soon,Auction,Delivery,Partners,SpellCheck,Rating,RatingSingle,UniqueEdition, Home , About, Writers, WriterSingle, SaleEvents, BookSeries, SeriesSingle, SingleWork, SinglePrint, Print, SingleBook, ProfileAdmin} from "./pages";
 
 
 export const routes = [
@@ -105,5 +105,13 @@ export const routes = [
     {
         path: '/profile',
         element: <Profile/>
+    },
+    {
+        path: '/profile-admin',
+        element: <ProfileAdmin/>
+    },
+    {
+        path: '/balance',
+        element: <Balance/>
     }
 ]

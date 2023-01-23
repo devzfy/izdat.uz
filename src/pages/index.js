@@ -21,4 +21,6 @@ import AudioBook from "./audiobooks/audiobook";
 import SingleBook from "./singleBook/singlebook";
 import Soon from "./comingSoon/soon";
 import Profile from "./profile/profile";
-export {Profile,Basket,Soon,SingleBook,AudioBook,SinglePrint,Print,SingleWork,Work,Auction,Delivery,Partners,SpellCheck,Rating,RatingSingle,SeriesSingle ,Home, About,UniqueEdition, Writers, WriterSingle, SaleEvents, BookSeries}
+import ProfileAdmin from "./profile/profileAdmin";
+import Balance from "./balance/balance";
+export {Profile,Balance,ProfileAdmin,Basket,Soon,SingleBook,AudioBook,SinglePrint,Print,SingleWork,Work,Auction,Delivery,Partners,SpellCheck,Rating,RatingSingle,SeriesSingle ,Home, About,UniqueEdition, Writers, WriterSingle, SaleEvents, BookSeries}

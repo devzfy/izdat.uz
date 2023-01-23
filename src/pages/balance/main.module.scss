@@ -1,0 +1,599 @@
+.Balance_wrapper {
+  .Balance_inner {
+    padding: 180px 0 60px;
+    h1 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 43px;
+      color: #000000;
+      margin-bottom: 40px;
+    }
+    .balance_overall {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 45px;
+      background: #e8e8e8;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+      border-radius: 20px;
+      margin-bottom: 90px;
+      .balans {
+        padding: 32px 24px;
+        background: #393a3f;
+        border-radius: 20px;
+        width: 50%;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        span {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 30px;
+          line-height: 37px;
+          color: #ffffff;
+        }
+        .cash_title {
+          display: flex;
+          align-items: center;
+          gap: 14px;
+          .cach_icon {
+            width: 62px;
+            height: 54px;
+            background: #f7a302;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+        .cach_amount {
+          span {
+            font-weight: 600;
+          }
+        }
+      }
+      .balance_monthly {
+        width: 50%;
+        gap: 43px;
+        display: flex;
+        align-items: center;
+        span {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 500;
+          line-height: 34px;
+          display: block;
+          &:nth-child(1) {
+            color: #6c6b6b;
+            font-size: 28px;
+          }
+          &:nth-child(2) {
+            font-size: 30px;
+            line-height: 37px;
+          }
+        }
+      }
+    }
+    .upload_book_holder {
+      display: flex;
+      justify-content: space-between;
+
+      h1 {
+        &:nth-child(1) {
+          width: 60%;
+        }
+        &:nth-child(2) {
+          width: 35%;
+        }
+      }
+    }
+    .upload_book {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 2px;
+        height: 50%;
+        background-color: #393a3f;
+        right: 37.5%;
+        top: 20%;
+      }
+      .upload_btn {
+        button {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 27px;
+          color: #ffffff;
+          padding: 12px 41px;
+          background: #393a3f;
+          border-radius: 20px;
+        }
+      }
+      form {
+        h1{
+            display: none;
+        }
+        &:nth-child(1) {
+          width: 60%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          .input_field {
+            width: 48%;
+            margin-bottom: 20px;
+            label {
+              font-family: "Montserrat";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 20px;
+              line-height: 34px;
+              color: #6c6b6b;
+              margin-bottom: 10px;
+              display: block;
+              &.upload_image {
+                width: 40%;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid #000;
+                border-radius: 10px;
+              }
+            }
+            input,
+            textarea {
+              box-sizing: border-box;
+              resize: vertical;
+              background-color: #fff;
+              width: 100%;
+              border: 2px solid #000000;
+              padding: 10px;
+              border-radius: 10px;
+              font-family: "Montserrat";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 28px;
+              color: #000000;
+              &.file {
+                display: none;
+              }
+            }
+          }
+        }
+        &:nth-child(2) {
+          width: 35%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          .input_field {
+            width: 100%;
+            margin-bottom: 20px;
+            label {
+              font-family: "Montserrat";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 20px;
+              line-height: 34px;
+              color: #6c6b6b;
+              margin-bottom: 10px;
+              display: block;
+              &.upload_image {
+                width: 30%;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid #000;
+                border-radius: 10px;
+              }
+            }
+            input {
+              box-sizing: border-box;
+              resize: vertical;
+              background-color: #fff;
+              width: 100%;
+              border: 2px solid #000000;
+              padding: 10px;
+              border-radius: 10px;
+              font-family: "Montserrat";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 28px;
+              color: #000000;
+              &.file {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .statistic {
+    margin-top: 43px;
+    background: #e8e8e8;
+    padding-bottom: 60px;
+    
+    .holder {
+      h1 {
+        padding: 27px 0;
+        margin-bottom: 0;
+        color: #F7A302;
+        font-weight: bold;
+      }
+      border-bottom: 2px solid #393a3f;
+    }
+    .date {
+      margin-top: 50px;
+      margin-bottom: 60px;
+      label {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 34px;
+        color: #000000;
+        margin-bottom: 10px;
+        display: block;
+      }
+      select {
+        display: block;
+        width: 416px;
+        padding: 24px;
+        border: 2px solid #f7a302;
+        border-radius: 20px;
+        background-color: transparent;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 28px;
+        color: #000000;
+      }
+    }
+    .result_cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      .card {
+        width: 24%;
+        margin-bottom: 40px;
+        height: 253px;
+        background: #ffffff;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        padding: 25px;
+        box-sizing: border-box;
+        span {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 25px;
+          line-height: 30px;
+          color: #000000;
+          display: block;
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .Balance_wrapper{
+        .Balance_inner{
+            .balance_overall {
+                gap: 25px;
+                margin-bottom: 60px;
+                .balans {
+                  padding: 22px 14px;
+                  span {
+                    font-size: 17px;
+                    line-height: 21px;
+                  }
+                  .cash_title {
+                    display: flex;
+                    align-items: center;
+                    gap: 14px;
+                    .cach_icon {
+                      width: 42px;
+                      height: 34px;
+                        svg{
+                            width: 25px;
+                        }
+                    }
+                  }
+                }
+                .balance_monthly {
+                  display: flex;
+                  justify-content: space-between;
+                  padding: 0 20px 0 0 ;
+                  span {
+                    line-height: 21px;
+                    &:nth-child(1) {
+                      font-size: 17px;
+                    }
+                    &:nth-child(2) {
+                      font-size: 17px;
+                      line-height: 21px;
+                    }
+                  }
+                }
+              }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .Balance_wrapper{
+        .Balance_inner{
+            .upload_book_holder {
+                display: flex;
+                justify-content: space-between;
+                h1 {
+                    font-size: 24px;
+                    line-height: 29px;
+                    margin-bottom: 20px;
+                  &:nth-child(1) {
+                    width: 60%;
+                  }
+                  &:nth-child(2) {
+                    width: 35%;
+                  }
+                }
+              }
+              .upload_book {
+                .upload_btn {
+                  button {
+                    font-size: 12px;
+                    line-height: 15px;
+                    padding: 6px 21px;
+                  }
+                }
+                form {
+                  &:nth-child(1) {
+                    .input_field {
+                      width: 48%;
+                      margin-bottom: 15px;
+                      label {
+                        font-size: 15px;
+                        line-height: 24px;
+                        margin-bottom: 5px;
+                        &.upload_image {
+                          width: 30%;
+                          height: 60px;
+                          svg{
+                            width: 60%;
+                          }
+                        }
+                      }
+                      input,
+                      textarea {
+                        padding: 8px;
+                        font-size: 13px;
+                        line-height: 18px;
+                        &.file {
+                          display: none;
+                        }
+                      }
+                    }
+                  }
+                  &:nth-child(2) {
+                    .input_field {
+                      margin-bottom: 15px;
+                      label {
+                        font-size: 15px;
+                        line-height: 24px;
+                        margin-bottom: 5px;
+                        &.upload_image {
+                            width: 25%;
+                            height: 60px;
+                            svg{
+                              width: 60%;
+                            }
+                        }
+                      }
+                      input {
+                        padding: 8px;
+                        font-size: 13px;
+                        line-height: 18px;
+                        &.file {
+                          display: none;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+                                                 
+        }
+
+        .statistic {
+            margin-top: 30px;
+            padding-bottom: 40px;
+            .holder {
+              h1 {
+                font-size: 24px;
+                line-height: 29px;
+                padding: 20px 0;
+              }
+            }
+            .date {
+              margin-top: 30px;
+              margin-bottom: 30px;
+              label {
+                font-size: 17px;
+                line-height: 21px;
+                margin-bottom: 10px;
+              }
+              select {
+                width: 223px;
+                font-size: 13px ;
+                padding: 12px 14px;
+                line-height: 16px;
+              }
+            }
+            .result_cards {
+              .card {
+                width: 155px;
+                height: 135px;
+                margin-bottom: 40px;
+                padding: 10px;
+                span {
+                  font-size: 15px;
+                  line-height: 18px;
+                  margin-bottom: 20px;
+                }
+              }
+            }
+          }   
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .Balance_wrapper {
+        .Balance_inner {
+          padding: 80px 0 60px;
+          h1 {
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 20px;
+          }
+          .balance_overall {
+            flex-direction: column;
+            gap: 0;
+            margin-bottom: 60px;
+            .balans {
+              padding: 10px 14px;
+              width: 100%;
+              span {
+                font-size: 15px;
+                line-height: 17px;
+              }
+              .cash_title {
+                .cach_icon {
+                  width: 30px;
+                  height: 26px;
+                  svg{
+                    width: 70%;
+                    height: 70%;
+                  }
+                }
+              }
+            }
+            .balance_monthly {
+              width: 100%;
+              gap: 30px;
+              padding: 10px;
+              span {
+                line-height: 17px;
+                &:nth-child(1) {
+                  font-size: 15px;
+                }
+                &:nth-child(2) {
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+          .upload_book_holder {
+            display: flex;
+            justify-content: space-between;
+      
+            h1 {
+              &:nth-child(1) {
+                width: 100%;
+              }
+              &:nth-child(2) {
+                display: none;
+              }
+            }
+          }
+          .upload_book {
+            flex-direction: column;
+            &::before{
+                display: none;
+            }
+            .upload_btn {
+              button {
+                font-size: 12px;
+                line-height: 15px;
+                padding: 6px 21px;
+              }
+            }
+            form {
+                h1{
+                    display: block;
+                }
+              &:nth-child(1) {
+                width: 100%;
+                margin-bottom: 40px;
+                .input_field {
+                  width: 48%;
+                  margin-bottom: 15px;
+                  label {
+                    font-size: 15px;
+                    line-height: 24px;
+                    margin-bottom: 5px;
+                    &.upload_image {
+                      width: 30%;
+                      height: 60px;
+                      svg{
+                        width: 60%;
+                      }
+                    }
+                  }
+                  input,
+                  textarea {
+                    padding: 8px;
+                    font-size: 13px;
+                    line-height: 18px;
+                    &.file {
+                      display: none;
+                    }
+                  }
+                }
+              }
+              &:nth-child(2) {
+                width: 100%;
+                .input_field {
+                  margin-bottom: 15px;
+                  label {
+                    font-size: 15px;
+                    line-height: 24px;
+                    margin-bottom: 5px;
+                    &.upload_image {
+                        width: 25%;
+                        height: 60px;
+                        svg{
+                          width: 60%;
+                        }
+                    }
+                  }
+                  input {
+                    padding: 8px;
+                    font-size: 13px;
+                    line-height: 18px;
+                    &.file {
+                      display: none;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+}
